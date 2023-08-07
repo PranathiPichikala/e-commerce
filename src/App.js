@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import Header from './Header/Header';
 import './App.css';
+import SliderComp from './Slider-component/SliderComp';
 
+const imagesslider = [
+  '/Images/slider1.jpeg',
+  '/Images/slider2.jpeg',
+  '/Images/slider3.jpeg',
+  '/Images/slider4.jpeg',
+];
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Header/>
+    <div className="slider-container">
+      <SliderComp imagesslider={imagesslider} />
     </div>
+    </>
   );
 }
 
