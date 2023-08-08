@@ -11,9 +11,9 @@ const Home = () => {
     return (
         <div>
             <Header />
-            {/*<div className="slider-container">
+            <div className="slider-container">
                 <SliderComp imagesslider={imagesslider} />
-            </div> */}
+            </div>
         </div>
     )
 }
