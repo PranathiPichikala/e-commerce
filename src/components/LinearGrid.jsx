@@ -55,7 +55,7 @@ const LinearGrid = ({ header, items }) => {
                   </div>
                   <div className="add-to-cart">
               <Button onClick={() => addToCart(data)}>ADD TO CART</Button>
-              <Link to='/cartcomponent'>
+              <Link to='/cart'>
               <Button>Go to Cart</Button>
               </Link>
             </div>
