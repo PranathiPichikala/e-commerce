@@ -1,6 +1,5 @@
 import Header from "../components/Header"
 import SliderComp from "../components/SliderComp"
-
 const Home = () => {
     const imagesslider = [
         '/Images/slider1.jpeg',
@@ -12,9 +11,9 @@ const Home = () => {
     return (
         <div>
             <Header />
-            <div className="slider-container">
+            {/*<div className="slider-container">
                 <SliderComp imagesslider={imagesslider} />
-            </div>
+            </div> */}
         </div>
     )
 }

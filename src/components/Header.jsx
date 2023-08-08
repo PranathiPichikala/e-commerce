@@ -61,6 +61,7 @@ const imageData = [
   {
     imageSrc: '/Images/mobile-2.jpg',
     heading: 'Mobiles',
+    link: "SmartPhones"
   },
   {
     imageSrc: '/Images/electronics-3.jpg',
@@ -181,7 +182,7 @@ const Header = () => {
         {imageData.map((data, index) => (
           <Grid item xs={6} sm={4} md={2}  lg={1} key={index} >
             <Paper className='paper-width'>
-              <Link href="#">
+              <Link href={`/Category/${data.link}`}>
                 <img src={data.imageSrc} alt="Image description" width="100%" height="auto" style={{ objectFit: 'cover' }} />
               
               <Typography variant="h6" align="center">
