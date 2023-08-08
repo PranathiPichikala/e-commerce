@@ -137,7 +137,7 @@ const Header = () => {
             </IconButton>
             Sign In
           </ButtonContainer>
-          <Link  to="/cartcomponent">
+          <Link  to="/cart">
           <ButtonContainer color="inherit">
          
             <IconButton color="inherit">
