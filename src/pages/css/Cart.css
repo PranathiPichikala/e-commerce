@@ -143,3 +143,155 @@
     margin-bottom: 50px;
     cursor: pointer;
 }
+
+._9zeg {
+    display: flex;
+    justify-content: center;
+}
+
+._9zeg .depot-cob {
+    width: 90vw;
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+._9zeg .container {
+    flex: 5;
+}
+
+._9zeg .navigate {
+    background-color: white;
+    height: 58px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+._9zeg .navigate div {
+    border-bottom: 3px solid transparent;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+._9zeg .navigate div.active {
+    color: rgb(40, 116, 240);
+    border-bottom-color: rgb(40, 116, 240);
+}
+
+._9zeg .ostrich-ewe {
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+._9zeg .ostrich-ewe .item {
+    position: relative;
+    padding: 20px 30px;
+    display: flex;
+    gap: 20px;
+}
+
+._9zeg .ostrich-ewe .item .specter-doer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+}
+
+._9zeg .ostrich-ewe .item:not(:last-of-type) {
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+._9zeg .ostrich-ewe .item .exonyms-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+._9zeg .ostrich-ewe .item .exonyms-dot button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+._9zeg .ostrich-ewe .item .exonyms-dot input {
+    width: 44px;
+    height: 27px;
+    border: 1px solid rgb(168, 168, 168);
+    outline: none;
+    padding-left: 16px;
+    box-sizing: border-box;
+    font-weight: 600;
+}
+
+._9zeg .ostrich-ewe .talmud-outs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+._9zeg .ostrich-ewe .talmud-outs img {
+    width: 112px;
+    height: 112px;
+    object-fit: contain;
+}
+
+._9zeg .ostrich-ewe .price-discount {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+._9zeg .ostrich-ewe .controllers {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+._9zeg .ostrich-ewe .controllers button {
+    all: unset;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+._9zeg .price {
+    flex: 2;
+    background-color: white;
+    height: fit-content;
+}
+
+._9zeg .price .cutesy-kyak {
+    padding: 20px;
+}
+
+._9zeg .price .cutesy-kyak > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+._9zeg .price .cutesy-kyak > div:not(:first-of-type) {
+    margin-top: 20px;
+}
+
+._9zeg .price .cutesy-kyak .handbag-kats {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
