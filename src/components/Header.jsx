@@ -11,7 +11,8 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Container } from '@mui/material';
 import './css/Header.css';
-import { Grid, Paper, Link, Typography } from '@mui/material';
+import { Grid, Paper, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 const SearchContainer = styled('div')(({ theme }) => ({
@@ -61,6 +62,7 @@ const imageData = [
   {
     imageSrc: '/Images/mobile-2.jpg',
     heading: 'Mobiles',
+    link: "/Category/SmartPhones",
   },
   {
     imageSrc: '/Images/electronics-3.jpg',
@@ -90,10 +92,7 @@ const imageData = [
     imageSrc: '/Images/flight-9.jpg',
     heading: 'Flights',
   },
-  {
-    imageSrc: '/Images/groceries-10.jpg',
-    heading: 'Grocery',
-  },
+  
 ];
 
 
@@ -138,13 +137,17 @@ const Header = () => {
             </IconButton>
             Sign In
           </ButtonContainer>
+          <Link  to="/cartcomponent">
           <ButtonContainer color="inherit">
+         
             <IconButton color="inherit">
               <ShoppingCartIcon />
+              
             </IconButton>
             Cart
+            
           </ButtonContainer>
-
+          </Link>
           <IconButton
             edge="end"
             color="inherit"
@@ -181,7 +184,7 @@ const Header = () => {
         {imageData.map((data, index) => (
           <Grid item xs={6} sm={4} md={2}  lg={1} key={index} >
             <Paper className='paper-width'>
-              <Link href="#">
+              <Link to={data.link}>
                 <img src={data.imageSrc} alt="Image description" width="100%" height="auto" style={{ objectFit: 'cover' }} />
               
               <Typography variant="h6" align="center">
