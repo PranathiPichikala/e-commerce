@@ -5,7 +5,7 @@ const CartComponent = () => {
 
   return (
     <div>
-      <ul>
+
         {cartItems.map((item, index) => (
            <div className="mobile-image">
                 <img src={item.images} alt="Mobile" />
@@ -25,7 +25,7 @@ const CartComponent = () => {
                 </div>
               </div>
         ))}
-      </ul>
+  
     </div>
   );
 };
