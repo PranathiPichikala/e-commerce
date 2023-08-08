@@ -1,0 +1,33 @@
+.First_Grid{
+    background: lightblue;
+    height: 400px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+}
+.Second_Grid{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(255, 255, 255);
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 15px -3px, rgba(0, 0, 0, 0.05) 3px 4px 6px -2px;
+}
+.Form-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.First_box{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around */
+}
+.Image_box{
+    display: flex;
+    justify-content: center;
+}
+.LoginButton{
+ background-color: #ff6e00 !important;
+}

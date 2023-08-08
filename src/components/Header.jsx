@@ -12,7 +12,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Container } from '@mui/material';
 import './css/Header.css';
 import { Grid, Paper, Typography } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const SearchContainer = styled('div')(({ theme }) => ({
@@ -107,6 +107,7 @@ const Header = () => {
   const handleMenuClose = () => {
     setAnchorEl(null);
   };
+  const navigate = useNavigate()
 
   return (
     <div>
@@ -131,7 +132,7 @@ const Header = () => {
             </IconButton>
             Become a Seller
           </ButtonContainer>
-          <ButtonContainer color="inherit">
+          <ButtonContainer color="inherit" onClick={()=>navigate("/login")}>
             <IconButton color="inherit">
               <PersonOutlineIcon />
             </IconButton>
