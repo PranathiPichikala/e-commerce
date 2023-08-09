@@ -44,9 +44,11 @@ export const FilterComponent = () => {
 			<div className="totalgrid">
 				<div className="_2atk">
 					<div className="bullion-fuki">
-						<h4>Filters</h4>
+						<div className="header">
+							<h4>Filters</h4>
+						</div>
 						<div className="container">
-							
+							Test
 						</div>
 					</div>
 				</div>
