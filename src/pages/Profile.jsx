@@ -8,6 +8,7 @@ import { Link } from "@mui/material";
 import { AiOutlineRight } from "react-icons/ai";
 import {AiOutlineLogout} from "react-icons/ai"
 import ProfileInformation from "../components/ProfileInformation";
+import MyWishlist from "../components/MyWishlist";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -28,7 +29,7 @@ export const Profile = () => {
       case "wishlist":
         return (
           <div>
-            Hello i'm wishlist
+           <MyWishlist/>
           </div>
         );
       case "profile":

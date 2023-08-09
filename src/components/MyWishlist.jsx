@@ -9,7 +9,6 @@ import {
 import "./css/Mywishlist.css"
 import { MdDelete } from 'react-icons/md'
 
-
 const MyWishlist = () => {
 
   const wishList = JSON.parse(localStorage.getItem("wish")) || [];
@@ -73,13 +72,7 @@ const MyWishlist = () => {
           </Card>
         </Grid>
       </Grid>
-    <OtpInput
-      value={otp}
-      onChange={setOtp}
-      numInputs={4}
-      renderSeparator={<span>-</span>}
-      renderInput={(props) => <input {...props} />}
-    />
+
     </Container>
   );
 };
