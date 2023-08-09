@@ -1,0 +1,16 @@
+._0ugg .headfilter{
+    display: flex;
+    flex-direction: row;
+ 
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    margin-bottom: 10px;
+}
+
+._0ugg .headfilter li{
+    padding-right: 30px;
+    color: #000;
+    font-weight: 600;
+}

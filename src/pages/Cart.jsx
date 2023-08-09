@@ -1,14 +1,11 @@
 import "./css/Cart.css";
 import React from "react";
-import { BiSearch } from "react-icons/bi";
 import { useEffect, useState } from "react";
 import EmptyCart from "../components/EmptyCart";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-import Modal from "@mui/material/Modal";
-import LoginPage from "../pages/LoginPage";
+import Navigation from "../components/Navigation";
 
 const Cart = () => {
-  const [search, setSearch] = useState("");
   const [cartitems, setCartItems] = useState([]);
   const [activemenu, setActivemenu] = useState("e-cart");
   const [triggerrefresh, setTriggerRefresh] = useState(0);
@@ -27,8 +24,8 @@ const Cart = () => {
       let total = 0;
 
       parseditems.forEach((item) => {
-        disc += item.price * item.discountPercentage * 0.01;
-        total += item.price;
+        disc += item.price * item.count * item.discountPercentage * 0.01;
+        total += item.price * item.count;
       });
 
       setTotalDiscount(disc.toFixed(2));
@@ -45,36 +42,33 @@ const Cart = () => {
     setTriggerRefresh((prev) => prev + 1);
   };
 
-  console.log({ cartitems });
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => {
-    setOpen(true);
-  };
+  const handleUpdateCount = (id, action) => {
+    const updated = cartitems.map(item => {
+      if (item.id === id) {
+        const itemcopy = JSON.parse(JSON.stringify(item))
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+        if (action === "increase") {
+          itemcopy.count = itemcopy.count + 1
+        } else {
+          itemcopy.count = itemcopy.count - 1
+        }
+        
+        return itemcopy
+      }
+
+      return item
+    })
+
+    localStorage.setItem("cart", JSON.stringify(updated))
+
+    setTriggerRefresh((prev) => prev + 1)
+  }
+
+  console.log({ cartitems });
 
   return (
     <div className="_5pko">
-      <div className="header">
-        <div className="search">
-          {search ? undefined : (
-            <label>Search for products, brands and more</label>
-          )}
-          <input value={search} onChange={(e) => setSearch(e.target.value)} />
-          <BiSearch />
-        </div>
-        <button onClick={handleOpen}>Login</button>
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
-        >
-          <LoginPage />
-        </Modal>
-      </div>
+      <Navigation cartcount={cartitems.length} isloggedin={true} />
       {cartitems.length ? (
         <div className="_9zeg">
           <div className="depot-cob">
@@ -105,11 +99,11 @@ const Cart = () => {
                           <img src={item.images} alt="" />
                         </div>
                         <div className="exonyms-dot">
-                          <button>
+                          <button onClick={() => handleUpdateCount(item.id, "decrease")}>
                             <AiOutlineMinus />
                           </button>
-                          <input value={1} />
-                          <button>
+                          <input value={item.count} />
+                          <button onClick={() => handleUpdateCount(item.id, "increase")}>
                             <AiOutlinePlus />
                           </button>
                         </div>

@@ -6,6 +6,8 @@ import ItemsList from './pages/ItemsList';
 import CartComponent from './components/CartComponent';
 import { FilterComponent } from './components/FilterComponent';
 import LoginPage from './pages/LoginPage';
+import MyWishlist from './components/MyWishlist';
+import OtpVerification from './components/OtpVerification';
 import { Profile } from './pages/Profile';
 function App() {
   
@@ -19,6 +21,8 @@ function App() {
         <Route path="/cartcomponent" element={<CartComponent/>} />
         <Route path='/filtercomponent' element={<FilterComponent/>}/>
         <Route path='/login' element={<LoginPage/>}/>
+        <Route path='my-wishlist' element = {<MyWishlist/>}/>
+        <Route path='otp-verif' element = {<OtpVerification/>}/>
         <Route path='/profile' element={<Profile/>}/>
       </Routes>
     </BrowserRouter>
