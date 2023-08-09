@@ -1,6 +1,6 @@
 
 
-export const Data =[{
+export const Data = [{
     "SmartPhones": {
         "OnePlus": [
             {
@@ -12,7 +12,9 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "One_plus",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
+
             },
             {
                 "id": 2,
@@ -23,8 +25,9 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "One_plus",
+                "images": "https://rukminim2.flixcart.com/image/312/312/l3rmzrk0/mobile/y/u/s/-original-imagetmefgcxw2ye.jpeg?q=70",
+                "count": 0
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/l3rmzrk0/mobile/y/u/s/-original-imagetmefgcxw2ye.jpeg?q=70"
             },
             {
                 "id": 3,
@@ -36,7 +39,8 @@ export const Data =[{
                 "stock": 94,
                 "brand": "One_plus",
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/l/8/d/-original-imagqadpnygfnn2v.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/l/8/d/-original-imagqadpnygfnn2v.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 4,
@@ -48,7 +52,8 @@ export const Data =[{
                 "stock": 94,
                 "brand": "One_plus",
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/z/x/x/-original-imagp55frhhddu6n.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/z/x/x/-original-imagp55frhhddu6n.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 5,
@@ -60,7 +65,8 @@ export const Data =[{
                 "stock": 94,
                 "brand": "One_plus",
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 6,
@@ -72,7 +78,8 @@ export const Data =[{
                 "stock": 94,
                 "brand": "One_plus",
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/l3rmzrk0/mobile/f/z/n/-original-imagetme3gzbnc3z.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/l3rmzrk0/mobile/f/z/n/-original-imagetme3gzbnc3z.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 7,
@@ -84,7 +91,8 @@ export const Data =[{
                 "stock": 94,
                 "brand": "One_plus",
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 8,
@@ -96,7 +104,8 @@ export const Data =[{
                 "stock": 94,
                 "brand": "One_plus",
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/1/7/l/-original-imaghgcj2z5cfugg.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/1/7/l/-original-imaghgcj2z5cfugg.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 9,
@@ -108,7 +117,8 @@ export const Data =[{
                 "stock": 94,
                 "brand": "One_plus",
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 10,
@@ -120,7 +130,8 @@ export const Data =[{
                 "stock": 94,
                 "brand": "One_plus",
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
         ],
         "Apple": [
@@ -135,7 +146,8 @@ export const Data =[{
                 "brand": "Apple",
 
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 2,
@@ -148,7 +160,8 @@ export const Data =[{
                 "brand": "Apple",
 
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 3,
@@ -161,7 +174,8 @@ export const Data =[{
                 "brand": "Apple",
 
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 4,
@@ -174,7 +188,8 @@ export const Data =[{
                 "brand": "Apple",
 
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 5,
@@ -187,7 +202,8 @@ export const Data =[{
                 "brand": "Apple",
 
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 6,
@@ -200,7 +216,8 @@ export const Data =[{
                 "brand": "Apple",
 
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 7,
@@ -213,7 +230,8 @@ export const Data =[{
                 "brand": "Apple",
 
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 8,
@@ -226,7 +244,8 @@ export const Data =[{
                 "brand": "Apple",
 
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 9,
@@ -239,7 +258,8 @@ export const Data =[{
                 "brand": "Apple",
 
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 10,
@@ -252,7 +272,8 @@ export const Data =[{
                 "brand": "Apple",
 
 
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
         ],
         "Poco": [
@@ -265,7 +286,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Poco",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 2,
@@ -276,7 +298,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Poco",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 3,
@@ -287,7 +310,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Poco",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 4,
@@ -298,7 +322,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Poco",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 5,
@@ -309,7 +334,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Poco",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 6,
@@ -320,7 +346,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Poco",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 7,
@@ -331,7 +358,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Poco",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 8,
@@ -342,7 +370,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Poco",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 9,
@@ -353,7 +382,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Poco",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 10,
@@ -364,7 +394,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Poco",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
         ],
         "Realme": [
@@ -377,7 +408,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Realme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 2,
@@ -388,7 +420,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Realme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 3,
@@ -399,7 +432,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Realme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 4,
@@ -410,7 +444,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Realme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 5,
@@ -421,7 +456,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Realme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 6,
@@ -432,7 +468,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Realme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 7,
@@ -443,7 +480,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Realme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 8,
@@ -454,7 +492,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Realme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 9,
@@ -465,7 +504,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Realme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 10,
@@ -476,7 +516,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Realme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
         ],
         "Redme": [
@@ -489,7 +530,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Redme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 2,
@@ -500,7 +542,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Redme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 3,
@@ -511,7 +554,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Redme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 4,
@@ -522,7 +566,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Redme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 5,
@@ -533,7 +578,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Redme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 6,
@@ -544,7 +590,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Redme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 7,
@@ -555,7 +602,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Redme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 8,
@@ -566,7 +614,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Redme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 9,
@@ -577,7 +626,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Redme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 10,
@@ -588,7 +638,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Redme",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
         ],
         "Motorola": [
@@ -601,7 +652,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Motorola",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 2,
@@ -612,7 +664,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Motorola",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 3,
@@ -623,7 +676,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Motorola",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 4,
@@ -634,7 +688,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Motorola",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 5,
@@ -645,7 +700,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Motorola",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 6,
@@ -656,7 +712,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Motorola",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 7,
@@ -667,7 +724,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Motorola",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 8,
@@ -678,7 +736,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Motorola",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 9,
@@ -689,7 +748,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Motorola",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 10,
@@ -700,7 +760,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Motorola",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
         ],
         "Oppo": [
@@ -713,7 +774,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Oppo",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 2,
@@ -724,7 +786,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Oppo",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 3,
@@ -735,7 +798,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Oppo",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 4,
@@ -746,7 +810,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Oppo",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 5,
@@ -757,7 +822,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Oppo",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 6,
@@ -768,7 +834,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Oppo",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 7,
@@ -779,7 +846,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Oppo",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 8,
@@ -790,7 +858,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Oppo",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 9,
@@ -801,7 +870,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Oppo",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 10,
@@ -812,7 +882,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Oppo",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
         ],
         "Samsung": [
@@ -825,7 +896,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Samsung",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 2,
@@ -836,7 +908,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Samsung",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 3,
@@ -847,7 +920,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Samsung",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 4,
@@ -858,7 +932,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Samsung",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 5,
@@ -869,7 +944,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Samsung",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 6,
@@ -880,7 +956,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Samsung",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 7,
@@ -891,7 +968,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Samsung",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 8,
@@ -902,7 +980,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Samsung",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 9,
@@ -913,7 +992,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Samsung",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
             {
                 "id": 10,
@@ -924,7 +1004,8 @@ export const Data =[{
                 "rating": 4.69,
                 "stock": 94,
                 "brand": "Samsung",
-                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                "images": "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70",
+                "count": 0
             },
         ]
     }
