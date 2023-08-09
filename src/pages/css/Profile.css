@@ -1,0 +1,124 @@
+.person-img{
+    display: flex;
+    flex-direction: row;
+  padding: 10px;
+}
+.person{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+    margin-bottom: 10px;
+}
+.hello-flipkart{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 5px 0 0 16px;
+}
+.hello-flipkart .hello-1{
+    color: #000;
+}
+.hello-flipkart .hello-2{
+    font-weight: bolder;
+    color: #000;
+}
+.myorders{
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.myorders .myorders-link, .myorders .myorders-img{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.myorders .myorders-link a{
+    width: calc(100% - 26px);
+    font-size: 15px;
+    font-weight:bolder;
+    color: #878787 !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+.myorders .myorders-img{
+    font-size: 20px;
+}
+.myorders .arrow-right{
+    font-size: 20px;
+    padding-left: 30px;
+}
+.my-acc{
+    border-bottom: 1px solid #f0f0f0;
+}
+.myaccount-setting{
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+}
+.myaccount-setting
+ .myaccount-setting-link, .myaccount-setting
+ .myaccount-setting-img{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.myaccount-setting
+ .myaccount-setting-link a{
+    width: calc(100% - 26px);
+    font-size: 15px;
+    font-weight:bolder;
+    color: #878787 !important;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+.myaccount-setting
+ .myaccount-setting-img{
+    font-size: 20px;
+}
+.profile-info ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style: none;
+}
+.profile-info ul li {
+    padding: 12px 5px 12px 54px;
+
+    text-decoration: none;
+ 
+}
+.profile-info ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    cursor: pointer;
+}
+.PKhkts{
+float: right;
+padding: 0 20px 0 65px;
+color: #388e3c;
+font-weight: 500;
+}
+.row .Track{
+    padding-right: 10px;
+}
+._1yce{
+    width: 500px;
+}
+._8ewn{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+._7hbl{
+    margin-left: 30px !important;
+}
+._7rmp{
+    margin-bottom: 20px !important;
+}
+._7xte{
+    margin-right: 20px!important;
+}
+._4eys{
+    margin-left: 20px !important;
+}
+._5wcd{
+    margin-top: 20px !important;
+}

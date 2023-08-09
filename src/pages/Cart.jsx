@@ -17,6 +17,9 @@ const Cart = () => {
 
   useEffect(() => {
     const items = localStorage.getItem("cart");
+
+    console.log(items)
+    
     if (items) {
       const parseditems = JSON.parse(items);
 
