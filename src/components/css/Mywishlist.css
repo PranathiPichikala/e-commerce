@@ -1,0 +1,53 @@
+.Mycontainer{
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+}
+.Card_001{
+    padding: 15px;
+}
+.List-item{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.rating2 span:nth-child(2) {
+    font-size: 10px; 
+    color: #ffffff; 
+    background-color: #388e3c;
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+.costtt{
+    margin-top: 25px;
+}
+.costtt span:nth-child(1){
+    font-weight: bolder;
+    padding-right:10px;
+}
+.costtt span:nth-child(2){
+    color: #878787;
+    padding-right:10px;
+    text-decoration: line-through;
+}
+.costtt span:nth-child(3){
+    color: #388e3c;
+    font-weight: bolder;
+}
+.Card_div{
+    display: flex;
+    padding: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+.rating2 h4 {
+    margin: 0;
+}
+.wishlist-detais{
+    margin-left: 15px;
+}
+.delete_button{
+    position: relative;
+    right: -70%;
+    top: 10px;
+    font-size: 18px; 
+}

@@ -28,6 +28,11 @@ const LinearGrid = ({ header, items }) => {
     cartItems.push(product);
     localStorage.setItem("cart", JSON.stringify(cartItems));
   };
+  const WishList = (product) => {
+    const wishlistItems = JSON.parse(localStorage.getItem("wish")) || [];
+    wishlistItems.push(product);
+    localStorage.setItem("wish", JSON.stringify(wishlistItems));
+  };
 
   return (
     <div className="linear-grid-container">
@@ -60,7 +65,7 @@ const LinearGrid = ({ header, items }) => {
               </Link>
             </div>
                 </div>
-                <div className="heart-icon">
+                <div onClick={() => WishList(data)} className="heart-icon">
                   <AiFillHeart color="#c2c2c2" />
                 </div>
               </div>
