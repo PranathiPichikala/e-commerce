@@ -108,6 +108,7 @@ const Header = () => {
     setAnchorEl(null);
   };
   const navigate = useNavigate()
+  
 
   return (
     <div>
@@ -139,7 +140,7 @@ const Header = () => {
             Sign In
           </ButtonContainer>
           <Link  to="/cart">
-          <ButtonContainer color="inherit">
+          <ButtonContainer color="inherit"  >
          
             <IconButton color="inherit">
               <ShoppingCartIcon />
@@ -148,6 +149,7 @@ const Header = () => {
             Cart
             
           </ButtonContainer>
+          
           </Link>
           <IconButton
             edge="end"
