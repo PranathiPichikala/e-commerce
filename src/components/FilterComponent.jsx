@@ -41,16 +41,16 @@ export const FilterComponent = () => {
 		<div className="_9rwr bg-whole">
 			<Navigation />
 			<NavigationBottom />
-			<Grid container className="totalgrid" rowSpacing={2} columnSpacing={5}>
-				<Grid className="_2atk" item lg={3}>
+			<div className="totalgrid">
+				<div className="_2atk">
 					<div className="bullion-fuki">
 						<h4>Filters</h4>
 						<div className="container">
 							
 						</div>
 					</div>
-				</Grid>
-				<Grid className="right-grid" item lg={9}>
+				</div>
+				<div className="right-grid" item lg={9}>
 					<div className="tabs-container">
 						<Tabs
 							value={selectedTab}
@@ -114,8 +114,8 @@ export const FilterComponent = () => {
 						{selectedTab === 1 && <div>Tab 2 Content</div>}
 						{selectedTab === 2 && <div>Tab 3 Content</div>}
 					</div>
-				</Grid>
-			</Grid>
+				</div>
+			</div>
 		</div>
 	);
 };
