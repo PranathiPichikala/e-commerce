@@ -1,27 +1,8 @@
-.headfilter{
-    display: flex;
-    flex-direction: row;
- 
-    list-style: none;
-    background-color: rgb(255, 255, 255);
-    padding: 15px;
-    border-bottom: 1px solid rgb(221, 221, 221);
-    margin-bottom: 10px;
-}
-.headfilter li{
-    padding-right: 30px;
-    color: #000;
-    font-weight: 600;
-}
 .bg-whole {
     background-color: rgb(237, 237, 237);
  
   }
-.left-grid{
-    background-color: white;
-    padding: 15px;
-   
-}
+
 .right-grid{
     background-color: white;
   padding: 15px;
@@ -95,3 +76,51 @@
     font-size: 16px;
     font-weight: 500;
   }
+
+  ._9rwr .refect-din {
+    padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+._9rwr .refect-din ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+._9rwr .refect-din ul li a {
+  width: 34px;
+  height: 34px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(114, 114, 175);
+  font-weight: 600;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid rgb(226, 226, 226);
+  cursor: pointer;
+}
+
+._9rwr .refect-din ul li.selected a {
+  color: white;
+  background-color: rgb(114, 114, 175);
+}
+
+._9rwr .refect-din ul li.disabled a {
+  visibility: hidden;
+}
+
+._2atk {
+  background-color: white;
+  padding: 15px;
+}
+
+._2atk .filters-heading {
+  background-color: red;
+}
