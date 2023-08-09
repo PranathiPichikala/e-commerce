@@ -69,13 +69,13 @@ const Navigation = ({ cartcount, isloggedin }) => {
                                         <div className="container">
                                             <ul>
                                                 <li>
-                                                    <Link>
+                                                    <Link to="/account/profile">
                                                         <CgProfile />
                                                         <span>My profile</span>
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link>
+                                                    <Link to="/account/wishlist">
                                                         <AiFillHeart />
                                                         <span>Wishlist</span>
                                                     </Link>

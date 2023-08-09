@@ -4,11 +4,14 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import "./css/Profile.css";
-import { Link } from "@mui/material";
+import { Link } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
 import {AiOutlineLogout} from "react-icons/ai"
 import ProfileInformation from "../components/ProfileInformation";
 import MyWishlist from "../components/MyWishlist";
+import { Outlet } from "react-router-dom";
+import Navigation from "../components/Navigation";
+import NavigationBottom from "../components/NavigationBottom";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -44,6 +47,8 @@ export const Profile = () => {
   };
   return (
     <div>
+      <Navigation />
+      <NavigationBottom />
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           <Grid item xs={3}>
@@ -89,7 +94,7 @@ export const Profile = () => {
               <div className="profile-info">
                 <ul>
                 <li>
-                  <Link onClick={() => handleLinkClick("profile")}>Profile Information</Link>
+                  <Link to="/account/profile">Profile Information</Link>
                 </li>
                 <li>
                   <Link>Manage Addresses</Link>
@@ -147,7 +152,7 @@ export const Profile = () => {
                   <Link>All Notifications</Link>
                 </li>
                 <li>
-                  <Link onClick={() => handleLinkClick("wishlist")}>My Wishlist</Link>
+                  <Link to="/account/wishlist">My Wishlist</Link>
                 </li>
                 </ul>
               </div>
@@ -172,7 +177,7 @@ export const Profile = () => {
             </Item>
           </Grid>
           <Grid item xs={9}>
-          {renderRightContent()}
+            <Outlet />
           </Grid>
         </Grid>
       </Box>

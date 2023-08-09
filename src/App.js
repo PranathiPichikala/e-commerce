@@ -9,6 +9,7 @@ import LoginPage from './pages/LoginPage';
 import MyWishlist from './components/MyWishlist';
 import OtpVerification from './components/OtpVerification';
 import { Profile } from './pages/Profile';
+import ProfileInformation from './components/ProfileInformation';
 function App() {
   
   return (
@@ -23,7 +24,10 @@ function App() {
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='my-wishlist' element = {<MyWishlist/>}/>
         <Route path='otp-verif' element = {<OtpVerification/>}/>
-        <Route path='/profile' element={<Profile/>}/>
+        <Route path='/account' element={<Profile/>}>
+          <Route path="/account/profile" element={<ProfileInformation />} />
+          <Route path="/account/wishlist" element={<MyWishlist />} />
+        </Route>
       </Routes>
     </BrowserRouter>
 
