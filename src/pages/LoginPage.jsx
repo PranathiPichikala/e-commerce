@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import "../components/css/LoginPage.css"
 import loginImage from "../assets/online-shop.png";
 import { BiSearch } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 const CenteredGrid = styled(Grid)(({ theme }) => ({
   display: 'flex',
@@ -68,6 +69,7 @@ const LoginPage = (click) => {
                 margin="normal"
                 variant="outlined"
               />
+                <Link  to="/otp-verif">
               <Button className='LoginButton'
                 variant="contained"
                 color="primary"
@@ -77,6 +79,7 @@ const LoginPage = (click) => {
               >
                 Continue
               </Button>
+              </Link>
               <Button
                 variant="outlined"
                 color="primary"
@@ -123,6 +126,7 @@ const LoginPage = (click) => {
                 margin="normal"
                 variant="outlined"
               />
+              <Link  to="/otp-verif">
               <Button className='LoginButton'
                 variant="contained"
                 color="primary"
@@ -132,6 +136,7 @@ const LoginPage = (click) => {
               >
                 Continue
               </Button>
+              </Link>
               <Button
                 variant="outlined"
                 color="primary"
