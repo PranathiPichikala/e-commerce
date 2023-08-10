@@ -87,6 +87,7 @@
     left: -80px;
     width: 250px;
     color: white;
+    z-index: 1;
 }
 
 ._9epm .header .monks-abs .popover .transparent {

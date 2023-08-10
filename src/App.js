@@ -11,6 +11,7 @@ import OtpVerification from './components/OtpVerification';
 import { Profile } from './pages/Profile';
 import ProfileInformation from './components/ProfileInformation';
 import { MyCoupons } from './components/MyCoupons';
+import GiftcardStore from './pages/GiftcardStore';
 function App() {
   
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/Category/:category" element={<ItemsList />} />
-
+        <Route path="/giftcards" element={<GiftcardStore/>} />
         <Route path="/cartcomponent" element={<CartComponent/>} />
         <Route path='/filtercomponent' element={<FilterComponent/>}/>
         <Route path='/login' element={<LoginPage/>}/>
