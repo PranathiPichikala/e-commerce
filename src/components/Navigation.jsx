@@ -1,6 +1,6 @@
 import Modal from "@mui/material/Modal";
 import LoginPage from "../pages/LoginPage";
-import { BiChevronDown, BiSearch } from "react-icons/bi";
+import { BiChevronDown, BiSearch, BiSolidWalletAlt } from "react-icons/bi";
 import { BsFillCartFill } from "react-icons/bs"
 import { CgProfile } from "react-icons/cg"
 import { useState } from "react";
@@ -78,6 +78,12 @@ const Navigation = ({ cartcount, isloggedin }) => {
                                                     <Link to="/account/wishlist">
                                                         <AiFillHeart />
                                                         <span>Wishlist</span>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/giftcards">
+                                                        <BiSolidWalletAlt />
+                                                        <span>Gift Cards</span>
                                                     </Link>
                                                 </li>
                                             </ul>
