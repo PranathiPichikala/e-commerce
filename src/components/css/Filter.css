@@ -2,11 +2,6 @@
     background-color: rgb(237, 237, 237);
  
   }
-
-.right-grid{
-    background-color: white;
-  padding: 15px;
-}
 .filters-heading{
     padding-left: 15px;
 }
@@ -14,8 +9,11 @@
     padding: 15px; 
   }
   
-  .totalgrid{
-    margin-top: 20px !important;
+ ._9rwr .totalgrid{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    margin: 10px;
   }
   
   .product-image img{
@@ -118,9 +116,30 @@
 
 ._2atk {
   background-color: white;
-  padding: 15px;
+  flex: 1;
+  height: fit-content;
 }
 
-._2atk .filters-heading {
-  background-color: red;
+._2atk h4 {
+  all: unset;
 }
+
+._9rwr .right-grid {
+  background-color: white;
+  padding: 15px;
+  flex: 4;
+}
+
+._2atk .bullion-fuki .header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  font-weight: 600;
+}
+
+._2atk .container {
+  padding: 20px;
+}
+
