@@ -10,6 +10,7 @@ import MyWishlist from './components/MyWishlist';
 import OtpVerification from './components/OtpVerification';
 import { Profile } from './pages/Profile';
 import ProfileInformation from './components/ProfileInformation';
+import ManageAddressesPage from './pages/ManageAddressPage';
 function App() {
   
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='my-wishlist' element = {<MyWishlist/>}/>
         <Route path='otp-verif' element = {<OtpVerification/>}/>
+        <Route path = "/manage-address" element = {<ManageAddressesPage/>}/>
         <Route path='/account' element={<Profile/>}>
           <Route path="/account/profile" element={<ProfileInformation />} />
           <Route path="/account/wishlist" element={<MyWishlist />} />
