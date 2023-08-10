@@ -22,7 +22,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export const Profile = () => {
-    const [activeContent, setActiveContent] = useState("profile"); // Default active content
+    const [activeContent, setActiveContent] = useState("profile"); 
 
   const handleLinkClick = (content) => {
     setActiveContent(content);
@@ -143,7 +143,7 @@ export const Profile = () => {
               <div className="profile-info">
                 <ul>
                 <li>
-                  <Link>MY Coupons</Link>
+                <Link to="/account/MyCoupons">My Coupons</Link>
                 </li>
                 <li>
                   <Link>My Reviews  & Ratings</Link>

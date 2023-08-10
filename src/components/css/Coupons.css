@@ -1,0 +1,56 @@
+._6ptd{
+    width: 632px;
+    background-color: #fff;
+    padding: 24px 16px 24px 20px;
+    border: 1px solid #e0e0e0;
+}
+._6ptd ._3qgl{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+._6ptd ._3qgl ._0llh{
+    color: #26a541;
+    font-size: 16px;
+    font-weight: 500;
+}
+._1pdu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px
+}
+._6ptd ._3qgl ._7gpk{
+    font-size: 14px;
+    color: #878787;
+    white-space: nowrap;
+    font-weight: 500;
+}
+._1pdu ._8xez{
+font-size: 14px;
+    color: #2874f0;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+._6nht{
+padding-bottom: 22px;
+    color: #212121;
+    font-size: 18px;
+    font-weight: 500;
+   padding-top: 20px;
+}
+._6hvd{
+padding: 24px 32px;
+}
+._6ptd ._3qgl ._9jjo{
+    color: #212121;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 650;
+}
