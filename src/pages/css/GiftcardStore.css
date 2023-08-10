@@ -1,0 +1,92 @@
+._7ifw .groveled-toke {
+    display: flex;
+    flex-direction: column;
+}
+
+._7ifw .groveled-toke .header {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+}
+
+._7ifw .groveled-toke .header h4 {
+    all: unset;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+._7ifw .groveled-toke .header span {
+    font-size: 14px;
+    color: grey;
+}
+
+._7ifw .groveled-toke .container {
+    padding: 10px;
+    background-color: rgb(241, 243, 246);
+    min-height: 80vh;
+}
+
+._7ifw .groveled-toke .container .background {
+    background-color: white;
+}
+
+._7ifw .groveled-toke .container .armagnac-asp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 54px;
+    border-bottom: 1px solid rgb(196, 196, 196);
+    padding: 0px 20px;
+}
+
+._7ifw .groveled-toke .container .armagnac-asp button {
+    all: unset;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: white;
+    background-color: rgb(40, 116, 240);
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+._7ifw .groveled-toke .container .reacher-gyps {
+    display: flex;
+    gap: 8px;
+}
+
+._7ifw .groveled-toke .container .reacher-gyps .card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+._7ifw .groveled-toke .container .reacher-gyps .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+._7ifw .groveled-toke .container .reacher-gyps .card .title {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+._7ifw .groveled-toke .container .reacher-gyps .card .discount {
+    font-size: 14px;
+    color: green;
+    margin-top: 8px;
+}
+
+._7ifw .groveled-toke .container .reacher-gyps .card .description {
+    font-size: 14px;
+    color: rgb(156, 156, 156);
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
