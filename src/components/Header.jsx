@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { AppBar, Toolbar, IconButton, InputBase, Button, Menu, MenuItem } from '@mui/material';
 import { styled } from '@mui/material/styles'; // This is the correct import for recent versions
 
@@ -13,6 +13,7 @@ import { Container } from '@mui/material';
 import './css/Header.css';
 import { Grid, Paper, Typography } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
+import Navigation from './Navigation';
 
 
 const SearchContainer = styled('div')(({ theme }) => ({
@@ -99,6 +100,12 @@ const imageData = [
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [isloggedin, setIsloggedin] = useState(false)
+
+  useEffect(() => {
+    const loginstatus = localStorage.getItem("isloggedin")
+    setIsloggedin(loginstatus)
+  }, [])
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -112,7 +119,7 @@ const Header = () => {
 
   return (
     <div>
-      <AppBar position="static" className='header-head'>
+      {/* <AppBar position="static" className='header-head'>
         <Toolbar className='Header-bg'>
           <div className='Header-logo'>
             <img src="\Images\Logo.png" alt="Logo" />
@@ -181,7 +188,8 @@ const Header = () => {
             <MenuItem onClick={handleMenuClose}>Menu Item 3</MenuItem>
           </Menu>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
+   <Navigation isloggedin={isloggedin} />
 
       <Grid container spacing={2} className='ecommerce-types-img'>
         {imageData.map((data, index) => (

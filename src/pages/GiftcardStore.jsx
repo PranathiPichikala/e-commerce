@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Navigation from "../components/Navigation"
 import NavigationBottom from "../components/NavigationBottom"
 import "./css/GiftcardStore.css"
@@ -16,7 +17,7 @@ const GiftcardStore = () => {
                     <div className="background">
                         <div className="armagnac-asp">
                             Digital Brand Gift Cards
-                            <button>View all</button>
+                         <Link to="/giftcardcomp"> <button>View all</button></Link>  
                         </div>
                         <div className="reacher-gyps">
                             <div className="card">

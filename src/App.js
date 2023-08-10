@@ -12,6 +12,9 @@ import { Profile } from './pages/Profile';
 import ProfileInformation from './components/ProfileInformation';
 import { MyCoupons } from './components/MyCoupons';
 import GiftcardStore from './pages/GiftcardStore';
+import { GiftCardComponent } from './components/GiftCardComponent';
+import { Notifications } from './components/Notifications';
+import { EmptyAddress } from './components/EmptyAddress';
 function App() {
   
   return (
@@ -25,12 +28,16 @@ function App() {
         <Route path='/filtercomponent' element={<FilterComponent/>}/>
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='my-wishlist' element = {<MyWishlist/>}/>
-        <Route path='otp-verif' element = {<OtpVerification/>}/>
+        <Route path='/otp-verif' element = {<OtpVerification/>}/>
         <Route path='/account' element={<Profile/>}>
           <Route path="/account/profile" element={<ProfileInformation />} />
           <Route path="/account/wishlist" element={<MyWishlist />} />
           <Route path="/account/MyCoupons" element={<MyCoupons/>}/>
+          <Route path="/account/notifications" element={<Notifications/>}/>
+          
         </Route>
+        <Route path="/giftcardcomp" element={<GiftCardComponent/>}/>
+        <Route path="/empty-address" element={<EmptyAddress/>}/>
       </Routes>
     </BrowserRouter>
 

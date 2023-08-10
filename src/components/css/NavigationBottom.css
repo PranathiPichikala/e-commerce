@@ -1,7 +1,7 @@
 ._0ugg .headfilter{
     display: flex;
     flex-direction: row;
- 
+    justify-content: center;
     list-style: none;
     background-color: rgb(255, 255, 255);
     padding: 15px;
@@ -10,7 +10,16 @@
 }
 
 ._0ugg .headfilter li{
-    padding-right: 30px;
+    padding: 0 13px;
     color: #000;
     font-weight: 600;
+}
+._0ekz{
+    font-size: 23px;
+    color: #6e6e6e;
+    cursor: pointer;
+}
+._1uac li{
+    display: flex;
+    cursor: pointer;
 }

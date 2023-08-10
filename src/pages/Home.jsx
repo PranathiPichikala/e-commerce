@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <div>
-            <Header />
+            <Header  />
             <div className="slider-container">
                 <SliderComp imagesslider={imagesslider} />
             </div>

@@ -4,6 +4,8 @@ import "../components/css/LoginPage.css"
 import { styled } from '@mui/material/styles';
 import loginImage from "../assets/online-shop.png";
 import OtpInput from 'react-otp-input';
+import { Link, useNavigate } from 'react-router-dom';
+import Navigation from './Navigation';
 
 
 const CenteredGrid = styled(Grid)(({ theme }) => ({
@@ -26,6 +28,7 @@ let styles = {
 const OtpVerification = () => {
 
     const [otp, setOtp] = useState('');
+    const navigate = useNavigate();
 
     console.log(otp)
 
@@ -39,13 +42,20 @@ const OtpVerification = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log('Submitted OTP:', otp);
-      };
+        if (otp === "123456") {
+            localStorage.setItem("isloggedin", true)
+            navigate("/")
+        } else {
+          alert("Incorrect OTP")
+        }
+    };
+ 
 
 
     return (
         <div>
             <CenteredGrid container spacing={2}>
-                {/* First Grid */}
+               
                 <Grid className='First_Grid' item xs={12} md={3}>
                     <Box className="First_box">
                         <Typography variant="h5">Login here!</Typography>
@@ -62,7 +72,7 @@ const OtpVerification = () => {
                     </Box>
                 </Grid>
 
-                {/* Second Grid */}
+               
                 <Grid className='Second_Grid' item xs={12} md={5}>
                     <div style={{width: "155px" ,textAlign: "center"}}>
                         <h4>Please Enter the OTP sen to Number.<span style={{color:"blue"}}>Change</span></h4>
@@ -82,6 +92,7 @@ const OtpVerification = () => {
                             // renderSeparator={<span> - </span>}
                             renderInput={(props) => <input  {...props} style={styles} />}
                         />
+                        
                         <Button className='LoginButton'
                             variant="contained"
                             color="primary"
@@ -91,7 +102,9 @@ const OtpVerification = () => {
                             style={{ marginTop: '20px' }}
                         >
                             Continue
+                            
                         </Button>
+                      
                     </form>
                     <Box>
                         <Typography>
