@@ -170,7 +170,7 @@ const ManageAddressesPage = () => {
                     </Grid>
 
                     <Grid className="_0dhm" item xs={12} md={6}>
-                        <List>
+                        <List className="_3hct">
                             {addresses.map((address, index) => (
                                 <ListItem key={index}>
                                     <ListItemText primary={address.name} secondary={address.address} />

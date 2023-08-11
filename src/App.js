@@ -35,10 +35,11 @@ function App() {
           <Route path="/account/wishlist" element={<MyWishlist />} />
           <Route path="/account/MyCoupons" element={<MyCoupons />} />
           <Route path="/account/notifications" element={<Notifications />} />
-
+          <Route path='/account/manage-address' element={<ManageAddressesPage />} />
         </Route>
         <Route path="/giftcardcomp" element={<GiftCardComponent />} />
         <Route path="/empty-address" element={<EmptyAddress />} />
+
       </Routes>
     </BrowserRouter>
 
