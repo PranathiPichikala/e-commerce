@@ -57,6 +57,7 @@
     fill: white;
     width: 25px;
     height: 25px;
+
 }
 
 ._9epm .header .dribbed-yum .cart-icon span {
@@ -154,7 +155,7 @@
     pointer-events: none;
 }
 
-._9epm .search svg {
+._2ons  svg {
     position: absolute;
     top: 8px;
     right: 10px;
@@ -185,3 +186,42 @@
     padding-bottom: 2.5px;
     cursor: pointer;
 }
+
+.search-history-dropdown {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+ top: 40px;
+  }
+  
+  .dropdown-item {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .search-input.focused {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  ._8zpq svg{
+    position: absolute;
+    top: 8px;
+  }
+  .dropdown-item{
+    display: flex;
+    flex-direction: row;
+  }
+  ._6edy {
+    padding-left: 10px;
+  
+ 
+ 
+  }
+  ._4jlj{
+    border-top: 1px solid rgb(213, 213, 213);
+  }
+  ._4jlj ._6pnm{
+    padding-left: 10px;
+  }

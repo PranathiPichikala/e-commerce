@@ -8,11 +8,15 @@ import "./css/Navigation.css"
 import { Link, useNavigate } from "react-router-dom";
 import { AiFillHeart } from "react-icons/ai";
 import Logo from "../assets/Logo.jpg"
+import { GoHistory } from "react-icons/go"
+import SearchComponent from "./SearchComponent";
 
 const Navigation = ({ cartcount, isloggedin }) => {
     const [open, setOpen] = useState(false)
     const [search, setSearch] = useState("")
     const [accountspopover, setAccountsPopover] = useState(false)
+    const [searchHistory, setSearchHistory] = useState([]);
+    const [showDropdown, setShowDropdown] = useState(false);
 
     const navigate = useNavigate()
 
@@ -22,6 +26,28 @@ const Navigation = ({ cartcount, isloggedin }) => {
 
     const handleClose = () => {
         setOpen(false);
+    };
+    const handleInputChange = (e) => {
+        const value = e.target.value.trim();
+        setSearch(value);
+
+        if (value !== '') {
+            setSearchHistory((prevHistory) => [...prevHistory.filter(item => item !== value), value]);
+        }
+    };
+
+    const handleInputFocus = () => {
+        setTimeout(() => {
+            if (searchHistory.length > 0) {
+                setShowDropdown(true);
+            }
+        }, 10);
+    };
+
+    const handleDropdownItemClick = (item) => {
+        setSearch(item);
+        setShowDropdown(false);
+        setSearchHistory([]);
     };
     return (
         <div className="_9epm">
@@ -43,26 +69,54 @@ const Navigation = ({ cartcount, isloggedin }) => {
                             <span>Logo</span>
                         </div>
                         <div className="search">
-                            {search ? undefined : (
-                                <label>Search for products, brands and more</label>
+                            <div className={`search-input${showDropdown ? ' focused' : ''}`}>
+                                {search ? undefined : (
+                                    <label>Search for products, brands and more</label>
+                                )}
+                                <input
+                                    value={search}
+                                    onChange={handleInputChange}
+                                    onFocus={() => setShowDropdown(true)} 
+                                    onBlur={() => setShowDropdown(false)}
+                                />
+                                <div className="_2ons">
+                                    <BiSearch />
+                                </div>
+                            </div>
+                            {showDropdown && (
+                                <div className="search-history-dropdown">
+                                
+                                    {searchHistory.map((item, index) => (
+                                        <div
+                                            key={index}
+                                            className="dropdown-item"
+                                            onClick={() => handleDropdownItemClick(item)}
+                                        >
+                                            <GoHistory /> <div className="_6edy">{item}</div>
+                                        </div>
+                                    ))}
+                                    <div className="_4jlj">
+                                        <p className="_6pnm">Discover more</p>
+                                        <SearchComponent />
+                                        </div>
+                                </div>
                             )}
-                            <input value={search} onChange={(e) => setSearch(e.target.value)} />
-                            <BiSearch />
                         </div>
+
                     </div>
                     <div className="center">
                         {isloggedin ? (
-                            <div 
-                                className="monks-abs" 
-                                onMouseEnter={() => setAccountsPopover(true)} 
+                            <div
+                                className="monks-abs"
+                                onMouseEnter={() => setAccountsPopover(true)}
                                 onMouseLeave={() => setAccountsPopover(false)}
                             >
                                 <span>Account</span>
                                 <BiChevronDown />
                                 {accountspopover ? (
-                                    <div 
+                                    <div
                                         className="popover"
-                                        onMouseEnter={() => setAccountsPopover(true)} 
+                                        onMouseEnter={() => setAccountsPopover(true)}
                                         onMouseLeave={() => setAccountsPopover(false)}
                                     >
                                         <div className="transparent"></div>

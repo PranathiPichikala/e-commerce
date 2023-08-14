@@ -15,6 +15,9 @@ import GiftcardStore from './pages/GiftcardStore';
 import { GiftCardComponent } from './components/GiftCardComponent';
 import { Notifications } from './components/Notifications';
 import { EmptyAddress } from './components/EmptyAddress';
+import { ProductDetails } from './pages/ProductDetails';
+import { NotificationPage } from './pages/NotificationPage';
+import { DesktopNotify } from './components/DesktopNotify';
 function App() {
   
   return (
@@ -36,8 +39,13 @@ function App() {
           <Route path="/account/notifications" element={<Notifications/>}/>
           
         </Route>
+
         <Route path="/giftcardcomp" element={<GiftCardComponent/>}/>
         <Route path="/empty-address" element={<EmptyAddress/>}/>
+        <Route path="/product-details" element={<ProductDetails/>}/>
+        <Route path="notifications-page" element={<NotificationPage/>}>
+        <Route path="/notifications-page/desktop" element={<DesktopNotify />} />
+          </Route>
       </Routes>
     </BrowserRouter>
 
