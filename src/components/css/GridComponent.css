@@ -1,0 +1,32 @@
+._2mgn {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 32.5% !important;
+    margin: 5px !important;
+}
+
+._6wgv {
+    padding: 25px !important;
+    margin-left: -8px !important;
+}
+._9wxr{
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+   border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+._4jkk{
+    padding: 20px 0px !important;
+        margin-left: -24px !important;
+}
+._4ztt{
+     padding-bottom: 10px;
+     font-size: 1.2rem !important;
+     font-weight: 600 !important;
+}
+._9wxr img{
+    margin-top: 10px;    
+}
+._3osj{
+        margin: 10px 0px 0px 0px !important;
+}
