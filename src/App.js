@@ -16,6 +16,9 @@ import GiftcardStore from './pages/GiftcardStore';
 import { GiftCardComponent } from './components/GiftCardComponent';
 import { Notifications } from './components/Notifications';
 import { EmptyAddress } from './components/EmptyAddress';
+import AddGiftCard from './components/AddGiftCard';
+import GridComponent from './components/GridComponents';
+import MyOrders from './pages/MyOrders';
 function App() {
 
   return (
@@ -30,12 +33,15 @@ function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='my-wishlist' element={<MyWishlist />} />
         <Route path='otp-verif' element={<OtpVerification />} />
+        <Route path='grids' element={<GridComponent />} />
+        <Route path='/myorders' element={<MyOrders />} />
         <Route path='/account' element={<Profile />}>
           <Route path="/account/profile" element={<ProfileInformation />} />
           <Route path="/account/wishlist" element={<MyWishlist />} />
           <Route path="/account/MyCoupons" element={<MyCoupons />} />
           <Route path="/account/notifications" element={<Notifications />} />
           <Route path='/account/manage-address' element={<ManageAddressesPage />} />
+          <Route path="/account/add-gift-cards" element={<AddGiftCard />} />
         </Route>
         <Route path="/giftcardcomp" element={<GiftCardComponent />} />
         <Route path="/empty-address" element={<EmptyAddress />} />

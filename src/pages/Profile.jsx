@@ -75,7 +75,7 @@ export const Profile = () => {
                   <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDI0IDE4Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04LjY5NCAtMTEpIj48ZWxsaXBzZSBjeD0iMjAuNTU3IiBjeT0iMjAiIHJ4PSIyMC41NTciIHJ5PSIyMCIvPjxwYXRoIGZpbGw9IiMyODc0RjEiIGQ9Ik05IDExdjE3LjEwOGMwIC40OTMuNDEuODkyLjkxOC44OTJoNC45M3YtNS4yNTdoLTMuMDMzbDQuOTEyLTQuNzcgNC45NzIgNC44M2gtMy4wMzVWMjloMTIuNDE3Yy41MDcgMCAuOTE4LS40LjkxOC0uODkyVjExSDl6Ii8+PC9nPjwvc3ZnPg==" />
                 </div>
                 <div className="myorders-link">
-                  <Link>MY ORDERS</Link>
+                  <Link to="/myorders">MY ORDERS</Link>
                 </div>
                 <div className="arrow-right">
                   <AiOutlineRight />
@@ -118,7 +118,7 @@ export const Profile = () => {
                 <div className="profile-info">
                   <ul>
                     <li>
-                      <Link>Gift Cards
+                      <Link to="/account/add-gift-cards" >Gift Cards
                         <span className="PKhkts">₹0</span></Link>
                     </li>
                     <li>

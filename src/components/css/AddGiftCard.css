@@ -1,0 +1,68 @@
+._4vqa{
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+}
+._3wts{
+    display: flex;
+    width: 328px;
+    color: #408cf4;
+}
+._1zfw{
+  margin-top: 20px;
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+._8fyb{
+   padding: 15px 30px 15px 30px !important;
+   display: flex !important;
+   align-items: center !important;
+   gap: 10px;
+   color: #408cf4 !important;
+   font-size: 13px !important;
+}
+._1xur{
+    font-size: 20px;
+}
+._5dgm{
+    margin: 50px 0px 20px 0px
+}
+
+
+
+
+
+
+/* Gift card Form */
+._8vgb{
+     background-color: #f5faff;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     border-radius: 10px;
+      margin: 5px 0px 0px 40px !important;
+      max-width: 90% !important;
+      padding: 20px;
+}
+._0zht{
+      padding: 19px;
+    border-radius: 20px;
+    margin: 20px 20px 20px 30px
+}
+
+._6lli{
+    margin-top: 8px !important;
+}
+._0atq{
+   display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+._4hch{
+    background-image:url("https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/giftcard_509752.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    color: white;
+}

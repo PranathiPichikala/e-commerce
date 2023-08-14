@@ -1,3 +1,4 @@
+import GridComponent from "../components/GridComponents";
 import Header from "../components/Header"
 import SliderComp from "../components/SliderComp"
 const Home = () => {
@@ -10,10 +11,11 @@ const Home = () => {
 
     return (
         <div>
-            <Header  />
+            <Header />
             <div className="slider-container">
                 <SliderComp imagesslider={imagesslider} />
             </div>
+            <GridComponent />
         </div>
     )
 }
