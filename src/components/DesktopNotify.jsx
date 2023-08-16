@@ -62,21 +62,23 @@ export const DesktopNotify = () => {
                     id="panel1a-header"
                 >
                     <div className="_3mic">
+                        
                         <FormControlLabel
+                        label={
+                            <>
+                                <span>My Orders</span>
+                                <Typography variant="body2" color="textSecondary">
+                                    Latest updates on your orders.
+                                </Typography>
+                            </>
+                        } 
                             control={
                                 <Checkbox
                                     checked={orders.every(item => item == 1)}
                                     onChange={handleMyOrdersChange}
                                 />
                             }
-                            label={
-                                <>
-                                    <span>My Orders</span>
-                                    <Typography variant="body2" color="textSecondary">
-                                        Latest updates on your orders.
-                                    </Typography>
-                                </>
-                            }
+                            
                         />
                     </div>
                 </AccordionSummary>
