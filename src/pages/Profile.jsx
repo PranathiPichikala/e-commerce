@@ -26,6 +26,8 @@ export const Profile = () => {
   const navigate = useNavigate("")
   const [activeContent, setActiveContent] = useState("profile");
 
+  const isloggedin = localStorage.getItem("isloggedin")
+
   // const handleLinkClick = (content) => {
   //   setActiveContent(content);
   // };
@@ -56,7 +58,7 @@ export const Profile = () => {
 
   return (
     <div>
-      <Navigation />
+      <Navigation isloggedin={isloggedin} />
       <NavigationBottom />
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>

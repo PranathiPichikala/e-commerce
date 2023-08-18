@@ -5,6 +5,7 @@ import "../components/css/LoginPage.css"
 import loginImage from "../assets/online-shop.png";
 import { BiSearch } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
+import Navigation from "../components/Navigation";
 
 const CenteredGrid = styled(Grid)(({ theme }) => ({
   display: 'flex',
@@ -33,14 +34,7 @@ const LoginPage = (click) => {
   return (
     <>
     <div className="_5pko">
-      <div className="header">
-        <div className="search">
-          {search ? undefined : <label>Search for products, brands and more</label>}
-          <input value={search} onChange={e => setSearch(e.target.value)} />
-          <BiSearch />
-        </div>
-        <button>Login</button>
-      </div>
+      <Navigation />
       {!showSignUpPage ? (
         <CenteredGrid container spacing={2}>
           {/* First Grid */}
