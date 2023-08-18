@@ -11,6 +11,8 @@ import "./css/Checkout.css";
 import "./css/Cart.css"
 import ManageAddressPage from './ManageAddressPage';
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+import Navigation from "../components/Navigation";
+import NavigationBottom from "../components/NavigationBottom";
 export default function Checkout() {
   const [activeRow, setActiveRow] = useState(0);
   const [activemenu, setActivemenu] = useState("e-cart");
@@ -84,12 +86,8 @@ export default function Checkout() {
 
   return (
     <div>
-      <div className="_3rse">
-        <div className="_1not">
-          <img src="/static/media/Logo.ad7ef6d6abe54c516ae4.jpg" alt="" />
-        </div>
-        <span>Logo</span>
-      </div>
+      <Navigation />
+      <NavigationBottom />
       <div className="_4xzp">
         <Box className="_6ggb">
           {[

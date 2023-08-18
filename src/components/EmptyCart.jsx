@@ -1,8 +1,11 @@
 import { useState } from "react"
 import EmptyCartImage from "../assets/Empty Cart.webp"
+import { useNavigate } from "react-router-dom"
 
 const EmptyCart = () => {
     const [activemenu, setActivemenu] = useState("e-cart")
+
+    const navigate = useNavigate()
 
     return (
         <div className="cart">
@@ -21,7 +24,7 @@ const EmptyCart = () => {
                 <div className="eclair-eel">
                     <h4>Missing Cart items?</h4>
                     <span>Login to see the items you added previously</span>
-                    <button>Login</button>
+                    <button onClick={() => navigate("/login")}>Login</button>
                 </div>
             </div>
         </div>

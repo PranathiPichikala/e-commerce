@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom"
 import Navigation from "../components/Navigation"
 import NavigationBottom from "../components/NavigationBottom"
 import "./css/GiftcardStore.css"
+import Footer from "./Footer"
 
 const GiftcardStore = () => {
     const navigate = useNavigate()
@@ -38,6 +39,7 @@ const GiftcardStore = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
