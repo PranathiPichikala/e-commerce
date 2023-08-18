@@ -4,6 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import NavigationBottom from '../components/NavigationBottom';
 import "./css/ProductDetails.css";
+import Footer from "./Footer";
 
 const electronicProduct = {
 
@@ -325,6 +326,7 @@ export const ProductDetails = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

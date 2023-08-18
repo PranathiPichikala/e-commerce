@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import EmptyCart from "../components/EmptyCart";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import Navigation from "../components/Navigation";
+import { useNavigate } from "react-router-dom";
+import { Modal } from "@mui/material";
+import LoginModal from "../components/LoginModal";
 
 const Cart = () => {
   const [cartitems, setCartItems] = useState([]);
@@ -12,6 +15,9 @@ const Cart = () => {
   const [totaldiscount, setTotalDiscount] = useState(0);
   const [totalamount, setTotalAmount] = useState(0);
   const [savedItems, setSavedItems] = useState([]);
+  const [open, setOpen] = useState(false)
+
+  const isloggedin = localStorage.getItem("isloggedin")
 
 
   useEffect(() => {
@@ -54,7 +60,9 @@ const Cart = () => {
         if (action === "increase") {
           itemcopy.count = itemcopy.count + 1
         } else {
-          itemcopy.count = itemcopy.count - 1
+          if (itemcopy.count != 1) {
+            itemcopy.count = itemcopy.count - 1
+          }
         }
 
         return itemcopy
@@ -91,9 +99,28 @@ const Cart = () => {
     setSavedItems(updatedSavedItems);
     localStorage.setItem("savedItems", JSON.stringify(updatedSavedItems)); // Update saved items in local storage
   };
+
+  const navigate = useNavigate()
+
+  const handleOpen = () => {
+    setOpen(true);
+};
+
+const handleClose = () => {
+    setOpen(false);
+};
+  
   return (
     <div className="_5pko">
       <Navigation cartcount={cartitems.length} isloggedin={true} />
+      <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+      >
+          <LoginModal handleClose={handleClose} />
+      </Modal>
       {cartitems.length ? (
         <div className="_9zeg">
           <div className="depot-cob">
@@ -197,7 +224,7 @@ const Cart = () => {
                   })}
                   <div className="placeorder-sticky">
                   <div className="placeorder-button">
-                    <button>PLACE ORDER</button>
+                    <button onClick={() => isloggedin ? navigate("/check-out") : handleOpen()}>PLACE ORDER</button>
                   </div>
                   </div>
                 </div>

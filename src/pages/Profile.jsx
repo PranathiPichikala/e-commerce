@@ -12,6 +12,7 @@ import MyWishlist from "../components/MyWishlist";
 import { Outlet } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import NavigationBottom from "../components/NavigationBottom";
+import Footer from "./Footer";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -191,6 +192,7 @@ export const Profile = () => {
           </Grid>
         </Grid>
       </Box>
+      <Footer />
     </div>
   );
 };
