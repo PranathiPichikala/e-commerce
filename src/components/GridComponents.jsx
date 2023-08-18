@@ -61,7 +61,7 @@ const GridComponent = () => (
             </Grid>
         </Grid>
         <Grid className="_6wgv" container spacing={2}>
-            <Grid className="_5xdq" item xs={8}>
+            <Grid className="_4amx" item xs={8}>
                 <Button variant="contained" className='button'>Explore</Button>
             </Grid>
             <Grid className="_2mgn" item xs={4}>
