@@ -68,30 +68,37 @@ const imageData = [
   {
     imageSrc: '/Images/electronics-3.jpg',
     heading: 'ELectronics',
+    link: "/Category/electronics",
   },
   {
     imageSrc: '/Images/tv-4.jpg',
     heading: 'Tvs ',
+    link: "/Category/electronics",
   },
   {
     imageSrc: '/Images/fashion-5.jpg',
     heading: 'Fashion',
+    link: "/Category/Fashion",
   },
   {
     imageSrc: '/Images/beauty-6.jpg',
     heading: 'Beauty',
+    link: "/Category/Beauty",
   },
   {
     imageSrc: '/Images/kitchen-7.jpg',
     heading: ' Kitchen',
+    link: "/Category/Appliances",
   },
   {
     imageSrc: '/Images/furniture-8.jpg',
     heading: 'Furniture',
+    link: "/Category/Furniture",
   },
   {
     imageSrc: '/Images/flight-9.jpg',
     heading: 'Flights',
+    link: "/Category/Beauty",
   },
   
 ];
