@@ -30,3 +30,23 @@
 ._3osj{
         margin: 10px 0px 0px 0px !important;
 }
+._5xdq{
+    background-image: url("../../assets/801.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px; 
+    max-width: 66% !important;
+    margin: 4px !important;
+    position: relative;
+}
+._5xdq .button{
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    background: #b682e4;
+    padding: 10px 50px;
+}
+._5xdq .button:hover{
+    background: #a04bea !important;
+}
