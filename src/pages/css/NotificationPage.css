@@ -1,0 +1,43 @@
+._8fyl{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 20px;
+}
+
+._7tnx{
+    background-color: #f1f3f6;
+}
+._6llk{
+    list-style: none;
+    background: white;
+    padding: 20px 55px;
+}
+._6llk a{
+    text-decoration: none;
+    padding: 20px 0;
+}
+._6llk a li{
+    padding: 15px 0;
+}
+._7gcb{
+    padding: 20px;
+
+    border-radius: 2px;
+    width: 400px;
+}
+._9epa{
+    padding: 0px 15px
+}
+._8gbw svg{
+padding: 2px;
+color: blue;
+}
+._7tnx{
+    display: flex;
+    flex-direction: row;
+}
+._3ynl{
+   padding: 20px;
+    width: 800px;
+}
