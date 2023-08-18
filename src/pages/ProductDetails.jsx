@@ -1,6 +1,6 @@
 import { Button } from '@mui/material';
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import NavigationBottom from '../components/NavigationBottom';
 import "./css/ProductDetails.css";
@@ -101,6 +101,8 @@ export const ProductDetails = () => {
 
     const { type } = useParams()
 
+    const navigate = useNavigate()
+
     useEffect(() => {
         let prods = electronicProduct
 
@@ -182,7 +184,7 @@ export const ProductDetails = () => {
 
                         <div className="_9xzv">
                             <Button className="_3sst"  onClick={() => addToCart(data)}>ADD TO CART</Button>
-                            <Button className="_8off">BUY NOW</Button>
+                            <Button className="_8off" onClick={() => navigate("/cart")}>BUY NOW</Button>
                         </div>
                     </div>
 

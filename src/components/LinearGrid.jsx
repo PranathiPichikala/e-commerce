@@ -8,7 +8,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const LinearGrid = ({ header, items, setTriggerRefresh }) => {
   const itemsPerPage = 4;
   const numPages = Math.ceil(items.length / itemsPerPage);
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(0)
   
 
   const handleNext = () => {
@@ -32,13 +32,25 @@ const LinearGrid = ({ header, items, setTriggerRefresh }) => {
     localStorage.setItem("cart", JSON.stringify(cartItems));
     setTriggerRefresh(prev => prev + 1)
   };
+
+  const wishlistitems = JSON.parse(localStorage.getItem("wish")) || [];
+
   const WishList = (product) => {
-    const wishlistItems = JSON.parse(localStorage.getItem("wish")) || [];
-    wishlistItems.push(product);
-    localStorage.setItem("wish", JSON.stringify(wishlistItems));
+    let previtems = wishlistitems
+  
+    if (previtems.some(item => item.id === product.id)) {
+      previtems = previtems.filter(item => item.id != product.id)
+    } else {
+      previtems.push(product)
+    }
+    
+    localStorage.setItem("wish", JSON.stringify(previtems));
+    setTriggerRefresh(prev => prev + 1)
   };
 
   const navigate = useNavigate()
+
+  console.log({visibleItems})
 
   return (
     <div className="linear-grid-container">
@@ -66,13 +78,16 @@ const LinearGrid = ({ header, items, setTriggerRefresh }) => {
                 </div>
                 <div className="add-to-cart">
                   <Button onClick={e => addToCart(e, data)}>ADD TO CART</Button>
-                  <Link to='/cart'>
+                  <Link to='/cart' onClick={e => e.stopPropagation()}>
                     <Button>Go to Cart</Button>
                   </Link>
                 </div>
               </div>
-              <div onClick={() => WishList(data)} className="heart-icon">
-                <AiFillHeart color="#c2c2c2" />
+              <div onClick={e => {
+                e.stopPropagation()
+                WishList(data)
+              }} className="heart-icon">
+                <AiFillHeart color={wishlistitems.some(item => item.id == data.id) ? "red" : "#c2c2c2"} />
               </div>
             </div>
           </Grid>

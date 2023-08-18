@@ -134,7 +134,7 @@ export const Data = [{
         ],
         "Apple": [
             {
-                "id": 1,
+                "id": 11,
                 "title": "iPhone 9",
                 "description": "An apple mobile which is nothing like apple",
                 "price": 35990,
@@ -146,7 +146,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 2,
+                "id": 12,
                 "title": "iPhone 12pro",
                 "description": "An apple mobile which is nothing like apple",
                 "price": 54900,
@@ -158,7 +158,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 3,
+                "id": 13,
                 "title": "iPhone 11pro",
                 "description": "An apple mobile which is nothing like apple",
                 "price": 54999,
@@ -170,7 +170,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 4,
+                "id": 14,
                 "title": "iPhone 9",
                 "description": "An apple mobile which is nothing like apple",
                 "price": 45000,
@@ -182,7 +182,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 5,
+                "id": 15,
                 "title": "iPhone 9",
                 "description": "An apple mobile which is nothing like apple",
                 "price": 49000,
@@ -194,7 +194,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 6,
+                "id": 16,
                 "title": "iPhone 9",
                 "description": "An apple mobile which is nothing like apple",
                 "price": 50499,
@@ -206,7 +206,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 7,
+                "id": 17,
                 "title": "iPhone 9",
                 "description": "An apple mobile which is nothing like apple",
                 "price": 54499,
@@ -218,7 +218,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 8,
+                "id": 18,
                 "title": "iPhone 9",
                 "description": "An apple mobile which is nothing like apple",
                 "price": 54999,
@@ -230,7 +230,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 9,
+                "id": 19,
                 "title": "iPhone 9",
                 "description": "An apple mobile which is nothing like apple",
                 "price": 549,
@@ -242,7 +242,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 10,
+                "id": 20,
                 "title": "iPhone 9",
                 "description": "An apple mobile which is nothing like apple",
                 "price": 549,
@@ -258,7 +258,7 @@ export const Data = [{
         ],
         "Poco": [
             {
-                "id": 1,
+                "id": 21,
                 "title": "Poco c40",
                 "description": "Discover the complete price list of Poco mobile phones available in India",
                 "price": 5949,
@@ -270,7 +270,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 2,
+                "id": 22,
                 "title": "POCO C55",
                 "description": "Discover the complete price list of Poco mobile phones available in India",
                 "price": 15499,
@@ -282,7 +282,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 3,
+                "id": 23,
                 "title": "POCO M5s",
                 "description": "Discover the complete price list of Poco mobile phones available in India",
                 "price": 9549,
@@ -294,7 +294,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 4,
+                "id": 24,
                 "title": "POCO M4 Pro",
                 "description": "Discover the complete price list of Poco mobile phones available in India",
                 "price": 20549,
@@ -306,7 +306,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 5,
+                "id": 25,
                 "title": "POCO C40",
                 "description": "Discover the complete price list of Poco mobile phones available in India",
                 "price": 549,
@@ -318,7 +318,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 6,
+                "id": 26,
                 "title": "Poco x7",
                 "description": "Discover the complete price list of Poco mobile phones available in India",
                 "price": 549,
@@ -330,7 +330,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 7,
+                "id": 27,
                 "title": "Poco x5",
                 "description": "Discover the complete price list of Poco mobile phones available in India",
                 "price": 549,
@@ -342,7 +342,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 8,
+                "id": 28,
                 "title": "Poco M5",
                 "description": "Discover the complete price list of Poco mobile phones available in India",
                 "price": 549,
@@ -354,7 +354,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 9,
+                "id": 29,
                 "title": "POCO C51",
                 "description": "Discover the complete price list of Poco mobile phones available in India",
                 "price": 549,
@@ -366,7 +366,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 10,
+                "id": 30,
                 "title": "POCO M4 5G",
                 "description": "Discover the complete price list of Poco mobile phones available in India",
                 "price": 549,
@@ -380,7 +380,7 @@ export const Data = [{
         ],
         "Realme": [
             {
-                "id": 1,
+                "id": 31,
                 "title": "realme C53",
                 "description": "The Realme  is a powerful device that will give you the best experience when using it.",
                 "price": 549,
@@ -392,7 +392,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 2,
+                "id": 32,
                 "title": "realme 11 Pro",
                 "description": "The Realme  is a powerful device that will give you the best experience when using it.",
                 "price": 549,
@@ -404,7 +404,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 3,
+                "id": 33,
                 "title": "realme Narzo 60 5G",
                 "description": "The Realme  is a powerful device that will give you the best experience when using it.",
                 "price": 549,
@@ -416,7 +416,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 4,
+                "id": 34,
                 "title": "realme 11 Pro Plus",
                 "description": "The Realme  is a powerful device that will give you the best experience when using it.",
                 "price": 549,
@@ -428,7 +428,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 5,
+                "id": 35,
                 "title": "realme C55",
                 "description": "The Realme  is a powerful device that will give you the best experience when using it.",
                 "price": 549,
@@ -440,7 +440,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 6,
+                "id": 36,
                 "title": "realme 10 Pro 5G",
                 "description": "The Realme  is a powerful device that will give you the best experience when using it.",
                 "price": 549,
@@ -452,7 +452,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 7,
+                "id": 37,
                 "title": "realme 10",
                 "description": "The Realme  is a powerful device that will give you the best experience when using it.",
                 "price": 549,
@@ -464,7 +464,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 8,
+                "id": 38,
                 "title": "realme Narzo N53",
                 "description": "The Realme  is a powerful device that will give you the best experience when using it.",
                 "price": 549,
@@ -476,7 +476,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 9,
+                "id": 39,
                 "title": "realme Narzo N55",
                 "description": "The Realme  is a powerful device that will give you the best experience when using it.",
                 "price": 549,
@@ -488,7 +488,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 10,
+                "id": 40,
                 "title": "realme C53 128GB",
                 "description": "The Realme  is a powerful device that will give you the best experience when using it.",
                 "price": 549,
@@ -504,7 +504,7 @@ export const Data = [{
     "electronics": {
         "Laptop": [
             {
-                "id": 1,
+                "id": 41,
                 "title": "Hp Pavilion",
                 "description": "HP Pavilion Ryzen 5 Hexa Core 5625U - (16 GB/512 GB SSD/Windows 11 Home) 14-EC1005AU",
                 "price": 54990,
@@ -516,7 +516,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 2,
+                "id": 42,
                 "title": "Lenovo Pavilion",
                 "description": "Lenovo Pavilion Ryzen 5 Hexa Core 5625U - (16 GB/512 GB SSD/Windows 11 Home) 14-EC1005AU",
                 "price": 54349,
@@ -528,7 +528,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 3,
+                "id": 43,
                 "title": "Apple Pavilion",
                 "description": "Apple Pavilion Ryzen 5 Hexa Core 5625U - (16 GB/512 GB SSD/Windows 11 Home) 14-EC1005AU",
                 "price": 54990,
@@ -540,7 +540,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 4,
+                "id": 44,
                 "title": "Hp Pavilion",
                 "description": "HP Pavilion Ryzen 5 Hexa Core 5625U - (16 GB/512 GB SSD/Windows 11 Home) 14-EC1005AU",
                 "price": 54090,
@@ -552,7 +552,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 5,
+                "id": 45,
                 "title": "Hp chromebook Pavilion",
                 "description": "HP Pavilion Ryzen 5 Hexa Core 5625U - (16 GB/512 GB SSD/Windows 11 Home) 14-EC1005AU",
                 "price": 54990,
@@ -564,7 +564,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 6,
+                "id": 46,
                 "title": "Asus Pavilion",
                 "description": "Asus Pavilion Ryzen 5 Hexa Core 5625U - (16 GB/512 GB SSD/Windows 11 Home) 14-EC1005AU",
                 "price": 54990,
@@ -576,7 +576,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 7,
+                "id": 47,
                 "title": "Dell Pavilion",
                 "description": "Dell Pavilion Ryzen 5 Hexa Core 5625U - (16 GB/512 GB SSD/Windows 11 Home) 14-EC1005AU",
                 "price": 54990,
@@ -588,7 +588,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 8,
+                "id": 48,
                 "title": "Acer ",
                 "description": "Acer Ryzen 5 Hexa Core 5625U - (16 GB/512 GB SSD/Windows 11 Home) 14-EC1005AU",
                 "price": 54990,
@@ -600,7 +600,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 9,
+                "id": 49,
                 "title": "Lenovo",
                 "description": "Lenovo Pavilion Ryzen 5 Hexa Core 5625U - (16 GB/512 GB SSD/Windows 11 Home) 14-EC1005AU",
                 "price": 54990,
@@ -612,7 +612,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 10,
+                "id": 50,
                 "title": "Hp ",
                 "description": "HP Pavilion Ryzen 5 Hexa Core 5625U - (16 GB/512 GB SSD/Windows 11 Home) 14-EC1005AU",
                 "price": 54990,
@@ -626,7 +626,7 @@ export const Data = [{
         ],
         "Tablets": [
             {
-                "id": 1,
+                "id": 51,
                 "title": "Lenovo Tab M10 HD",
                 "description": "Tab M10 FHD Plus 6 GB RAM 128 GB ROM 10.61 inch with Wi-Fi+4G Tablet ",
                 "price": 54409,
@@ -638,7 +638,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 2,
+                "id": 52,
                 "title": "Apple iPad (9th Gen) ",
                 "description": "An Apple ipad which is nothing like Oneplus",
                 "price": 76549,
@@ -650,7 +650,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 3,
+                "id": 53,
                 "title": "Xiaomi Redmi Pad 128GB",
                 "description": "Tab M10 FHD Plus 6 GB RAM 128 GB ROM 10.61 inch with Wi-Fi+4G Tablet ",
                 "price": 23549,
@@ -662,7 +662,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 4,
+                "id": 54,
                 "title": "Samsung Galaxy Tab A8 2021",
                 "description": "Tab M10 FHD Plus 6 GB RAM 128 GB ROM 10.61 inch with Wi-Fi+4G Tablet ",
                 "price": 56549,
@@ -674,7 +674,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 5,
+                "id": 55,
                 "title": "Samsung Galaxy Tab S6 Lite 2022",
                 "description": "Tab M10 FHD Plus 6 GB RAM 128 GB ROM 10.61 inch with Wi-Fi+4G Tablet ",
                 "price": 87549,
@@ -686,7 +686,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 6,
+                "id": 56,
                 "title": "realme Pad Mini LTE",
                 "description": "Tab M10 FHD Plus 6 GB RAM 128 GB ROM 10.61 inch with Wi-Fi+4G Tablet ",
                 "price": 76549,
@@ -698,7 +698,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 7,
+                "id": 57,
                 "title": "realme Pad LTE",
                 "description": "Tab M10 FHD Plus 6 GB RAM 128 GB ROM 10.61 inch with Wi-Fi+4G Tablet ",
                 "price": 54449,
@@ -710,7 +710,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 8,
+                "id": 58,
                 "title": "realme Pad X 5G 128GB ",
                 "description": "Tab M10 FHD Plus 6 GB RAM 128 GB ROM 10.61 inch with Wi-Fi+4G Tablet ",
                 "price": 54967,
@@ -722,7 +722,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 9,
+                "id": 59,
                 "title": "OPPO Pad Air",
                 "description": "Tab M10 FHD Plus 6 GB RAM 128 GB ROM 10.61 inch with Wi-Fi+4G Tablet ",
                 "price": 54009,
@@ -734,7 +734,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 10,
+                "id": 60,
                 "title": "TCL 10 Tab Max",
                 "description": "Tab M10 FHD Plus 6 GB RAM 128 GB ROM 10.61 inch with Wi-Fi+4G Tablet ",
                 "price": 54449,
@@ -748,7 +748,7 @@ export const Data = [{
         ],
         "Computer Accessories": [
             {
-                "id": 1,
+                "id": 61,
                 "title": "Hp Keyboard",
                 "description": "HP 150 Wired Wired USB Desktop Keyboard",
                 "price": 54967,
@@ -760,7 +760,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 2,
+                "id": 62,
                 "title": "Mouse",
                 "description": " HP 1000 Wired Optical Mouse ",
                 "price": 549,
@@ -772,7 +772,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 3,
+                "id": 63,
                 "title": "Speaker",
                 "description": "boAt Stone 650 10 W Bluetooth Speaker  (Charcoal Black, Stereo Channel)",
                 "price": 549,
@@ -784,7 +784,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 4,
+                "id": 64,
                 "title": "Printer",
                 "description": "brother DCP-T226 Multi-function Color Inkjet Printer",
                 "price": 549,
@@ -797,7 +797,7 @@ export const Data = [{
             },
            
             {
-                "id": 5,
+                "id": 65,
                 "title": "pendrive ",
                 "description": "Julep V220 128 GB Pen Drive  (Silver)",
                 "price": 549,
@@ -813,7 +813,7 @@ export const Data = [{
         ],
         "Cameras & Accessories": [
             {
-                "id": 1,
+                "id": 71,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -825,7 +825,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 2,
+                "id": 72,
                 "title": "Apple iPad (9th Gen) ",
                 "description": "An Apple ipad which is nothing like Oneplus",
                 "price": 549,
@@ -837,7 +837,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 3,
+                "id": 73,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -849,7 +849,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 4,
+                "id": 74,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -861,7 +861,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 5,
+                "id": 75,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -873,7 +873,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 6,
+                "id": 76,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -885,7 +885,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 7,
+                "id": 77,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -897,7 +897,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 8,
+                "id": 78,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -909,7 +909,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 9,
+                "id": 79,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -921,7 +921,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 10,
+                "id": 80,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -935,7 +935,7 @@ export const Data = [{
         ],
         "ITPeripherals": [
             {
-                "id": 1,
+                "id": 81,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -947,7 +947,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 2,
+                "id": 82,
                 "title": "Apple iPad (9th Gen) ",
                 "description": "An Apple ipad which is nothing like Oneplus",
                 "price": 549,
@@ -959,7 +959,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 3,
+                "id": 83,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -971,7 +971,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 4,
+                "id": 84,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -983,7 +983,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 5,
+                "id": 85,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -995,7 +995,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 6,
+                "id": 86,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1007,7 +1007,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 7,
+                "id": 87,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1019,7 +1019,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 8,
+                "id": 88,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1031,7 +1031,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 9,
+                "id": 89,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1043,7 +1043,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 10,
+                "id": 90,
                 "title": "Apple ",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1059,7 +1059,7 @@ export const Data = [{
     "Fashion": {
         "MEN's Wear": [
             {
-                "id": 1,
+                "id": 91,
                 "title": "Hp Pavilion",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1071,7 +1071,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 2,
+                "id": 92,
                 "title": "Hp Pavilion",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1083,7 +1083,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 3,
+                "id": 93,
                 "title": "Hp Pavilion",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1095,7 +1095,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 4,
+                "id": 94,
                 "title": "Hp Pavilion",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1107,7 +1107,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 5,
+                "id": 95,
                 "title": "Hp Pavilion",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1119,7 +1119,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 6,
+                "id": 96,
                 "title": "Hp Pavilion",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1131,7 +1131,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 7,
+                "id": 97,
                 "title": "Hp Pavilion",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1143,7 +1143,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 8,
+                "id": 98,
                 "title": "Hp Pavilion",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1155,7 +1155,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 9,
+                "id": 99,
                 "title": "Hp Pavilion",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
@@ -1167,7 +1167,7 @@ export const Data = [{
                 "count": 0
             },
             {
-                "id": 10,
+                "id": 100,
                 "title": "Hp Pavilion",
                 "description": "An OnePlus mobile which is nothing like Oneplus",
                 "price": 549,
