@@ -1,50 +1,35 @@
-import React, { useEffect, useState } from 'react';
-import { Grid, TextField, Button, Typography, Box } from '@mui/material';
-import { styled } from '@mui/material/styles';
 import "../components/css/LoginPage.css"
+import { useState } from "react";
+import { Grid, TextField, Button, Typography, Box } from '@mui/material';
 import loginImage from "../assets/online-shop.png";
-import { BiSearch } from 'react-icons/bi';
-import { Link, useLocation } from 'react-router-dom';
-import Navigation from "../components/Navigation";
+import { Link } from 'react-router-dom';
+import { styled } from '@mui/material/styles';
 
 const CenteredGrid = styled(Grid)(({ theme }) => ({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  height: '100vh',
-}));
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+  }));
 
+const LoginModal = ({ handleClose }) => {
+    const [showSignUpPage, setShowSignUpPage] = useState(true);
+    const [search, setSearch] = useState("")
+  
+    const handleRegisterClick = () => {
+      setShowSignUpPage(true);
+    };
+  
+    const handleSignUpPageClose = () => {
+      setShowSignUpPage(false);
+    };
 
-const LoginPage = () => {
-  const [showSignUpPage, setShowSignUpPage] = useState(true);
-  const [search, setSearch] = useState("")
-
-  const { state } = useLocation()
-
-  const handleRegisterClick = () => {
-    setShowSignUpPage(true);
-  };
-
-  const handleSignUpPageClose = () => {
-    setShowSignUpPage(false);
-  };
-
-  useEffect(() => {
-    if (state && state.signupopen) {
-      setShowSignUpPage(false)
-    }
-  }, [state])
-
-
-
-  return (
-    <>
-    <div className="_5pko">
-      <Navigation />
-      {!showSignUpPage ? (
+    return (
+        <div className="_2egr" onClick={() => handleClose()}>
+           {!showSignUpPage ? (
         <CenteredGrid container spacing={2}>
           {/* First Grid */}
-          <Grid className='First_Grid' item xs={12} md={3}>
+          <Grid className='First_Grid' item xs={12} md={3} onClick={e => e.stopPropagation()}>
             <Box className="First_box">
               <Typography variant="h5">Looks like you're new here!</Typography>
               <Typography variant="body1">
@@ -61,7 +46,7 @@ const LoginPage = () => {
           </Grid>
 
           {/* Second Grid */}
-          <Grid className='Second_Grid' item xs={12} md={5}>
+          <Grid className='Second_Grid' item xs={12} md={5} onClick={e => e.stopPropagation()}>
             <form className='Form-control'>
               <TextField
                 label="Enter Email/Mobile Number"
@@ -101,7 +86,7 @@ const LoginPage = () => {
       ) : (
         <CenteredGrid container spacing={2}>
           {/* First Grid */}
-          <Grid className='First_Grid' item xs={12} md={3}>
+          <Grid className='First_Grid' item xs={12} md={3} onClick={e => e.stopPropagation()}>
             <Box className="First_box">
               <Typography variant="h5">Login</Typography>
               <Typography variant="body1">
@@ -118,7 +103,7 @@ const LoginPage = () => {
           </Grid>
 
           {/* Second Grid */}
-          <Grid className='Second_Grid' item xs={12} md={5}>
+          <Grid className='Second_Grid' item xs={12} md={5} onClick={e => e.stopPropagation()}>
             <form className='Form-control'>
               <TextField
                 label="Enter Email/Mobile Number"
@@ -155,11 +140,9 @@ const LoginPage = () => {
             </Box>
           </Grid>
         </CenteredGrid>
-      )
-      };
-      </div>
-    </>
-  )
-};
+      )}
+        </div>
+    )
+}
 
-export default LoginPage;
+export default LoginModal

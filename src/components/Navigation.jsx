@@ -11,6 +11,7 @@ import Logo from "../assets/Logo.jpg"
 import LogoutIcon from '@mui/icons-material/Logout';
 import { GoHistory } from "react-icons/go"
 import SearchComponent from "./SearchComponent";
+import LoginModal from "./LoginModal";
 
 const Navigation = ({ cartcount, isloggedin }) => {
     const [open, setOpen] = useState(false)
@@ -63,7 +64,7 @@ const Navigation = ({ cartcount, isloggedin }) => {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <LoginPage />
+                <LoginModal handleClose={handleClose} />
             </Modal>
             <div className="header">
                 <div className="rebond-doe">
@@ -111,31 +112,41 @@ const Navigation = ({ cartcount, isloggedin }) => {
 
                     </div>
                     <div className="center">
-                        {isloggedin ? (
                             <div
                                 className="monks-abs"
                                 onMouseEnter={() => setAccountsPopover(true)}
                                 onMouseLeave={() => setAccountsPopover(false)}
                             >
-                                <span>Account</span>
-                                <BiChevronDown />
+                                {isloggedin ? (
+                                    <div>
+                                        <span>Account</span>
+                                        <BiChevronDown />
+                                    </div>
+                                ) : <button onClick={() => handleOpen()}>Login</button>}
+                                
                                 {accountspopover ? (
                                     <div
                                         className="popover"
                                         onMouseEnter={() => setAccountsPopover(true)}
                                         onMouseLeave={() => setAccountsPopover(false)}
                                     >
-                                        <div className="transparent"></div>
+                                        <div className="transparent" onClick={() => isloggedin ? undefined : handleOpen()}></div>
                                         <div className="container">
                                             <ul>
+                                                {isloggedin ? undefined : <li>
+                                                    <div style={{ color: "grey", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                                                        <span style={{ fontSize: "14px", fontWeight: "400" }}>New customer?</span>
+                                                        <span style={{ fontSize: "14px", color: "blue", cursor: "pointer" }} onClick={() => navigate("/login", { state: { signupopen: true }})}>Sign up</span>
+                                                    </div>
+                                                </li>}
                                                 <li>
-                                                    <Link to="/account/profile">
+                                                    <Link to={isloggedin ? "/account/profile" : "/login"}>
                                                         <CgProfile />
                                                         <span>My profile</span>
                                                     </Link>
                                                 </li>
                                                 <li>
-                                                    <Link to="/account/wishlist">
+                                                    <Link to={isloggedin ? "/account/wishlist" : "/login"}>
                                                         <AiFillHeart />
                                                         <span>Wishlist</span>
                                                     </Link>
@@ -146,18 +157,17 @@ const Navigation = ({ cartcount, isloggedin }) => {
                                                         <span>Gift Cards</span>
                                                     </Link>
                                                 </li>
-                                                <li>
+                                                {isloggedin ? <li>
                                                     <Link to="/" >
                                                         <LogoutIcon />
                                                         <span onClick={handleLogOut}>Log Out</span>
                                                     </Link>
-                                                </li>
+                                                </li> : undefined}
                                             </ul>
                                         </div>
                                     </div>
                                 ) : undefined}
                             </div>
-                        ) : <button onClick={handleOpen}>Login</button>}
                         <span style={{ fontWeight: "600", color: "white", cursor: "pointer" }}>Become a seller</span>
                         <div className="dribbed-yum" onClick={() => navigate("/cart")}>
                             <div className="cart-icon">
