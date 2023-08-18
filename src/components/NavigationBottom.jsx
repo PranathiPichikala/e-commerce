@@ -1,35 +1,57 @@
 import "./css/NavigationBottom.css"
-import {RiArrowDropDownLine} from "react-icons/ri"
+import { RiArrowDropDownLine } from "react-icons/ri"
+import { Link } from "react-router-dom"
 const NavigationBottom = () => {
-    return (
-        <div className="_0ugg">
-            <div className="headfilter _1uac">
-				<li>Electronics
-					<div className="_0ekz"><RiArrowDropDownLine/></div>
-				</li>
-				<li>Tvs & Appliances
-				<div className="_0ekz"><RiArrowDropDownLine/></div>
-				</li>
-				<li>Men
-				<div className="_0ekz"><RiArrowDropDownLine/></div>
-				</li>
-				<li> Women
-				<div className="_0ekz"><RiArrowDropDownLine/></div>
-				</li>
-				<li>Baby & Kids
-				<div className="_0ekz"><RiArrowDropDownLine/></div>
-				</li>
-				<li>Home & Furniture
-				<div className="_0ekz"><RiArrowDropDownLine/></div>
-				</li>
-				<li> Sports, Books & More
-				<div className="_0ekz"><RiArrowDropDownLine/></div>
-				</li>
-				<li>Offer Zone</li>
-				<li>Grocery</li>
+	return (
+		<div className="_0ugg">
+			<div className="headfilter _1uac">
+				<div className="_5bbl">
+					<Link to="/Category/electronics">
+						<li>Electronics
+
+						</li>
+					</Link>
+					<Link to="/Category/SmartPhones">
+					<li>Mobiles</li>
+					</Link>
+					<Link to="/Category/electronics">
+						<li>Tvs & Appliances
+						</li>
+					</Link>
+
+					<Link to="/Category/Fashion">
+					<li>Men
+				
+					</li>
+					</Link>
+					<Link to="/Category/Beauty">
+					<li> Women
+
+					</li>
+					</Link>
+					<Link to="/Category/Fashion">
+					<li>Baby & Kids
+
+					</li>
+					</Link>
+					<Link to="/Category/Furniture">
+					<li>Home & Furniture
+
+					</li>
+					</Link>
+					<Link to="/Category/Appliances">
+					<li> Sports, Books & More
+
+					</li>
+					</Link>
+					
+					<Link to="/Category/Beauty">
+					<li>Grocery</li>
+					</Link>
+				</div>
 			</div>
-        </div>
-    )
+		</div>
+	)
 }
 
 export default NavigationBottom
