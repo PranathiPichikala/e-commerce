@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Navigation from "../components/Navigation"
 import NavigationBottom from "../components/NavigationBottom"
 import "./css/GiftcardStore.css"
 
 const GiftcardStore = () => {
+    const navigate = useNavigate()
     
     return (
         <div className="_7ifw">
@@ -21,13 +22,13 @@ const GiftcardStore = () => {
                          <Link to="/giftcardcomp"> <button>View all</button></Link>  
                         </div>
                         <div className="reacher-gyps">
-                            <div className="card">
+                            <div className="card" onClick={() => navigate("/product-details")}>
                                 <img src="https://rukminim2.flixcart.com/image/150/150/kn4xhu80/e-gift-voucher/w/l/i/open-croma-250-original-imagfvh6s4zghusx.jpeg?q=70" alt="" />
                                 <div className="title">Electronics & Home</div>
                                 <div className="discount">Up to 10% off</div>
                                 <div className="description">Instant delivery</div>
                             </div>
-                            <div className="card">
+                            <div className="card" onClick={() => navigate("/product-details")}>
                                 <img src="https://rukminim2.flixcart.com/image/150/150/kn4xhu80/e-gift-voucher/w/l/i/open-croma-250-original-imagfvh6s4zghusx.jpeg?q=70" alt="" />
                                 <div className="title">Electronics & Home</div>
                                 <div className="discount">Up to 10% off</div>
