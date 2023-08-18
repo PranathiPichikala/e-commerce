@@ -100,7 +100,7 @@ const imageData = [
     heading: 'Flights',
     link: "/Category/Beauty",
   },
-  
+
 ];
 
 
@@ -122,92 +122,22 @@ const Header = () => {
     setAnchorEl(null);
   };
   const navigate = useNavigate()
-  
+
 
   return (
     <div>
-      {/* <AppBar position="static" className='header-head'>
-        <Toolbar className='Header-bg'>
-          <div className='Header-logo'>
-            <img src="\Images\Logo.png" alt="Logo" />
-          </div>
-          <SearchContainer className='search-bg'>
-            <SearchIconContainer>
-              <SearchIcon />
-            </SearchIconContainer>
-            <InputBaseContainer
-              className='products-size'
-              placeholder="Search for Products, Brands and More"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </SearchContainer>
-          <ButtonContainer color="inherit" className='becomeseller'>
-            <IconButton color="inherit">
-              <StorefrontIcon />
-            </IconButton>
-            Become a Seller
-          </ButtonContainer>
-          <ButtonContainer color="inherit" onClick={()=>navigate("/login")}>
-            <IconButton color="inherit">
-              <PersonOutlineIcon />
-            </IconButton>
-            Sign In
-          </ButtonContainer>
-          <Link  to="/cart">
-          <ButtonContainer color="inherit"  >
-         
-            <IconButton color="inherit">
-              <ShoppingCartIcon />
-              
-            </IconButton>
-            Cart
-            
-          </ButtonContainer>
-          
-          </Link>
-          <IconButton
-            edge="end"
-            color="inherit"
-            aria-label="menu"
-            aria-controls="menu-appbar"
-            aria-haspopup="true"
-            onClick={handleMenuOpen}
-          >
-            <MoreVertIcon />
-          </IconButton>
-          <Menu
-            id="menu-appbar"
-            anchorEl={anchorEl}
-            anchorOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            keepMounted
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'right',
-            }}
-            open={Boolean(anchorEl)}
-            onClose={handleMenuClose}
-          >
-            <MenuItem onClick={handleMenuClose}>Menu Item 1</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Menu Item 2</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Menu Item 3</MenuItem>
-          </Menu>
-        </Toolbar>
-      </AppBar> */}
-   <Navigation isloggedin={isloggedin} />
+      <Navigation isloggedin={isloggedin} />
 
       <Grid container spacing={2} className='ecommerce-types-img'>
         {imageData.map((data, index) => (
-          <Grid item xs={6} sm={4} md={2}  lg={1} key={index} >
+          <Grid item xs={6} sm={4} md={2} lg={1} key={index} >
             <Paper className='paper-width'>
               <Link to={data.link}>
                 <img src={data.imageSrc} alt="Image description" width="100%" height="auto" style={{ objectFit: 'cover' }} />
-              
-              <Typography variant="h6" align="center">
-                {data.heading}
-              </Typography>
+
+                <Typography variant="h6" align="center">
+                  {data.heading}
+                </Typography>
               </Link>
             </Paper>
           </Grid>

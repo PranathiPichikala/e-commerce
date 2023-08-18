@@ -8,6 +8,7 @@ import "./css/Navigation.css"
 import { Link, useNavigate } from "react-router-dom";
 import { AiFillHeart } from "react-icons/ai";
 import Logo from "../assets/Logo.jpg"
+import LogoutIcon from '@mui/icons-material/Logout';
 import { GoHistory } from "react-icons/go"
 import SearchComponent from "./SearchComponent";
 
@@ -27,6 +28,11 @@ const Navigation = ({ cartcount, isloggedin }) => {
     const handleClose = () => {
         setOpen(false);
     };
+
+    const handleLogOut = () => {
+        localStorage.removeItem("isloggedin")
+        window.location.reload()
+    }
     const handleInputChange = (e) => {
         const value = e.target.value.trim();
         setSearch(value);
@@ -76,7 +82,7 @@ const Navigation = ({ cartcount, isloggedin }) => {
                                 <input
                                     value={search}
                                     onChange={handleInputChange}
-                                    onFocus={() => setShowDropdown(true)} 
+                                    onFocus={() => setShowDropdown(true)}
                                     onBlur={() => setShowDropdown(false)}
                                 />
                                 <div className="_2ons">
@@ -85,7 +91,7 @@ const Navigation = ({ cartcount, isloggedin }) => {
                             </div>
                             {showDropdown && (
                                 <div className="search-history-dropdown">
-                                
+
                                     {searchHistory.map((item, index) => (
                                         <div
                                             key={index}
@@ -98,7 +104,7 @@ const Navigation = ({ cartcount, isloggedin }) => {
                                     <div className="_4jlj">
                                         <p className="_6pnm">Discover more</p>
                                         <SearchComponent />
-                                        </div>
+                                    </div>
                                 </div>
                             )}
                         </div>
@@ -138,6 +144,12 @@ const Navigation = ({ cartcount, isloggedin }) => {
                                                     <Link to="/giftcards">
                                                         <BiSolidWalletAlt />
                                                         <span>Gift Cards</span>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/" >
+                                                        <LogoutIcon />
+                                                        <span onClick={handleLogOut}>Log Out</span>
                                                     </Link>
                                                 </li>
                                             </ul>
