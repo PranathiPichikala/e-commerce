@@ -22,6 +22,7 @@ import { DesktopNotify } from './components/DesktopNotify';
 import AddGiftCard from './components/AddGiftCard';
 import GridComponent from './components/GridComponents';
 import MyOrders from './pages/MyOrders';
+import Footer from './pages/Footer';
 function App() {
 
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path='/filtercomponent' element={<FilterComponent />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='my-wishlist' element={<MyWishlist />} />
+        <Route path='footer' element={<Footer />} />
         <Route path='otp-verif' element={<OtpVerification />} />
         <Route path='grids' element={<GridComponent />} />
         <Route path='/myorders' element={<MyOrders />} />
@@ -49,10 +51,10 @@ function App() {
 
         <Route path="/giftcardcomp" element={<GiftCardComponent />} />
         <Route path="/empty-address" element={<EmptyAddress />} />
-        <Route path="/product-details" element={<ProductDetails/>}/>
-        <Route path="notifications-page" element={<NotificationPage/>}>
-        <Route path="/notifications-page/desktop" element={<DesktopNotify />} />
-          </Route>
+        <Route path="/product-details" element={<ProductDetails />} />
+        <Route path="notifications-page" element={<NotificationPage />}>
+          <Route path="/notifications-page/desktop" element={<DesktopNotify />} />
+        </Route>
 
       </Routes>
     </BrowserRouter>
