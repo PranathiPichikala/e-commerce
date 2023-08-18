@@ -57,7 +57,7 @@ const HomeGrid = () => {
                 <Link to="/product-details">
                 <div className="_6jup">
                     <img style={{ width: "120px", height: "150px" }} src={data.imageSrc} alt="Mobile" />
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography  className="heading-6jup"gutterBottom variant="h5" component="div" >
                         {data.heading}
                     </Typography>
                     <Typography className="_1fdg" variant="body2" color="green">
