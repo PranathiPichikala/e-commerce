@@ -6,6 +6,7 @@ import loginImage from "../assets/online-shop.png";
 import OtpInput from 'react-otp-input';
 import { Link, useNavigate } from 'react-router-dom';
 import Navigation from './Navigation';
+import NavigationBottom from "./NavigationBottom";
 
 
 const CenteredGrid = styled(Grid)(({ theme }) => ({
@@ -54,6 +55,7 @@ const OtpVerification = () => {
 
     return (
         <div>
+            <Navigation />
             <CenteredGrid container spacing={2}>
                
                 <Grid className='First_Grid' item xs={12} md={3}>

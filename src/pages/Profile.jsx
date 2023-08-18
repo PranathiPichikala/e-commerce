@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import "./css/Profile.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
 import { AiOutlineLogout } from "react-icons/ai"
 import ProfileInformation from "../components/ProfileInformation";
@@ -22,32 +22,43 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export const Profile = () => {
+
+  const navigate = useNavigate("")
   const [activeContent, setActiveContent] = useState("profile");
 
-  const handleLinkClick = (content) => {
-    setActiveContent(content);
-  };
-  const renderRightContent = () => {
-    switch (activeContent) {
-      case "wishlist":
-        return (
-          <div>
-            <MyWishlist />
-          </div>
-        );
-      case "profile":
-        return (
-          <div>
-            <ProfileInformation />
-          </div>
-        );
-      default:
-        return null;
-    }
-  };
+  const isloggedin = localStorage.getItem("isloggedin")
+
+  // const handleLinkClick = (content) => {
+  //   setActiveContent(content);
+  // };
+  // const renderRightContent = () => {
+  //   switch (activeContent) {
+  //     case "wishlist":
+  //       return (
+  //         <div>
+  //           <MyWishlist />
+  //         </div>
+  //       );
+  //     case "profile":
+  //       return (
+  //         <div>
+  //           <ProfileInformation />
+  //         </div>
+  //       );
+  //     default:
+  //       return null;
+  //   }
+  // };
+
+  const handleLogOut = () => {
+    localStorage.removeItem("isloggedin")
+    navigate("/")
+  }
+
+
   return (
     <div>
-      <Navigation />
+      <Navigation isloggedin={isloggedin} />
       <NavigationBottom />
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
@@ -157,12 +168,12 @@ export const Profile = () => {
                   </ul>
                 </div>
               </div>
-              <div className="myorders">
+              <div onClick={handleLogOut} className="myorders">
                 <div className="myorders-img">
                   <AiOutlineLogout />
                 </div>
                 <div className="myorders-link">
-                  <Link>Logout</Link>
+                  <span>Logout</span>
                 </div>
 
               </div>
