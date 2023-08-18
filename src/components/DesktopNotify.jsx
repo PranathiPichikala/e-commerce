@@ -63,7 +63,16 @@ export const DesktopNotify = () => {
                     id="panel1a-header"
                 >
                     <div className="_3mic">
+                        
                         <FormControlLabel
+                        label={
+                            <>
+                                <span>My Orders</span>
+                                <Typography variant="body2" color="textSecondary">
+                                    Latest updates on your orders.
+                                </Typography>
+                            </>
+                        } 
                             control={
                                 <Checkbox
                                     checked={orders.every(item => item === true)}
@@ -73,14 +82,7 @@ export const DesktopNotify = () => {
                                     })}
                                 />
                             }
-                            label={
-                                <>
-                                    <span>My Orders</span>
-                                    <Typography variant="body2" color="textSecondary">
-                                        Latest updates on your orders.
-                                    </Typography>
-                                </>
-                            }
+                            
                         />
                     </div>
                 </AccordionSummary>
