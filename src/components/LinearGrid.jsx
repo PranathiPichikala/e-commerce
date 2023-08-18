@@ -76,12 +76,14 @@ const LinearGrid = ({ header, items, setTriggerRefresh }) => {
                   <span>₹12,999</span>
                   <span>{data.discountPercentage}% off</span>
                 </div>
+                <div className="addtocart-buttons">
                 <div className="add-to-cart">
                   <Button onClick={e => addToCart(e, data)}>ADD TO CART</Button>
-                  <Link to='/cart' onClick={e => e.stopPropagation()}>
+                  </div>
+                  <Link  className="go-to-cart" to='/cart' onClick={e => e.stopPropagation()}>
                     <Button>Go to Cart</Button>
                   </Link>
-                </div>
+                  </div>
               </div>
               <div onClick={e => {
                 e.stopPropagation()
