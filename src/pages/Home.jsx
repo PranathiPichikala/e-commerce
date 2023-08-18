@@ -17,9 +17,10 @@ const Home = () => {
             <div className="slider-container">
                 <SliderComp imagesslider={imagesslider} />
             </div>
-            <GridComponent />
-            <Footer />
             <HomeGrid />
+            <GridComponent />
+            <HomeGrid />
+            <Footer />
         </div>
     )
 }
