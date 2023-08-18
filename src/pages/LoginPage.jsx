@@ -35,8 +35,6 @@ const LoginPage = () => {
     }
   }, [state])
 
-
-
   return (
     <>
     <div className="_5pko">

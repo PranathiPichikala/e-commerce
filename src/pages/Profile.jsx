@@ -55,10 +55,9 @@ export const Profile = () => {
     navigate("/")
   }
 
-
   return (
     <div>
-      <Navigation isloggedin={isloggedin} />
+      <Navigation />
       <NavigationBottom />
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>

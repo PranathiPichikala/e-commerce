@@ -7,8 +7,10 @@ import NavigationBottom from "../components/NavigationBottom";
 
 const ItemsList = () => {
   const { category } = useParams();
+  const [triggerRefresh, setTriggerRefresh] = useState(0)
 
   // const [] = useState()
+
 
   return (
     <div>
@@ -16,7 +18,7 @@ const ItemsList = () => {
       <NavigationBottom />
       {Data.map((item, index) => {
         return Object.entries(item[category]).map(mess => {
-            return <LinearGrid key={index} header={mess[0]} items={mess[1]} />
+            return <LinearGrid setTriggerRefresh={setTriggerRefresh} key={index} header={mess[0]} items={mess[1]} />
         })
       })}
     </div>
