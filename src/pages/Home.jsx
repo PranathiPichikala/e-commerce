@@ -1,6 +1,8 @@
 import GridComponent from "../components/GridComponents";
 import Header from "../components/Header"
+import HomeGrid from "../components/HomeGrid";
 import SliderComp from "../components/SliderComp"
+import Footer from "./Footer";
 const Home = () => {
     const imagesslider = [
         '/Images/slider1.jpeg',
@@ -15,7 +17,10 @@ const Home = () => {
             <div className="slider-container">
                 <SliderComp imagesslider={imagesslider} />
             </div>
+            <HomeGrid />
             <GridComponent />
+            <HomeGrid />
+            <Footer />
         </div>
     )
 }

@@ -68,8 +68,6 @@ const Cart = () => {
     setTriggerRefresh((prev) => prev + 1)
   }
 
-  const isloggedin = localStorage.getItem("isloggedin")
-
   console.log({ cartitems });
   const handleSaveForLater = (id) => {
     const savedItem = cartitems.find((item) => item.id === id);
@@ -95,7 +93,7 @@ const Cart = () => {
   };
   return (
     <div className="_5pko">
-      <Navigation cartcount={cartitems.length} isloggedin={isloggedin} />
+      <Navigation cartcount={cartitems.length} isloggedin={true} />
       {cartitems.length ? (
         <div className="_9zeg">
           <div className="depot-cob">
@@ -197,7 +195,13 @@ const Cart = () => {
                       </div>
                     );
                   })}
+                  <div className="placeorder-sticky">
+                  <div className="placeorder-button">
+                    <button>PLACE ORDER</button>
+                  </div>
+                  </div>
                 </div>
+                
               </div>
               <div className="_7oyb">
                 {savedItems.length > 0 && (
