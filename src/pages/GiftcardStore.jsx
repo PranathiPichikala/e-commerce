@@ -4,11 +4,10 @@ import NavigationBottom from "../components/NavigationBottom"
 import "./css/GiftcardStore.css"
 
 const GiftcardStore = () => {
-    const isloggedin = localStorage.getItem("isloggedin")
     
     return (
         <div className="_7ifw">
-            <Navigation isloggedin={isloggedin} />
+            <Navigation />
             <NavigationBottom />
             <div className="groveled-toke">
                 <div className="header">

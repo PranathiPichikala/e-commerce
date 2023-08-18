@@ -142,6 +142,7 @@ export const ProductDetails = () => {
         product.count= product.count +1
         cartItems.push(product);
         localStorage.setItem("cart", JSON.stringify(cartItems));
+        setTriggerRefresh(prev => prev + 1)
       };
 
     const data = {

@@ -13,12 +13,15 @@ import { GoHistory } from "react-icons/go"
 import SearchComponent from "./SearchComponent";
 import LoginModal from "./LoginModal";
 
-const Navigation = ({ cartcount, isloggedin }) => {
+const Navigation = () => {
     const [open, setOpen] = useState(false)
     const [search, setSearch] = useState("")
     const [accountspopover, setAccountsPopover] = useState(false)
     const [searchHistory, setSearchHistory] = useState([]);
     const [showDropdown, setShowDropdown] = useState(false);
+
+    const isloggedin = localStorage.getItem("isloggedin")
+    const cartcount = localStorage.getItem("cart") && JSON.parse(localStorage.getItem("cart")).length
 
     const navigate = useNavigate()
 
