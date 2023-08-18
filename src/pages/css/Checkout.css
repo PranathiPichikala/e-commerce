@@ -1,0 +1,131 @@
+._7hxr  svg:nth-child(1){
+    display: none;
+}
+._5klr{
+    margin: 30px;
+    width: 800px;
+    position: relative;
+    display: inline-block;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.2);
+}
+._6ggb{
+    width: 800px;
+    margin: 30px;
+}
+
+._4dqh,._6uoh{
+    display: flex;
+    flex-direction: row;
+}
+
+._6ipc{
+    list-style: none;
+}
+._7bbm{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+}
+._1kxb span{
+    padding: 1px 5px;
+    font-size: 15px;
+    margin: 20px;
+    background-color: #d2d1d1;
+    color: #2874f0;
+}
+._6uoh{
+    padding: 30px;
+}
+._1kxb{
+    text-transform: uppercase;
+    color: #878787;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 15px;
+}
+._5mxq{
+    color: #878787
+}
+._0nur{
+    margin-left: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+._9ikx {
+    margin-bottom: 12px;
+}
+._9ikx a{
+    color: #2874f0;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+}
+._7zvr{
+    background-color: #fb641b !important;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2) !important;
+    border: none;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-size: 16px;
+    margin-bottom: 12px;
+    z-index: 99999;
+    padding: 10px 30px !important;
+}
+._1gnc{
+    background-color: #fb641b !important;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2) !important;
+    border: none;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-size: 16px;
+  
+    z-index: 9999999;
+    padding: 10px 30px !important;  
+    margin: 10px 50px !important;
+}
+._7bbm div:nth-child(1){
+    color: #878787;
+    font-weight: 550;
+}
+._6ipc li{
+    padding:10px 50px;
+}
+._6ipc li svg{
+    color: #2874f0;
+    padding-right: 10px;
+}
+._7hoy{
+    padding: 0 20px 18px 50px;
+    font-size: 14px;
+    color: #878787;
+}
+._8hxp{
+    margin: 30px 0;
+}
+._4xzp{
+    display: flex;
+}
+
+._3rse {
+ 
+    gap: 10px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(40, 116, 240);
+    display: flex;
+justify-content: flex-start;
+    box-shadow: 0 2px 2.5px 0 rgba(0,0,0,.3);
+    padding: 10px 30px;
+}
+._3rse ._1not img{
+    height: 37px
+}
+
+._7pzq{
+    display: flex;
+    justify-content: space-between;
+}
+

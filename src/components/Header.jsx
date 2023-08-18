@@ -107,12 +107,7 @@ const imageData = [
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const [isloggedin, setIsloggedin] = useState(false)
 
-  useEffect(() => {
-    const loginstatus = localStorage.getItem("isloggedin")
-    setIsloggedin(loginstatus)
-  }, [])
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -126,7 +121,7 @@ const Header = () => {
 
   return (
     <div>
-      <Navigation isloggedin={isloggedin} />
+      <Navigation />
 
       <Grid container spacing={2} className='ecommerce-types-img'>
         {imageData.map((data, index) => (

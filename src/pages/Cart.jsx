@@ -11,19 +11,23 @@ const Cart = () => {
   const [triggerrefresh, setTriggerRefresh] = useState(0);
   const [totaldiscount, setTotalDiscount] = useState(0);
   const [totalamount, setTotalAmount] = useState(0);
+  const [savedItems, setSavedItems] = useState([]);
+
 
   useEffect(() => {
     const items = localStorage.getItem("cart");
 
     console.log(items)
-    
+
     if (items) {
       const parseditems = JSON.parse(items);
+      console.log({ parseditems });
 
       let disc = 0;
       let total = 0;
 
       parseditems.forEach((item) => {
+        console.log({ item })
         disc += item.price * item.count * item.discountPercentage * 0.01;
         total += item.price * item.count;
       });
@@ -52,7 +56,7 @@ const Cart = () => {
         } else {
           itemcopy.count = itemcopy.count - 1
         }
-        
+
         return itemcopy
       }
 
@@ -67,112 +71,214 @@ const Cart = () => {
   const isloggedin = localStorage.getItem("isloggedin")
 
   console.log({ cartitems });
+  const handleSaveForLater = (id) => {
+    const savedItem = cartitems.find((item) => item.id === id);
+    const updatedCartItems = cartitems.filter((item) => item.id !== id);
 
+    setCartItems(updatedCartItems);
+    setSavedItems((prevSavedItems) => [...prevSavedItems, savedItem]);
+    localStorage.setItem("cart", JSON.stringify(updatedCartItems));
+  };
+  const handleMoveToCart = (id) => {
+    const movedItem = savedItems.find((item) => item.id === id);
+    const updatedSavedItems = savedItems.filter((item) => item.id !== id);
+
+    setSavedItems(updatedSavedItems);
+    setCartItems((prevCartItems) => [...prevCartItems, movedItem]);
+    localStorage.setItem("cart", JSON.stringify([...cartitems, movedItem]));
+  };
+  const handleRemoveFromSaved = (id) => {
+    const updatedSavedItems = savedItems.filter((item) => item.id !== id);
+
+    setSavedItems(updatedSavedItems);
+    localStorage.setItem("savedItems", JSON.stringify(updatedSavedItems)); // Update saved items in local storage
+  };
   return (
     <div className="_5pko">
       <Navigation cartcount={cartitems.length} isloggedin={isloggedin} />
       {cartitems.length ? (
         <div className="_9zeg">
           <div className="depot-cob">
-            <div className="container">
-              <div className="navigate">
-                <div
-                  onClick={() => setActivemenu("e-cart")}
-                  className={activemenu === "e-cart" ? "active" : undefined}
-                >
-                  e-cart
+            <div className="_9jqn">
+              <div className="container">
+                <div className="navigate">
+                  <div
+                    onClick={() => setActivemenu("e-cart")}
+                    className={activemenu === "e-cart" ? "active" : undefined}
+                  >
+                    e-cart
+                  </div>
+                  <div
+                    onClick={() => setActivemenu("grocery")}
+                    className={activemenu === "grocery" ? "active" : undefined}
+                  >
+                    Grocery
+                  </div>
                 </div>
-                <div
-                  onClick={() => setActivemenu("grocery")}
-                  className={activemenu === "grocery" ? "active" : undefined}
-                >
-                  Grocery
+                <div className="ostrich-ewe">
+                  {cartitems.map((item, index) => {
+                    return (
+                      <div key={index} className="item">
+                        <span className="specter-doer">
+                          Delivery by Tue Aug 15
+                        </span>
+                        <div className="talmud-outs">
+                          <div>
+                            <img src={item.images} alt="" />
+                          </div>
+                          <div className="exonyms-dot">
+                            <button onClick={() => handleUpdateCount(item.id, "decrease")}>
+                              <AiOutlineMinus />
+                            </button>
+                            <input value={item.count} />
+                            <button onClick={() => handleUpdateCount(item.id, "increase")}>
+                              <AiOutlinePlus />
+                            </button>
+                          </div>
+                        </div>
+                        <div className="foulards-ids">
+                          <div>{item.title}</div>
+                          <div
+                            style={{
+                              display: "flex",
+                              flexDirection: "column",
+                              color: "grey",
+                              fontSize: "14px",
+                            }}
+                          >
+                            <span>8 GB RAM</span>
+                            <span
+                              style={{
+                                display: "inline-block",
+                                marginTop: "5px",
+                              }}
+                            >
+                              Seller: Retail Net
+                            </span>
+                          </div>
+                          <div className="price-discount">
+                            <span
+                              style={{
+                                fontSize: "14px",
+                                color: "grey",
+                                textDecoration: "line-through",
+                                alignSelf: "end",
+                              }}
+                            >
+                              ₹ {item.price}
+                            </span>
+                            <span
+                              style={{
+                                fontWeight: "600",
+                                color: "rgb(27, 27, 27)",
+                              }}
+                            >
+                              ₹{" "}
+                              {(
+                                item.price -
+                                item.price * item.discountPercentage * 0.01
+                              ).toFixed(2)}
+                            </span>
+                            <span
+                              style={{
+                                fontSize: "14px",
+                                color: "green",
+                                fontWeight: "600",
+                              }}
+                            >
+                              {item.discountPercentage} % Off
+                            </span>
+                          </div>
+                          <div className="controllers">
+                            <button onClick={() => handleSaveForLater(item.id)}>SAVE FOR LATER</button>
+                            <button onClick={() => handleRemove(item.id)}>REMOVE</button>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-              <div className="ostrich-ewe">
-                {cartitems.map((item, index) => {
-                  return (
-                    <div key={index} className="item">
-                      <span className="specter-doer">
-                        Delivery by Tue Aug 15
-                      </span>
-                      <div className="talmud-outs">
-                        <div>
-                          <img src={item.images} alt="" />
-                        </div>
-                        <div className="exonyms-dot">
-                          <button onClick={() => handleUpdateCount(item.id, "decrease")}>
-                            <AiOutlineMinus />
-                          </button>
-                          <input value={item.count} />
-                          <button onClick={() => handleUpdateCount(item.id, "increase")}>
-                            <AiOutlinePlus />
-                          </button>
-                        </div>
-                      </div>
-                      <div className="foulards-ids">
-                        <div>{item.title}</div>
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            color: "grey",
-                            fontSize: "14px",
-                          }}
-                        >
-                          <span>8 GB RAM</span>
-                          <span
-                            style={{
-                              display: "inline-block",
-                              marginTop: "5px",
-                            }}
-                          >
-                            Seller: Retail Net
-                          </span>
-                        </div>
-                        <div className="price-discount">
-                          <span
-                            style={{
-                              fontSize: "14px",
-                              color: "grey",
-                              textDecoration: "line-through",
-                              alignSelf: "end",
-                            }}
-                          >
-                            ₹ {item.price}
-                          </span>
-                          <span
-                            style={{
-                              fontWeight: "600",
-                              color: "rgb(27, 27, 27)",
-                            }}
-                          >
-                            ₹{" "}
-                            {(
-                              item.price -
-                              item.price * item.discountPercentage * 0.01
-                            ).toFixed(2)}
-                          </span>
-                          <span
-                            style={{
-                              fontSize: "14px",
-                              color: "green",
-                              fontWeight: "600",
-                            }}
-                          >
-                            {item.discountPercentage} % Off
-                          </span>
-                        </div>
-                        <div className="controllers">
-                          <button>SAVE FOR LATER</button>
-                          <button onClick={() => handleRemove(item.id)}>
-                            REMOVE
-                          </button>
-                        </div>
-                      </div>
+              <div className="_7oyb">
+                {savedItems.length > 0 && (
+                  <div className="_1shv">
+                    <div className="saved-items">
+                      <h3>Saved For Later</h3>
+                      {savedItems.map((item, index) => {
+                        return (
+                          <div className="_2mhu">
+                            <div key={index} className="_6mqt">
+                              <div className="talmud-outs">
+                                <div>
+                                  <img src={item.images} alt="" />
+                                </div>
+                                <div className="exonyms-dot">
+                                  <button onClick={() => handleUpdateCount(item.id, "decrease")}>
+                                    <AiOutlineMinus />
+                                  </button>
+                                  <input value={item.count} />
+                                  <button onClick={() => handleUpdateCount(item.id, "increase")}>
+                                    <AiOutlinePlus />
+                                  </button>
+                                </div>
+                              </div>
+                              <div className="foulards-ids">
+                                <div>{item.title}</div>
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                    color: "grey",
+                                    fontSize: "14px",
+                                  }}
+                                >
+                                  <span>8 GB RAM</span>
+                                </div>
+                                <div className="_6jyc">
+                                  <span
+                                    style={{
+                                      fontSize: "14px",
+                                      color: "grey",
+                                      textDecoration: "line-through",
+                                      alignSelf: "end",
+                                    }}
+                                  >
+                                    ₹ {item.price}
+                                  </span>
+                                  <span
+                                    style={{
+                                      fontWeight: "600",
+                                      color: "rgb(27, 27, 27)",
+                                    }}
+                                  >
+                                    ₹{" "}
+                                    {(
+                                      item.price -
+                                      item.price * item.discountPercentage * 0.01
+                                    ).toFixed(2)}
+                                  </span>
+                                  <span
+                                    style={{
+                                      fontSize: "14px",
+                                      color: "green",
+                                      fontWeight: "600",
+                                    }}
+                                  >
+                                    {item.discountPercentage} % Off
+                                  </span>
+                                </div>
+                                <div className="_6nda">
+                                <button onClick={() => handleMoveToCart(item.id)}>MOVE TO CART</button>
+                                <button onClick={() => handleRemoveFromSaved(item.id)}>REMOVE</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
-                  );
-                })}
+                  </div>
+                )}
               </div>
             </div>
             <div className="price">
@@ -214,6 +320,9 @@ const Cart = () => {
       ) : (
         <EmptyCart />
       )}
+
+
+
     </div>
   );
 };

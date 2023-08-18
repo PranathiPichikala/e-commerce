@@ -23,6 +23,7 @@ import AddGiftCard from './components/AddGiftCard';
 import GridComponent from './components/GridComponents';
 import MyOrders from './pages/MyOrders';
 import Footer from './pages/Footer';
+import Checkout from './pages/Checkout';
 function App() {
 
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path='otp-verif' element={<OtpVerification />} />
         <Route path='grids' element={<GridComponent />} />
         <Route path='/myorders' element={<MyOrders />} />
+        <Route path="/check-out" element={<Checkout />} />
         <Route path='/account' element={<Profile />}>
           <Route path="/account/profile" element={<ProfileInformation />} />
           <Route path="/account/wishlist" element={<MyWishlist />} />
