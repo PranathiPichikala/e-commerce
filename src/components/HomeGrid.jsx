@@ -46,7 +46,7 @@ const HomeGrid = () => {
     return (
         <div className="_7hac">
             <div className="_3ndr">
-        <Typography variant='h4'>Mobiles & more</Typography>
+        <Typography variant='h5'>Mobiles & more</Typography>
         <Link to="filtercomponent">
         <AiOutlineRight/>
         </Link>
