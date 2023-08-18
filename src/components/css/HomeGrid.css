@@ -29,6 +29,9 @@
     display: flex;
     justify-content: space-between;
 }
+._3ndr h5{
+    padding: 20px;
+}
 ._3ndr svg{
     padding: 5px;
     background-color: blue;
