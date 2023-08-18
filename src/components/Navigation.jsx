@@ -8,6 +8,7 @@ import "./css/Navigation.css"
 import { Link, useNavigate } from "react-router-dom";
 import { AiFillHeart } from "react-icons/ai";
 import Logo from "../assets/Logo.jpg"
+import LogoutIcon from '@mui/icons-material/Logout';
 
 const Navigation = ({ cartcount, isloggedin }) => {
     const [open, setOpen] = useState(false)
@@ -23,6 +24,11 @@ const Navigation = ({ cartcount, isloggedin }) => {
     const handleClose = () => {
         setOpen(false);
     };
+
+    const handleLogOut = () => {
+        localStorage.removeItem("isloggedin")
+        window.location.reload()
+    }
     return (
         <div className="_9epm">
             <Modal
@@ -52,17 +58,17 @@ const Navigation = ({ cartcount, isloggedin }) => {
                     </div>
                     <div className="center">
                         {isloggedin ? (
-                            <div 
-                                className="monks-abs" 
-                                onMouseEnter={() => setAccountsPopover(true)} 
+                            <div
+                                className="monks-abs"
+                                onMouseEnter={() => setAccountsPopover(true)}
                                 onMouseLeave={() => setAccountsPopover(false)}
                             >
                                 <span>Account</span>
                                 <BiChevronDown />
                                 {accountspopover ? (
-                                    <div 
+                                    <div
                                         className="popover"
-                                        onMouseEnter={() => setAccountsPopover(true)} 
+                                        onMouseEnter={() => setAccountsPopover(true)}
                                         onMouseLeave={() => setAccountsPopover(false)}
                                     >
                                         <div className="transparent"></div>
@@ -84,6 +90,12 @@ const Navigation = ({ cartcount, isloggedin }) => {
                                                     <Link to="/giftcards">
                                                         <BiSolidWalletAlt />
                                                         <span>Gift Cards</span>
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link to="/" >
+                                                        <LogoutIcon />
+                                                        <span onClick={handleLogOut}>Log Out</span>
                                                     </Link>
                                                 </li>
                                             </ul>
