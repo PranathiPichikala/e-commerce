@@ -2,7 +2,7 @@ import { Button, Grid} from "@mui/material";
 import { AiFillHeart } from "react-icons/ai";
 import { useState } from "react";
 import "./css/Mobile.css";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const LinearGrid = ({ header, items }) => {
@@ -35,6 +35,8 @@ const LinearGrid = ({ header, items }) => {
     localStorage.setItem("wish", JSON.stringify(wishlistItems));
   };
 
+  const navigate = useNavigate()
+
   return (
     <div className="linear-grid-container">
       <div className="smartphones">
@@ -44,7 +46,7 @@ const LinearGrid = ({ header, items }) => {
       <Grid container rowSpacing={2} columnSpacing={5}>
         {visibleItems.map((data, index) => (
             <Grid item lg={3} key={index}>
-              <div className="mobile-image">
+              <div className="mobile-image" onClick={() => navigate("/product-details")}>
                 <img src={data.images} alt="Mobile" />
                 <div className="mobile-image-content">
                   <div title="realme C53 (Champion Gold, 64 GB)" href="#">

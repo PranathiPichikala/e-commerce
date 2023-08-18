@@ -43,19 +43,13 @@ const Navigation = ({ cartcount, isloggedin }) => {
         }
     };
 
-    const handleInputFocus = () => {
-        setTimeout(() => {
-            if (searchHistory.length > 0) {
-                setShowDropdown(true);
-            }
-        }, 10);
-    };
-
     const handleDropdownItemClick = (item) => {
         setSearch(item);
         setShowDropdown(false);
         setSearchHistory([]);
+        navigate("/filtercomponent")
     };
+
     return (
         <div className="_9epm">
             <Modal
@@ -92,12 +86,12 @@ const Navigation = ({ cartcount, isloggedin }) => {
                             </div>
                             {showDropdown && (
                                 <div className="search-history-dropdown">
-
                                     {searchHistory.map((item, index) => (
                                         <div
                                             key={index}
                                             className="dropdown-item"
                                             onClick={() => handleDropdownItemClick(item)}
+                                            onMouseDown={(e) => e.preventDefault()}
                                         >
                                             <GoHistory /> <div className="_6edy">{item}</div>
                                         </div>
@@ -118,10 +112,10 @@ const Navigation = ({ cartcount, isloggedin }) => {
                                 onMouseLeave={() => setAccountsPopover(false)}
                             >
                                 {isloggedin ? (
-                                    <div>
+                                    <>
                                         <span>Account</span>
                                         <BiChevronDown />
-                                    </div>
+                                    </>
                                 ) : <button onClick={() => handleOpen()}>Login</button>}
                                 
                                 {accountspopover ? (

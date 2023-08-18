@@ -137,6 +137,27 @@ export const ProductDetails = () => {
         setSelectedColor(src);
     };
 
+    const addToCart = (product) => {
+        const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+        product.count= product.count +1
+        cartItems.push(product);
+        localStorage.setItem("cart", JSON.stringify(cartItems));
+      };
+
+    const data = {
+        id: 1,
+        title: 'realme C53',
+        description: 'The Realme  is a powerful device that will give you the best experience when using it.',
+        price: 549,
+        discountPercentage: 12.96,
+        rating: 4.69,
+        stock: 94,
+        brand: 'Realme',
+        images: 
+          'https://images.jdmagicbox.com/quickquotes/images_main/realme-gt-2-pro-steel-black-8gb-128gb-2188142229-4q0jqnpo.jpg',
+        count: 0
+      }
+
     return (
         <div>
             <Navigation />
@@ -159,7 +180,7 @@ export const ProductDetails = () => {
 
 
                         <div className="_9xzv">
-                            <Button className="_3sst">ADD TO CART</Button>
+                            <Button className="_3sst"  onClick={() => addToCart(data)}>ADD TO CART</Button>
                             <Button className="_8off">BUY NOW</Button>
                         </div>
                     </div>
