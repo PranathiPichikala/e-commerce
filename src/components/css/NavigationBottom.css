@@ -1,4 +1,4 @@
-._0ugg .headfilter{
+._0ugg .headfilter ._5bbl{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -8,10 +8,24 @@
     border-bottom: 1px solid rgb(221, 221, 221);
     margin-bottom: 10px;
 }
-
+._5bbl li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+._5bbl a{
+text-decoration: none;
+}
 ._0ugg .headfilter li{
     padding: 0 13px;
-    color: #000;
+    color: #5b5b5b;
+    font-weight: 600;
+}
+._0ugg .headfilter li:hover{
+    padding: 0 13px;
+    color: #000000;
     font-weight: 600;
 }
 ._0ekz{
