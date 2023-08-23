@@ -94,6 +94,21 @@ const Smallbox = ({ text }) => {
     )
 }
 
+// index is used to flip direction of image i.e. right to left
+const Bigbox = ({index, header, paragraph, image}) => {
+    return (
+        <div className={index % 2 === 1 ? "frees-cam nocturne-tag" : "nocturne-tag"}>
+            <div>
+                <h3>{header}</h3>
+                <p>{paragraph}</p>
+            </div>
+            <div>
+                <img src={image} alt="" />
+            </div>
+        </div>
+    )
+}
+
 export const ProductDetails = () => {
     const [showAllOffers, setShowAllOffers] = useState(false);
     const [productData, setProductData] = useState(undefined)
@@ -142,11 +157,11 @@ export const ProductDetails = () => {
 
     const addToCart = (product) => {
         const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-        product.count= product.count +1
+        product.count = product.count + 1
         cartItems.push(product);
         localStorage.setItem("cart", JSON.stringify(cartItems));
         setTriggerRefresh(prev => prev + 1)
-      };
+    };
 
     const data = {
         id: 1,
@@ -157,10 +172,10 @@ export const ProductDetails = () => {
         rating: 4.69,
         stock: 94,
         brand: 'Realme',
-        images: 
-          'https://images.jdmagicbox.com/quickquotes/images_main/realme-gt-2-pro-steel-black-8gb-128gb-2188142229-4q0jqnpo.jpg',
+        images:
+            'https://images.jdmagicbox.com/quickquotes/images_main/realme-gt-2-pro-steel-black-8gb-128gb-2188142229-4q0jqnpo.jpg',
         count: 0
-      }
+    }
 
     return (
         <div>
@@ -170,21 +185,14 @@ export const ProductDetails = () => {
                 <div className="_7oqi">
                     <div className="_8dlm">
                         <div className="_6rkq">
-
                             {selectedColor && (
                                 <div className="_hovered-img">
                                     <img src={selectedColor} alt="Selected" />
                                 </div>
                             )}
-
-
                         </div>
-
-
-
-
                         <div className="_9xzv">
-                            <Button className="_3sst"  onClick={() => addToCart(data)}>ADD TO CART</Button>
+                            <Button className="_3sst" onClick={() => addToCart(data)}>ADD TO CART</Button>
                             <Button className="_8off" onClick={() => navigate("/cart")}>BUY NOW</Button>
                         </div>
                     </div>
@@ -237,61 +245,61 @@ export const ProductDetails = () => {
                             </button>
                         </div>
                         <div className="_5tht">
-                        <div className="_1evn">
-                            {renderkeys.map(item => {
-                                if (item === "Color") {
-                                    const prod = productData[item];
-                                    const imageComponents = prod.map(iamtired => {
-                                        if (iamtired.component === "image") {
-                                            return (
-                                                <div key={iamtired.src}>
-                                                    <ImageBox
-                                                        src={iamtired.src}
-                                                        onMouseEnter={() => handleColorHover(iamtired.src)}
-                                                        onClick={() => handleColorClick(iamtired.src)}
-                                                    />
+                            <div className="_1evn">
+                                {renderkeys.map(item => {
+                                    if (item === "Color") {
+                                        const prod = productData[item];
+                                        const imageComponents = prod.map(iamtired => {
+                                            if (iamtired.component === "image") {
+                                                return (
+                                                    <div key={iamtired.src}>
+                                                        <ImageBox
+                                                            src={iamtired.src}
+                                                            onMouseEnter={() => handleColorHover(iamtired.src)}
+                                                            onClick={() => handleColorClick(iamtired.src)}
+                                                        />
+                                                    </div>
+                                                );
+                                            }
+
+                                            return null;
+                                        });
+
+                                        return (
+                                            <div className="_2qvz" key={item}>
+                                                <div className="_0esa">{item}</div>
+                                                <div className="_3xam">
+                                                    {imageComponents}
                                                 </div>
-                                            );
-                                        }
-                                  
-                                        return null;
-                                    });
-
-                                    return (
-                                        <div className="_2qvz" key={item}>
-                                            <div className="_0esa">{item}</div>
-                                            <div className="_3xam">
-                                                {imageComponents}
                                             </div>
-                                        </div>
-                                    );
-                                }
-                                return null;
-                            })}
-                        </div>
-                        <div className="_1evn">
-                    {renderkeys.map(item => {
-                        if (item === "RAM") {
-                            const ramOptions = productData[item];
-                            const ramTextComponents = ramOptions.map(ramOption => (
-                                <div key={ramOption.text}>
-                                   <Smallbox text={ramOption.text} />
-                                </div>
-                            ));
+                                        );
+                                    }
+                                    return null;
+                                })}
+                            </div>
+                            <div className="_1evn">
+                                {renderkeys.map(item => {
+                                    if (item === "RAM") {
+                                        const ramOptions = productData[item];
+                                        const ramTextComponents = ramOptions.map(ramOption => (
+                                            <div key={ramOption.text}>
+                                                <Smallbox text={ramOption.text} />
+                                            </div>
+                                        ));
 
-                            return (
-                                <div className="_2qvz" key={item}>
-                                    <div className="_0esa">{item}</div>
-                                    <div className="_3xam">
-                                        {ramTextComponents}
-                                    </div>
-                                </div>
-                            );
-                        }
-                        return null;
-                    })}
-                </div>
-                </div>
+                                        return (
+                                            <div className="_2qvz" key={item}>
+                                                <div className="_0esa">{item}</div>
+                                                <div className="_3xam">
+                                                    {ramTextComponents}
+                                                </div>
+                                            </div>
+                                        );
+                                    }
+                                    return null;
+                                })}
+                            </div>
+                        </div>
                         <div className="_1wrq">
                             <div>Highlights</div>
                             <div className="_1xyh">
@@ -314,14 +322,20 @@ export const ProductDetails = () => {
                                 <p>With the superb Vivo T2x 5G, you can take advantage of great pictures and a flawless user experience. With the Vivo T2x 5G, you can experience exceptional performance owing to its 7 nm 5G CPU, the octa-core Dimensity 6020, with a top clock speed of 2.2 GHz. Additionally, the 50 MP main camera on this smartphone beautifully catches every detail you see. Additionally, Super Night Selfie employs noise cancellation technology in conjunction with an Aura Screen Light to produce a calming light that is effective in low light. The pioneering Extended RAM 3.0 technology also uses ROM to expand RAM with a maximum capacity of 8 GB. This enables smooth app switching and allows up to 27 active applications to run in the background.</p>
                             </div>
                         </div>
-
-
                         <div className="_4lay">
                             <div className="_2syx">
                                 Product Description
                             </div>
-
-
+                            <div className="container">
+                                {renderkeys.map(item => {
+                                    const prod = productData[item]
+                                    return prod.map((product, index) => {
+                                        if (product.component === "bigbox") {
+                                            return <Bigbox index={index} header={product.title} paragraph={product.description} image={product.image} />
+                                        }
+                                    })
+                                })}
+                            </div>
                         </div>
                     </div>
                 </div>
