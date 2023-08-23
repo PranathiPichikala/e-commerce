@@ -6,10 +6,11 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 const LinearGrid = ({ header, items, setTriggerRefresh }) => {
+
   const itemsPerPage = 4;
   const numPages = Math.ceil(items.length / itemsPerPage);
   const [page, setPage] = useState(0)
-  
+
 
   const handleNext = () => {
     setPage((prevPage) => (prevPage + 1) % numPages);
@@ -51,7 +52,7 @@ const LinearGrid = ({ header, items, setTriggerRefresh }) => {
   const navigate = useNavigate()
 
   console.log({visibleItems})
-
+  console.log(items);
   return (
     <div className="linear-grid-container">
       <div className="smartphones">

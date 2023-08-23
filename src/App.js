@@ -24,6 +24,7 @@ import GridComponent from './components/GridComponents';
 import MyOrders from './pages/MyOrders';
 import Footer from './pages/Footer';
 import Checkout from './pages/Checkout';
+import SimiliarProducts from './components/SimiliarProducts';
 function App() {
 
   return (
@@ -56,8 +57,9 @@ function App() {
         <Route path="/product-details" element={<ProductDetails />} />
         <Route path="notifications-page" element={<NotificationPage />}>
           <Route path="/notifications-page/desktop" element={<DesktopNotify />} />
+         
         </Route>
-
+        <Route path="/similiar-products" element={<SimiliarProducts/>}/>
       </Routes>
     </BrowserRouter>
 

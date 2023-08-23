@@ -4,6 +4,7 @@ import Data from "../components/Data";
 import LinearGrid from "../components/LinearGrid";
 import Navigation from "../components/Navigation";
 import NavigationBottom from "../components/NavigationBottom";
+import SimiliarProducts from "../components/SimiliarProducts";
 
 const ItemsList = () => {
   const { category } = useParams();
@@ -18,9 +19,12 @@ const ItemsList = () => {
       <NavigationBottom />
       {Data.map((item, index) => {
         return Object.entries(item[category]).map(mess => {
-            return <LinearGrid setTriggerRefresh={setTriggerRefresh} key={index} header={mess[0]} items={mess[1]} />
-        })
+            return <LinearGrid setTriggerRefresh={setTriggerRefresh} key={index} header={mess[0]} items={mess[1]} 
+        />
+     
+          })
       })}
+
     </div>
   );
 };
