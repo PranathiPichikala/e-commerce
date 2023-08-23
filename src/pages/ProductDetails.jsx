@@ -283,7 +283,7 @@ export const ProductDetails = () => {
                             <div className="Delivery-field-side">
                                 <MdLocationOn />
                                 <form autocomplete="off" className="_5bhq">
-                                    <input className="_36yFo0" placeholder="Enter Delivery Pincode" type="text" maxlength="6" id="pincodeInputId" value="" />
+                                    <input placeholder="Enter Delivery Pincode" type="text" maxlength="6" />
 
                                 </form>
                                 <div className="check-button-delivery">
