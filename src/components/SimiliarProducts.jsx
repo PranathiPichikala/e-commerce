@@ -21,9 +21,7 @@ const SimilarProducts = () => {
 
   return (
     <div className="_1fdd linear-grid-container ">
-      <div className="smartphones">
-        <h2>Similar Products</h2>
-      </div>
+       
       <Slider {...settings}>
         {smartphones?.map((data) => (
           <div className="_5hrk" key={data.id}>
