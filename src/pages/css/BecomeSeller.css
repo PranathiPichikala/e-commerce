@@ -1,63 +1,121 @@
-.existing-seller{
-    border-bottom: 1px solid rgb(208, 208, 208);
-    color: rgb(53, 53, 53);
-    padding: 20px;
+.existing-seller {
+  border-bottom: 1px solid rgb(208, 208, 208);
+  color: rgb(53, 53, 53);
+  padding: 20px;
 }
-.become-seller-img img{
-    width: 100px;
-    height: 70px;
+
+.become-seller-img img {
+  width: 100px;
+  height: 70px;
 }
-._9yux{
-    display: flex;
+
+._9yux {
+  display: flex;
 }
+
 
 
 .row-container {
-    display: flex;
-    align-items: center; 
-    margin: 20px;
-  }
-  
-  .links-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .links-list li {
-    margin: 0;
-    padding:0 20px;
-  }
-  
-  .start-selling-button{
-    display: flex;
-    list-style: none;
-    align-items: center;
-  }
-  .start-selling-button li{
-    padding:0 20px;
-  }
-  .start-selling-button a{
-    text-decoration: none !important;
-  }
-  ._5ctx{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .start-selling-button .selling-button{
-    display: flex;
-    align-items: center;
-    width: 100px;
-    height: 50px;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-    background: rgb(255, 205, 0);
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-  }
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.links-list li {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.start-selling-button {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.start-selling-button li {
+  padding: 0 20px;
+}
+
+.start-selling-button a {
+  text-decoration: none !important;
+}
+
+._5ctx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.start-selling-button .selling-button {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  background: rgb(255, 205, 0);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+
+/* login model */
+._2fzv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: azure;
+}
+
+._9kzg {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  padding: 20px;
+}
+
+._2eby {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.spann {
+  padding-bottom: 30px;
+}
+
+.spann1 {
+  padding-bottom: 20px;
+}
+
+.otpBox {
+  position: 'absolute';
+  top: '50%';
+  left: '50%';
+  transform: 'translate(-50%, -50%)';
+  width: '80%';
+  background-color: 'white';
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.OtpField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
