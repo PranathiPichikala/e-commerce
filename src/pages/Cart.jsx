@@ -5,8 +5,20 @@ import EmptyCart from "../components/EmptyCart";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import Navigation from "../components/Navigation";
 import { useNavigate } from "react-router-dom";
-import { Modal } from "@mui/material";
+import { Box, Modal, Typography } from "@mui/material";
 import LoginModal from "../components/LoginModal";
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 
 const Cart = () => {
   const [cartitems, setCartItems] = useState([]);
@@ -15,10 +27,12 @@ const Cart = () => {
   const [totaldiscount, setTotalDiscount] = useState(0);
   const [totalamount, setTotalAmount] = useState(0);
   const [savedItems, setSavedItems] = useState([]);
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   const isloggedin = localStorage.getItem("isloggedin")
-
+  const [opened, setOpened] = React.useState(false);
+  const handleOpened = () => setOpened(true);
+  const handleClosed = () => setOpened(false);
 
   useEffect(() => {
     const items = localStorage.getItem("cart");
@@ -104,22 +118,22 @@ const Cart = () => {
 
   const handleOpen = () => {
     setOpen(true);
-};
+  };
 
-const handleClose = () => {
+  const handleClose = () => {
     setOpen(false);
-};
-  
+  };
+
   return (
     <div className="_5pko">
       <Navigation cartcount={cartitems.length} isloggedin={true} />
       <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
       >
-          <LoginModal handleClose={handleClose} />
+        <LoginModal handleClose={handleClose} />
       </Modal>
       {cartitems.length ? (
         <div className="_9zeg">
@@ -140,6 +154,71 @@ const handleClose = () => {
                     Grocery
                   </div>
                 </div>
+                <div className="address-change">
+                  <div className="address-change-content">
+                    <div className="deliver-to">
+                      <div className="_3pos">
+                        <div className="_3pos-deliver">Deliver to: </div>
+                        <div className="_3pos-name">
+                          <span className="_3pos-name-content">Pranathi</span>
+                        </div>
+                        <span className="pincode-content">, 500072</span>
+                        <span className="address-home">HOME</span>
+                      </div>
+                      <div className="adress-content">KPHB, roadno:1, Hyderabad, Hyderabad</div>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div className="change-button-adress">
+                    <button onClick={handleOpened}>Change</button>
+
+                    <Modal
+                      open={opened}
+                      onClose={handleClosed}
+                      aria-labelledby="modal-modal-title"
+                      aria-describedby="modal-modal-description"
+                    >
+                      <Box sx={style} className="_7bdq">
+                        <Typography id="modal-modal-title" className="select-adress" variant="h6" component="h2">
+                          Select Delivery Address
+                        </Typography>
+                        <div className="deliver-to-modal">
+                        <input type="radio" name="address" id="address1" className="address-radio"/>
+                        <div>
+                          <div className="_3pos">
+                          
+                            <div className="_3pos-name">
+                             
+                                <label htmlFor="address1" className="_3pos-name-content">Pranathi</label>
+                            </div>
+                            <span className="pincode-content">, 500072</span>
+                            <span className="address-home">HOME</span>
+                          </div>
+                          <div className="adress-content">KPHB, roadno:1, Hyderabad, Hyderabad</div>
+                        </div>
+                        </div>
+                      
+                        <div className="pincode-info">Use pincode to check delivery info</div>
+                        <div className="_2ywt">
+                        <div className="Delivery-field-side-pincode">
+                              
+                                <form autocomplete="off" className="_5bhq">
+                                    <input  placeholder="Enter Pincode" type="number" maxlength="6" />
+
+                                </form>
+                                
+                            </div>
+                            <div className="check-button-pincode">
+                                    <button>Submit </button></div>
+                        </div>
+
+                      </Box>
+                    </Modal>
+                  </div>
+                </div>
+
+
+
                 <div className="ostrich-ewe">
                   {cartitems.map((item, index) => {
                     return (
@@ -223,12 +302,12 @@ const handleClose = () => {
                     );
                   })}
                   <div className="placeorder-sticky">
-                  <div className="placeorder-button">
-                    <button onClick={() => isloggedin ? navigate("/check-out") : handleOpen()}>PLACE ORDER</button>
-                  </div>
+                    <div className="placeorder-button">
+                      <button onClick={() => isloggedin ? navigate("/check-out") : handleOpen()}>PLACE ORDER</button>
+                    </div>
                   </div>
                 </div>
-                
+
               </div>
               <div className="_7oyb">
                 {savedItems.length > 0 && (
@@ -299,8 +378,8 @@ const handleClose = () => {
                                   </span>
                                 </div>
                                 <div className="_6nda">
-                                <button onClick={() => handleMoveToCart(item.id)}>MOVE TO CART</button>
-                                <button onClick={() => handleRemoveFromSaved(item.id)}>REMOVE</button>
+                                  <button onClick={() => handleMoveToCart(item.id)}>MOVE TO CART</button>
+                                  <button onClick={() => handleRemoveFromSaved(item.id)}>REMOVE</button>
                                 </div>
                               </div>
                             </div>
