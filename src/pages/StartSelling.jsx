@@ -170,28 +170,15 @@ const StartSelling = () => {
             <p>
               By continuing, I agree to Flipkart’s Terms of Use & Privacy Policy
             </p>
-            <button onClick={handleNext}>Register and continue</button>
-            <button
-              disabled={isBackDisabled}
-              onClick={handleBack}
-              sx={{ mr: 1 }}
-            >
-              Back
-            </button>
+            
           </div>
         )}
 
         {activeStep === 1 && (
           <div>
             password page
-            <button onClick={handleNext}>Register and continue</button>
-            <button
-              disabled={isBackDisabled}
-              onClick={handleBack}
-              sx={{ mr: 1 }}
-            >
-              Back
-            </button>
+            
+           
           </div>
         )}
 
@@ -202,6 +189,16 @@ const StartSelling = () => {
         )}
        
       </div>
+      <div className="registerback">
+      <button onClick={handleNext}>Register and continue</button>
+      <button
+              disabled={isBackDisabled}
+              onClick={handleBack}
+              sx={{ mr: 1 }}
+            >
+              Back
+            </button>
+            </div>
     </div>
   );
 };

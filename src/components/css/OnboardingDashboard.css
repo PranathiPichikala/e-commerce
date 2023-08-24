@@ -1,0 +1,193 @@
+._6ecl{
+    display: grid;
+    grid-template-columns: 2fr 6fr 4fr;
+    gap: 20px;
+}
+._6ecl .onboarding-comp{
+
+    border-radius: 8px;
+}
+.onboarding-comp .head{
+    background: rgb(255, 245, 227);
+   border-bottom: 1px solid rgb(245, 166, 35);
+    border-top-color: rgb(245, 166, 35);
+    border-right-color: rgb(245, 166, 35);
+    border-left-color: rgb(245, 166, 35);
+    padding: 12px;
+}
+._0gjg{
+    position: sticky;
+    top: 0;
+}
+.onboarding-comp ._0gjg{
+    border: 1px solid rgb(245, 166, 35);
+}
+
+.onboarding-comp .head h2{
+    margin: 0px 0px 12px;
+    line-height: 16px;
+    font-size: 14px;
+}
+.onboarding-comp .head p{
+    margin: 0px;
+    line-height: 16px;
+    color: rgb(255, 255, 255);
+    background: rgb(245, 166, 35);
+    border-radius: 20px;
+    padding: 4px 8px;
+}
+.onboarding-comp .percentage{
+    display: flex;
+}
+.percentage-line{
+    border: 1px solid rgb(245, 166, 35);
+    height: 10px;
+    flex: 1 1 0%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+ .percenatge-line-contnet{
+    background: rgb(245, 166, 35);
+    width: 20%;
+    height: 100%;
+    transition: width 300ms ease 0s;
+}
+ ._0osc ul{
+    list-style: none;
+}
+._0osc p{
+    font-size: 13px;
+}
+.align-oosc ul{
+   margin: 0;
+   padding: 12px;
+}
+._0osc ul li{
+    font-size: 13px;
+}
+._5ybi{
+    margin-left: 20px;
+}
+._5ybi .mobile-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile-line .mobilenumber-verify{
+    display: flex;
+    align-items: center;
+}
+.mobile-line .verified{
+    padding: 4px 12px;
+    background: rgb(229, 245, 238);
+    border-radius: 12px;
+    color: rgb(39, 172, 112);
+    font-weight: 600;
+}
+.mobilenumber-verify svg{
+    font-size: 22px;
+    padding-right: 10px;
+}
+.mobile-line .resend{
+    font-size: 12px;
+    color: rgb(0, 102, 204);
+    font-weight: bolder;
+    border: none;
+    background-color: white;
+}
+.mobile-5ybi, .id-signature{
+    border-bottom: 1px solid rgb(193, 199, 208);
+}
+.pickup-name, .pickup-display{
+    margin-bottom: 20px !important;
+}
+.pickup-description{
+    width: 100% !important;
+    height: 55px !important;
+    margin-bottom: 10px;
+}
+.password-save{
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    min-width: 96px;
+    width: fit-content;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    background-color: rgb(0, 102, 204);
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+}
+._7ogo{
+    margin: 20px;
+}
+._7ogo .need-help-content{
+    background: rgb(235, 243, 251);
+    padding: 20px;
+    border-radius: 10px;
+}
+.callback-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.callback-header .close-button{
+    width: 25px;
+    height: 30px;
+}
+.callback-form-content{
+    background: rgb(235, 243, 251);
+    padding: 20px;
+    border-radius: 10px;
+}
+.time-slot{
+    margin: 15px 0;
+}
+.time-slot .choose-slot{
+    background-color: white !important;
+}
+.date-picker input{
+    width: 100%;
+    height: 50px;
+
+}
+.mobile-number fieldset{
+    background-color: white !important;
+  
+}
+.mobile-number{
+    margin-bottom: 15px;
+}
+.additional{
+    width: 100%;
+}
+.request-callback{
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    min-width: 96px;
+    width: fit-content;
+    height: 36px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    white-space: nowrap;
+    background-color: rgb(0, 102, 204);
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+}
+.city-state{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.city-state .city, .city-state .state{
+    width: 100%;
+}
