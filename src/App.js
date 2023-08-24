@@ -27,6 +27,8 @@ import Checkout from './pages/Checkout';
 import SimiliarProducts from './components/SimiliarProducts';
 import { BecomeSeller } from './pages/BecomeSeller';
 import StartSelling from './pages/StartSelling';
+import RatingsAndReviews from './components/RatingsAndReviews';
+
 function App() {
 
   return (
@@ -45,6 +47,7 @@ function App() {
         <Route path='grids' element={<GridComponent />} />
         <Route path='/myorders' element={<MyOrders />} />
         <Route path="/check-out" element={<Checkout />} />
+        <Route path="/ratings" element={<RatingsAndReviews />} />
         <Route path='/account' element={<Profile />}>
           <Route path="/account/profile" element={<ProfileInformation />} />
           <Route path="/account/wishlist" element={<MyWishlist />} />
@@ -59,11 +62,12 @@ function App() {
         <Route path="/product-details" element={<ProductDetails />} />
         <Route path="notifications-page" element={<NotificationPage />}>
           <Route path="/notifications-page/desktop" element={<DesktopNotify />} />
-         
+
         </Route>
         <Route path="/similiar-products" element={<SimiliarProducts/>}/>
         <Route path="/become-seller" element={<BecomeSeller/>}/>
         <Route path="/start-selling" element={<StartSelling/>}/>
+        <Route path="/similiar-products" element={<SimiliarProducts />} />
       </Routes>
     </BrowserRouter>
 
