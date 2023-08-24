@@ -165,7 +165,9 @@ const Navigation = () => {
                                     </div>
                                 ) : undefined}
                             </div>
+                            <Link to="/become-seller">
                         <span style={{ fontWeight: "600", color: "white", cursor: "pointer" }}>Become a seller</span>
+                        </Link>
                         <div className="dribbed-yum" onClick={() => navigate("/cart")}>
                             <div className="cart-icon">
                                 <BsFillCartFill />

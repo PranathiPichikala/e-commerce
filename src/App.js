@@ -25,6 +25,8 @@ import MyOrders from './pages/MyOrders';
 import Footer from './pages/Footer';
 import Checkout from './pages/Checkout';
 import SimiliarProducts from './components/SimiliarProducts';
+import { BecomeSeller } from './pages/BecomeSeller';
+import StartSelling from './pages/StartSelling';
 function App() {
 
   return (
@@ -60,6 +62,8 @@ function App() {
          
         </Route>
         <Route path="/similiar-products" element={<SimiliarProducts/>}/>
+        <Route path="/become-seller" element={<BecomeSeller/>}/>
+        <Route path="/start-selling" element={<StartSelling/>}/>
       </Routes>
     </BrowserRouter>
 
