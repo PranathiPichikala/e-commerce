@@ -25,9 +25,9 @@ import MyOrders from './pages/MyOrders';
 import Footer from './pages/Footer';
 import Checkout from './pages/Checkout';
 import SimiliarProducts from './components/SimiliarProducts';
-import { BecomeSeller } from './pages/BecomeSeller';
 import StartSelling from './pages/StartSelling';
 import RatingsAndReviews from './components/RatingsAndReviews';
+import BecomeSeller from './pages/BecomeSeller';
 
 function App() {
 
@@ -64,9 +64,9 @@ function App() {
           <Route path="/notifications-page/desktop" element={<DesktopNotify />} />
 
         </Route>
-        <Route path="/similiar-products" element={<SimiliarProducts/>}/>
-        <Route path="/become-seller" element={<BecomeSeller/>}/>
-        <Route path="/start-selling" element={<StartSelling/>}/>
+        <Route path="/similiar-products" element={<SimiliarProducts />} />
+        <Route path="/become-seller" element={<BecomeSeller />} />
+        <Route path="/start-selling" element={<StartSelling />} />
         <Route path="/similiar-products" element={<SimiliarProducts />} />
       </Routes>
     </BrowserRouter>
