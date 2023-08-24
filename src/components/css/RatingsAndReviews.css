@@ -1,0 +1,72 @@
+._6slx {
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+._9elk {
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+._2rqp {
+    padding: 10px 200px 0px 0px;
+}
+
+._4dyfff {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    margin-bottom: 20px;
+}
+
+.tittlee {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    padding: 15px;
+}
+
+.show-more {
+    padding: 15px;
+    color: #2874f1;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+._6slx .reviews {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+._6slx .reviews .rating {
+    background: green;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+._6slx .reviews .comment {
+    font-size: 18px;
+    font-weight: 700;
+    color: gray;
+}
+
+._6slx .images_div {
+    padding: 20px;
+}
+
+._6slx .description {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 10px;
+}
+
+._3fux {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+/* add review */

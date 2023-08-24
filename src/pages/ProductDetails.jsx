@@ -10,9 +10,10 @@ import Footer from "./Footer";
 import { MdLocationOn } from "react-icons/md"
 import { HiOutlineSearch } from "react-icons/hi"
 import { ImUser } from "react-icons/im"
-import {BiLike} from "react-icons/bi"
-import {BiDislike} from "react-icons/bi"
-import {RiArrowDropDownLine} from "react-icons/ri"
+import { BiLike } from "react-icons/bi"
+import { BiDislike } from "react-icons/bi"
+import { RiArrowDropDownLine } from "react-icons/ri"
+import RatingsAndReviews from "../components/RatingsAndReviews";
 const electronicProduct = {
     Color: [
         {
@@ -419,7 +420,9 @@ export const ProductDetails = () => {
                             })}
                         </div>
                     </div>
-
+                    <div className="_9fqp">
+                        <RatingsAndReviews />
+                    </div>
                     <div className="_5bzr">
                         <div className="questions-answers">
                             <div className="_2rdj">Questions and Answers</div>
@@ -444,12 +447,12 @@ export const ProductDetails = () => {
                                     </div>
                                 </div>
 
-                                <div className="likes-dislike"> 
+                                <div className="likes-dislike">
                                     <div className="like">
-                                        <BiLike/> 683</div>
-                                      <div className="dislike"> <BiDislike/>292</div> 
-                                      <div className="riarrowdrop"><RiArrowDropDownLine/></div>
-                                    
+                                        <BiLike /> 683</div>
+                                    <div className="dislike"> <BiDislike />292</div>
+                                    <div className="riarrowdrop"><RiArrowDropDownLine /></div>
+
                                 </div>
                             </div>
 
@@ -471,12 +474,12 @@ export const ProductDetails = () => {
                                     </div>
                                 </div>
 
-                                <div className="likes-dislike"> 
+                                <div className="likes-dislike">
                                     <div className="like">
-                                        <BiLike/> 683</div>
-                                      <div className="dislike"> <BiDislike/>292</div> 
-                                      <div className="riarrowdrop"><RiArrowDropDownLine/></div>
-                                    
+                                        <BiLike /> 683</div>
+                                    <div className="dislike"> <BiDislike />292</div>
+                                    <div className="riarrowdrop"><RiArrowDropDownLine /></div>
+
                                 </div>
                             </div>
 
@@ -498,58 +501,51 @@ export const ProductDetails = () => {
                                     </div>
                                 </div>
 
-                                <div className="likes-dislike"> 
+                                <div className="likes-dislike">
                                     <div className="like">
-                                        <BiLike/> 683</div>
-                                      <div className="dislike"> <BiDislike/>292</div> 
-                                      <div className="riarrowdrop"><RiArrowDropDownLine/></div>
-                                    
+                                        <BiLike /> 683</div>
+                                    <div className="dislike"> <BiDislike />292</div>
+                                    <div className="riarrowdrop"><RiArrowDropDownLine /></div>
+
                                 </div>
                             </div>
-
-
                         </div>
-
-
-
                         {showAllOffers && (
-                         <div className="options-q">
-                         <span className="options-question">Q:</span>
-                         <span>Reno10 5G comes in how many colour options?</span>
+                            <div className="options-q">
+                                <span className="options-question">Q:</span>
+                                <span>Reno10 5G comes in how many colour options?</span>
 
-                         <div className="answers-a">
-                             <span >A:</span>
-                             <span>It is available in two premium colors - Ice Blue and Silvery Grey</span>
-                         </div>
-                         <div className="_3fkx">
-                             <div className="xonight">
-                                 <div className="xonight-ecom">XONIGHT E-Commerce</div>
-                                 <div className="Flipkart-Seller">
-                                     <ImUser /> Flipkart Seller
-                                 </div>
-                             </div>
+                                <div className="answers-a">
+                                    <span >A:</span>
+                                    <span>It is available in two premium colors - Ice Blue and Silvery Grey</span>
+                                </div>
+                                <div className="_3fkx">
+                                    <div className="xonight">
+                                        <div className="xonight-ecom">XONIGHT E-Commerce</div>
+                                        <div className="Flipkart-Seller">
+                                            <ImUser /> Flipkart Seller
+                                        </div>
+                                    </div>
 
-                             <div className="likes-dislike"> 
-                                 <div className="like">
-                                     <BiLike/> 683</div>
-                                   <div className="dislike"> <BiDislike/>292</div> 
-                                   <div className="riarrowdrop"><RiArrowDropDownLine/></div>
-                                 
-                             </div>
-                         </div>
+                                    <div className="likes-dislike">
+                                        <div className="like">
+                                            <BiLike /> 683</div>
+                                        <div className="dislike"> <BiDislike />292</div>
+                                        <div className="riarrowdrop"><RiArrowDropDownLine /></div>
 
-
-                     </div>
+                                    </div>
+                                </div>
+                            </div>
                         )}
-                        <div  className="_0qof">
-                        <button onClick={toggleOffers}>
-                            {showAllOffers ? "View Less" : "All Questions"}
-                        </button>
+                        <div className="_0qof">
+                            <button onClick={toggleOffers}>
+                                {showAllOffers ? "View Less" : "All Questions"}
+                            </button>
                         </div>
 
 
                     </div>
-                    
+
 
                 </div>
             </div>
