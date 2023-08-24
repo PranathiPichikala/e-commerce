@@ -191,3 +191,42 @@
 .city-state .city, .city-state .state{
     width: 100%;
 }
+.submit-done{
+    display: flex;
+    align-items: center;
+}
+.submit-done button{
+    border:none;
+    background: white;
+    padding-left: 15px;
+    color: blue;
+
+}
+.pandetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pandetails h5{
+    margin-left: 10px;
+}
+.pandetails button{
+    padding: 8px 12px;
+    background: rgb(229, 245, 238);
+    border-radius: 12px;
+    color: rgb(39, 172, 112);
+    font-weight: 600;
+    border: none;
+}
+.pandetails ._9ndz{
+    display: flex;
+    align-items: center;
+}
+.business-details{
+    display: flex;
+   
+}
+.business-details .business-details-icon{
+    margin-top: 20px;
+    margin-right: 20px;
+}

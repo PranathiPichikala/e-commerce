@@ -7,6 +7,8 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
+import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
 
 import 'react-datepicker/dist/react-datepicker.css';
 
@@ -17,8 +19,10 @@ export const OnboardingDashboard = () => {
     const [mobile, setMobile] = useState("");
     const [name, setName] = useState("");
     const [time, setTime] = useState("");
-    const [pin,setPin] = useState("")
+    const [pin, setPin] = useState("")
     const [showCallbackForm, setShowCallbackForm] = useState(false);
+    const [showPickupAdd, setShowPickupAdd] = useState(false);
+    const [showCallbackSubmitted, setshowCallbackSubmitted] = useState(false);
 
     const handleCallbackRequest = () => {
         setShowCallbackForm(true);
@@ -29,6 +33,14 @@ export const OnboardingDashboard = () => {
     };
     const handleTabChange = (event, newValue) => {
         setTabValue(newValue);
+    };
+    const handlePinChange = (e) => {
+        const newPin = e.target.value;
+        setPin(newPin);
+        setShowPickupAdd(newPin.length === 6);
+    };
+    const handleFormSubmitRequest = () => {
+        setshowCallbackSubmitted(true);
     };
     return (
         <div>
@@ -122,7 +134,7 @@ export const OnboardingDashboard = () => {
                             ) : (
                                 <div>
                                     <TextField
-                                       className="pickup-name"
+                                        className="pickup-name"
                                         label="Enter PAN Number"
                                         value={pan}
                                         onChange={(e) => setPan(e.target.value)}
@@ -136,7 +148,7 @@ export const OnboardingDashboard = () => {
                                         className="pickup-name"
                                         label="Enter Your Full Name"
                                         value={name}
-
+                                        onChange={(e) => setName(e.target.value)}
                                         fullWidth
                                     />
                                     <textarea className="pickup-description" placeholder="Enter store description"></textarea>
@@ -148,11 +160,48 @@ export const OnboardingDashboard = () => {
                                         fullWidth
                                     />
                                     <div className="city-state">
-                                        <TextField  className="city"label="Text Field 1" variant="outlined" />
+                                        <TextField className="city" label="Text Field 1" variant="outlined" />
                                         <TextField className="state" label="Text Field 2" variant="outlined" />
                                     </div>
                                     <button className="password-save">Save</button>
+
+                                    <div>
+                                        <div className="submit-done">
+                                        <h4>PAN & Business Details
+                                        </h4>
+                                        <button>Edit</button>
+                                        </div>
+                                        <div className="pandetails">
+                                            <div className="_9ndz">
+                                        <BadgeOutlinedIcon/>
+                                        <h5>ABCTY1234D</h5>
+                                        </div>
+                                        <div>
+                                        <button> Valid PAN</button>
+                                        </div>
+                                        </div>
+
+                                        <h4>Business Details
+                                        </h4>
+                                        <div className="business-details">
+                                            <div className="business-details-icon"><WorkOutlineOutlinedIcon/></div>
+                                            <div>
+                                                <h5>Business Name</h5>
+                                                <p>Ecommerce-app</p>
+                                                <h5>Business Address</h5>
+                                                <p>Hyderabad, HYDERABAD, TELANGANA, 500085</p>
+
+                                                </div>
+                                            </div>
+
+                                    </div>
+
+
+
                                 </div>
+
+
+
                             )}
 
                         </div>
@@ -180,48 +229,42 @@ export const OnboardingDashboard = () => {
                                 className="pickup-name"
                                 label="Enter Pickup Pincode"
                                 value={pin}
-                                onChange={(e) => setPin(e.target.value)}
+                                onChange={handlePinChange}
                                 fullWidth
                             />
 
-
-                            <h5>Pickup Address (Minimum 8 letters)</h5>
-                            <TextField
-                                           className="pickup-name"
+                            {showPickupAdd && (
+                                <div className="pickup-add">
+                                    <h5>Pickup Address (Minimum 8 letters)</h5>
+                                    <TextField
+                                        className="pickup-name"
                                         label="Shop No., Building Name, Floor"
                                         value={pan}
                                         onChange={(e) => setPan(e.target.value)}
                                         fullWidth
                                     />
-                                   
 
                                     <TextField
                                         className="pickup-name"
                                         label="Road Name, Area, Colon"
                                         value={name}
-
+                                        onChange={(e) => setName(e.target.value)}
                                         fullWidth
                                     />
-                        
+
                                     <TextField
                                         className="pickup-name"
                                         label="Nearby Landmark"
                                         value={name}
-
+                                        onChange={(e) => setName(e.target.value)}
                                         fullWidth
                                     />
                                     <div className="city-state">
-                                        <TextField  className="city"label="Text Field 1" variant="outlined" />
-                                        <TextField className="state" label="Text Field 2" variant="outlined" />
+                                        <TextField className="city" label="City" variant="outlined" />
+                                        <TextField className="state" label="State" variant="outlined" />
                                     </div>
-
-
-
-
-
-
-
-
+                                </div>
+                            )}
                         </div>
                         <button className="password-save">Save</button>
                     </div>
