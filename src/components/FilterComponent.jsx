@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 import ReactPaginate from 'react-paginate';
 import { useState } from "react";
 import NavigationBottom from "./NavigationBottom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const FilterComponent = () => {
 	const [selectedTab, setSelectedTab] = useState(0)
@@ -72,12 +72,15 @@ export const FilterComponent = () => {
 							currentItems.map((item, index) => {
 								console.log({ item })
 								return (
+								
 									<div key={index}>
 										<Grid container rowSpacing={2} columnSpacing={2} onClick={() => navigate("/product-details")}>
 											<Grid item lg={3}>
+											<Link to="/product-details">
 												<div className="product-image">
 													<img src={item.images} alt="Product" />
 												</div>
+												</Link>
 											</Grid>
 											<Grid item lg={5}>
 												<div className="product-details">

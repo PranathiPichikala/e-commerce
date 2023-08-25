@@ -47,14 +47,14 @@ const HomeGrid = () => {
         <div className="_7hac">
             <div className="_3ndr">
         <Typography variant='h5'>Mobiles & more</Typography>
-        <Link to="filtercomponent">
+        <Link to="giftcardcomp">
         <AiOutlineRight/>
         </Link>
         </div>
         <Grid container spacing={2}>
         {GridData.map((data, index) => (
             <Grid item xs={2} className="_8znn">
-                <Link to="/product-details">
+                <Link to="/filtercomponent">
                 <div className="_6jup">
                     <img style={{ width: "120px", height: "150px" }} src={data.imageSrc} alt="Mobile" />
                     <Typography  className="heading-6jup"gutterBottom variant="h5" component="div" >
