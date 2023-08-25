@@ -249,9 +249,9 @@
 }
 
 ._hovered-img .btn1 {
-  width: 200px;
+  width: 175px;
   height: 50px;
-  margin-right: 15px;
+  margin: 0px 10px 5px 10px;
   border: none;
   background: orange;
   color: white;
@@ -260,9 +260,8 @@
 }
 
 ._hovered-img .btn2 {
-  width: 200px;
+  width: 175px;
   height: 50px;
-  margin-right: 15px;
   border: none;
   background: tomato;
   color: white;
