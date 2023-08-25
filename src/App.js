@@ -30,6 +30,8 @@ import RatingsAndReviews from './components/RatingsAndReviews';
 import BecomeSeller from './pages/BecomeSeller';
 import OnboardingSeller  from './pages/OnboardingSeller';
 import SellerHeader from './components/SellerHeader';
+import SellerSlider from './components/SellerSlider';
+import SellerCategories from './components/SellerCategories';
 
 function App() {
 
@@ -71,8 +73,11 @@ function App() {
         <Route path="/become-seller" element={<BecomeSeller />} />
         <Route path="/start-selling" element={<StartSelling />} />
         <Route path="/similiar-products" element={<SimiliarProducts />} />
-        <Route path="/onboarding-seller" element={<OnboardingSeller/>} />
-        <Route path="/seller-header" element={<SellerHeader/>} />
+        <Route path="/onboarding-seller" element={<OnboardingSeller/>} >
+        <Route path="/onboarding-seller/seller-header" element={<SellerHeader/>} />
+        <Route path="/onboarding-seller/seller-slider" element={<SellerSlider/>} />
+        <Route path="/onboarding-seller/seller-categories" element={<SellerCategories/>} />
+        </Route>
       </Routes>
     </BrowserRouter>
 

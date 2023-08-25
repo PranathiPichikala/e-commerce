@@ -35,8 +35,17 @@ export const SellerSlider = () => {
                             <p>No image uploaded</p>
                         )}
                     </div>
-                    <input type="file" accept="image/*" onChange={handleImageUpload} />
-
+                    <div className="custom-file-input">
+                        <label htmlFor="fileInput" className="custom-button-2">
+                            Choose Image
+                        </label>
+                        <input
+                            type="file"
+                            accept="image/*"
+                            id="fileInput"
+                            onChange={handleImageUpload}
+                        />
+                    </div>
                 </div>
                 <div className='_3cmk-save'>
                 <button onClick={handleSave}>Save</button>

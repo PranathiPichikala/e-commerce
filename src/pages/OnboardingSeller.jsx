@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SellerHeader from "../components/SellerHeader";
 import { SellerSlider } from "../components/SellerSlider";
+import SellerCategories from "../components/SellerCategories";
+import { Link, Outlet } from "react-router-dom";
 
 function OnboardingSeller() {
     const [selectedOption, setSelectedOption] = useState(null);
@@ -31,24 +33,31 @@ function OnboardingSeller() {
                             <Typography>Customize Dashboard</Typography>
                         </AccordionSummary>
                         <AccordionDetails className="accord-details">
-                            <ul>
-                                <li onClick={() => handleOptionSelect('header')}>
+                            <ul className="accord-details-ul">
+                                <Link to="/onboarding-seller/seller-header">
+                                <li >
                                     Header
                                 </li>
+                                </Link>
+                                <Link to="/onboarding-seller/seller-slider">
                                 <li onClick={() => handleOptionSelect('slider')}>
                                     Slider
                                 </li>
-                                <li onClick={() => handleOptionSelect('slider')}>
+                                </Link>
+                                <Link to="/onboarding-seller/seller-categories">
+                                <li onClick={() => handleOptionSelect('categories')}>
                                     Categories
                                 </li>
+                                </Link>
                             </ul>
                         </AccordionDetails>
                     </Accordion>
                 </div>
                 <div className="right-side-bar">
-                  
-                    {selectedOption === 'header' && <SellerHeader/>}
+                <Outlet/>
+                    {/* {selectedOption === 'header' && <SellerHeader/>}
                     {selectedOption === 'slider' && <SellerSlider/>}
+                    {selectedOption === 'categories' && <SellerCategories/>} */}
                 </div>
             </div>
 

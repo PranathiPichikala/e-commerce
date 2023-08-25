@@ -41,7 +41,17 @@ export const SellerHeader = () => {
                             <p>No image uploaded</p>
                         )}
                     </div>
-                    <input type="file" accept="image/*" onChange={handleImageUpload} />
+                    <div className="custom-file-input">
+                        <label htmlFor="fileInput" className="custom-button">
+                            Choose Image
+                        </label>
+                        <input
+                            type="file"
+                            accept="image/*"
+                            id="fileInput"
+                            onChange={handleImageUpload}
+                        />
+                    </div>
 
                     <TextField
                         label="Enter product name"
