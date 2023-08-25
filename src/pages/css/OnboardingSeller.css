@@ -61,3 +61,6 @@
 .right-side-bar{
     width: 100%;
 }
+.accord-details-ul a{
+    text-decoration: none;
+}
