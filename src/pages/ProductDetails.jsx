@@ -200,31 +200,27 @@ export const ProductDetails = () => {
         <div>
             <Navigation />
             <NavigationBottom />
-
             <div className="_7oqi">
                 <div className="_8dlm">
                     <div className="_6rkq">
                         {selectedColor && (
-                            <div className="_hovered-img">
-                                <img src={selectedColor} alt="Selected" />
-                            </div>
+                            <>
+                                <div className="_hovered-img">
+                                    <img src={selectedColor} alt="Selected" />
+                                    <button className="btn1" onClick={() => addToCart(data)}>
+                                        ADD TO CART
+                                    </button>
+                                    <button className="btn2" onClick={() => navigate("/cart")}>
+                                        BUY NOW
+                                    </button>
+                                </div>
+                            </>
                         )}
                         <div className="heart">
                             <AiFillHeart />
                         </div>
-
-                        <div className="_9xzv">
-                            <Button className="_3sst" onClick={() => addToCart(data)}>
-                                ADD TO CART
-                            </Button>
-                            <Button className="_8off" onClick={() => navigate("/cart")}>
-                                BUY NOW
-                            </Button>
-                        </div>
                     </div>
-
                 </div>
-
                 <div className="_0otr">
                     <p>vivo T2x 5G (Glimmer Black, 128 GB) (4 GB RAM)</p>
                     <div className="_6ucv">
@@ -558,7 +554,9 @@ export const ProductDetails = () => {
                     <button>VIEW ALL</button>
                 </div>
             </div>
-            <SimilarProducts />
+            <div className="_ayyababoi">
+                <SimilarProducts />
+            </div>
             <div className="_6atp">
                 <div className="smartphones-similiar">
                     <h2>Recently viewed</h2>
