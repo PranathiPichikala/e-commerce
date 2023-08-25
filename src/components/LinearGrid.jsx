@@ -38,21 +38,21 @@ const LinearGrid = ({ header, items, setTriggerRefresh }) => {
 
   const WishList = (product) => {
     let previtems = wishlistitems
-  
+
     if (previtems.some(item => item.id === product.id)) {
       previtems = previtems.filter(item => item.id != product.id)
     } else {
       previtems.push(product)
     }
-    
+
     localStorage.setItem("wish", JSON.stringify(previtems));
     setTriggerRefresh(prev => prev + 1)
   };
 
   const navigate = useNavigate()
 
-  console.log({visibleItems})
-  console.log(items);
+  console.log(wishlistitems)
+
   return (
     <div className="linear-grid-container">
       <div className="smartphones">
@@ -60,41 +60,44 @@ const LinearGrid = ({ header, items, setTriggerRefresh }) => {
       </div>
 
       <Grid container rowSpacing={2} columnSpacing={5}>
-        {visibleItems.map((data, index) => (
-          <Grid item lg={3} key={index}>
-            <div className="mobile-image" onClick={() => navigate("/product-details")}>
-              <img src={data.images} alt="Mobile" />
-              <div className="mobile-image-content">
-                <div title="realme C53 (Champion Gold, 64 GB)" href="#">
-                  {data.title}
-                </div>
-                <div className="rating">
-                  <span>{data.rating}★</span>
-                  <span>{data.stock}</span>
-                </div>
-                <div className="costtt">
-                  <span>₹{data.price}</span>
-                  <span>₹12,999</span>
-                  <span>{data.discountPercentage}% off</span>
-                </div>
-                <div className="addtocart-buttons">
-                <div className="add-to-cart">
-                  <Button onClick={e => addToCart(e, data)}>ADD TO CART</Button>
+        {visibleItems.map((data, index) => {
+          return (
+            <Grid item lg={3} key={index}>
+              <div className="mobile-image" onClick={() => navigate("/product-details")}>
+                <img src={data.images} alt="Mobile" />
+                <div className="mobile-image-content">
+                  <div title="realme C53 (Champion Gold, 64 GB)" href="#">
+                    {data.title}
                   </div>
-                  <Link  className="go-to-cart" to='/cart' onClick={e => e.stopPropagation()}>
-                    <Button>Go to Cart</Button>
-                  </Link>
+                  <div className="rating">
+                    <span>{data.rating}★</span>
+                    <span>{data.stock}</span>
                   </div>
+                  <div className="costtt">
+                    <span>₹{data.price}</span>
+                    <span>₹12,999</span>
+                    <span>{data.discountPercentage}% off</span>
+                  </div>
+                  <div className="addtocart-buttons">
+                    <div className="add-to-cart">
+                      <Button onClick={e => addToCart(e, data)}>ADD TO CART</Button>
+                    </div>
+                    <Link className="go-to-cart" to='/cart' onClick={e => e.stopPropagation()}>
+                      <Button>Go to Cart</Button>
+                    </Link>
+                  </div>
+                </div>
+                <div onClick={e => {
+                  e.stopPropagation()
+                  WishList(data)
+                }} className="heart-icon">
+                  <AiFillHeart fill={wishlistitems.some(item => item.id == data.id) ? "#FF6969" : "#c2c2c2"} />
+                </div>
               </div>
-              <div onClick={e => {
-                e.stopPropagation()
-                WishList(data)
-              }} className="heart-icon">
-                <AiFillHeart color={wishlistitems.some(item => item.id == data.id) ? "red" : "#c2c2c2"} />
-              </div>
-            </div>
-          </Grid>
-        ))}
+            </Grid>
+          )
+        }
+        )}
       </Grid>
 
       <div className="buttons-container">
