@@ -157,7 +157,7 @@ export const Profile = () => {
                       <Link to="/account/MyCoupons">My Coupons</Link>
                     </li>
                     <li>
-                      <Link>My Reviews  & Ratings</Link>
+                      <Link to="/account/ratings">My Reviews  & Ratings</Link>
                     </li>
                     <li>
                       <Link to="/account/notifications">All Notifications</Link>

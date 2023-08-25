@@ -145,7 +145,9 @@ export const OnboardingDashboard = () => {
                                     </p>
 
                                     <TextField
-                                        className="pickup-name"
+                                        cl
+                                        
+                                        assName="pickup-name"
                                         label="Enter Your Full Name"
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
@@ -199,8 +201,6 @@ export const OnboardingDashboard = () => {
 
 
                                 </div>
-
-
 
                             )}
 

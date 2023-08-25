@@ -1,0 +1,53 @@
+._1ort {
+    padding: 2rem;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  ._1ort .product-des textarea{
+ width: 445px;
+  }
+  .display-image img, .uploadedimage-img img{
+    width: 100px;
+    object-fit: contain;
+  }
+  .table-container-iort{
+    background-color: white;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .table-container{
+    background-color: white;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+.table-head{
+    width: 100%;
+   
+}
+
+.table-data td{
+    text-align: center;
+}
+.table-head .table-row{
+    background-color: antiquewhite;
+}
+._1ort-save button{
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+    background-color: rgb(0, 102, 204);
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+}

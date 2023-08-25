@@ -1,0 +1,54 @@
+._3cmk {
+    padding: 2rem;
+  }
+  
+  ._3cmk  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+ ._3cmk .product-des textarea{
+ width: 445px;
+  }
+  ._3cmk .display-image img, .uploadedimage-img img{
+    width: 100px;
+    object-fit: contain;
+  }
+  ._3cmk .table-container-iort{
+    background-color: white;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  ._3cmk .table-container{
+    background-color: white;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+._3cmk .table-head{
+    width: 100%;
+   
+}
+
+._3cmk .table-data td{
+    text-align: center;
+}
+._3cmk .table-head .table-row{
+    background-color: antiquewhite;
+}
+._3cmk ._3cmk-save button{
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    white-space: nowrap;
+    background-color: rgb(0, 102, 204);
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    margin-top: 10px;
+}

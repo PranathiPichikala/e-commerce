@@ -28,6 +28,8 @@ import SimiliarProducts from './components/SimiliarProducts';
 import StartSelling from './pages/StartSelling';
 import RatingsAndReviews from './components/RatingsAndReviews';
 import BecomeSeller from './pages/BecomeSeller';
+import OnboardingSeller  from './pages/OnboardingSeller';
+import SellerHeader from './components/SellerHeader';
 
 function App() {
 
@@ -47,7 +49,7 @@ function App() {
         <Route path='grids' element={<GridComponent />} />
         <Route path='/myorders' element={<MyOrders />} />
         <Route path="/check-out" element={<Checkout />} />
-        <Route path="/ratings" element={<RatingsAndReviews />} />
+        
         <Route path='/account' element={<Profile />}>
           <Route path="/account/profile" element={<ProfileInformation />} />
           <Route path="/account/wishlist" element={<MyWishlist />} />
@@ -55,6 +57,7 @@ function App() {
           <Route path="/account/notifications" element={<Notifications />} />
           <Route path='/account/manage-address' element={<ManageAddressesPage />} />
           <Route path="/account/add-gift-cards" element={<AddGiftCard />} />
+          <Route path="/account/ratings" element={<RatingsAndReviews/>} />
         </Route>
 
         <Route path="/giftcardcomp" element={<GiftCardComponent />} />
@@ -68,6 +71,8 @@ function App() {
         <Route path="/become-seller" element={<BecomeSeller />} />
         <Route path="/start-selling" element={<StartSelling />} />
         <Route path="/similiar-products" element={<SimiliarProducts />} />
+        <Route path="/onboarding-seller" element={<OnboardingSeller/>} />
+        <Route path="/seller-header" element={<SellerHeader/>} />
       </Routes>
     </BrowserRouter>
 
