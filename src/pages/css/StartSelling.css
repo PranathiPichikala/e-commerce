@@ -1,59 +1,76 @@
 /* Add your custom styling here */
 ._2ydi {
-    display: flex;
-    flex-direction: column;
-   
-    justify-content: center;
-  }
-  
-  ._2ydi .step-content {
-    width: 100%;
-    display: flex;
-    margin: 20px;
-  }
-  
-  ._2ydi .step {
-    width: 100%;
-    max-width: 600px; 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    margin: 20px;
-    
-   
-  }
- 
-  
-  ._2ydi .otp-fields {
-    display: flex;
-    margin-top: 10px;
-  }
-  ._2ydi .otp-fields input{
-    height: 36px;
-    border: 1px solid rgb(193, 199, 208);
-    border-radius: 6px;
-    font-size: 14px;
-    caret-color: rgb(0, 102, 204);
-    width: 36px !important;
-  }
-  
-  ._2ydi .otp-fields input {
-    width: 30px;
-    text-align: center;
-    margin: 0 5px;
-  }
-  
- 
-  /* .categories-books button{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+._2ydi .step-content {
+  width: 100%;
+  display: flex;
+  margin: 20px;
+}
+
+._2ydi .step {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 20px;
+
+
+}
+
+
+._2ydi .otp-fields {
+  display: flex;
+  margin-top: 10px;
+}
+
+._2ydi .otp-fields input {
+  height: 36px;
+  border: 1px solid rgb(193, 199, 208);
+  border-radius: 6px;
+  font-size: 14px;
+  caret-color: rgb(0, 102, 204);
+  width: 36px !important;
+}
+
+._2ydi .otp-fields input {
+  width: 30px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+
+/* .categories-books button{
     /* border-color: rgb(0, 102, 204);
     color: rgb(0, 102, 204);
     background: rgba(0, 102, 204, 0.1);} */
 
-.gstin-number{
-    margin-top: 10px;
+.gstin-number {
+  margin-top: 10px;
 }
-.registerback button{
-padding: 10px;
-margin: 20px;
+
+.registerback button {
+  padding: 10px;
+  margin: 20px;
+}
+
+.Rajesh_alachandra ._8biz {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+._8biz .hello {
+  padding: 6px;
+}
+
+._1olp {
+  display: flex !important;
+  flex-direction: column !important;
 }

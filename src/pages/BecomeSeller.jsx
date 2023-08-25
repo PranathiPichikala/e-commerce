@@ -138,44 +138,51 @@ const BecomeSeller = () => {
                 </Box>
               </Modal>
               {otpPopupOpen && (
-                <Box className="otpBox"
-                  sx={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    width: '80%',
-                    maxWidth: '400px',
-                    bgcolor: 'white',
-                  }}
+                <Modal
+                  open={otpPopupOpen}
+                  onClose={handleOtpVerificationSuccess}
+                  aria-labelledby="modal-modal-title"
+                  aria-describedby="modal-modal-description"
                 >
-                  <Grid className="_2fzv">
-                    <Typography variant="h5" component="h2">
-                      Login
-                    </Typography>
-                    <CloseIcon onClick={handleOtpVerificationSuccess} />
-                  </Grid>
-                  <div className='OtpField'>
-                    <Typography>
-                      Please enter correct OTP !
-                    </Typography>
-                    <TextField
-                      label="Enter Email/Mobile Number"
-                      sx={{ width: 350 }}
-                      margin="normal"
-                      variant="outlined"
-                    />
-                    <Button
-                      variant="outlined"
-                      color="primary"
-                      sx={{ width: 350, paddingBottom: "10px" }}
-                      onClick={handleOtpVerificationSuccess}
-                    >
-                      Verify OTP
-                    </Button>
-                    {/* <Button>Resend otp</Button> */}
-                  </div>
-                </Box>
+                  <Box className="otpBox"
+                    sx={{
+                      position: 'absolute',
+                      top: '50%',
+                      left: '50%',
+                      transform: 'translate(-50%, -50%)',
+                      width: '80%',
+                      maxWidth: '400px',
+                      bgcolor: 'white',
+                    }}
+                  >
+                    <Grid className="_2fzv">
+                      <Typography variant="h5" component="h2">
+                        Login
+                      </Typography>
+                      <CloseIcon onClick={handleOtpVerificationSuccess} />
+                    </Grid>
+                    <div className='OtpField'>
+                      <Typography>
+                        Please enter correct OTP !
+                      </Typography>
+                      <TextField
+                        label="Enter Email/Mobile Number"
+                        sx={{ width: 350 }}
+                        margin="normal"
+                        variant="outlined"
+                      />
+                      <Button
+                        variant="outlined"
+                        color="primary"
+                        sx={{ width: 350, paddingBottom: "10px" }}
+                        onClick={handleOtpVerificationSuccess}
+                      >
+                        Verify OTP
+                      </Button>
+                      {/* <Button>Resend otp</Button> */}
+                    </div>
+                  </Box>
+                </Modal>
               )}
             </li>
             <Link to="/start-selling">

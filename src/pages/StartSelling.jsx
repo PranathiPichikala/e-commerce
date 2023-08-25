@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Stepper, Step, StepLabel, TextField, Tabs, Tab } from "@mui/material";
+import { Stepper, Step, StepLabel, TextField, Tabs, Tab, Typography, Grid } from "@mui/material";
 import "./css/StartSelling.css";
 import { OnboardingDashboard } from "../components/OnboardingDashboard";
 
@@ -170,35 +170,66 @@ const StartSelling = () => {
             <p>
               By continuing, I agree to Flipkart’s Terms of Use & Privacy Policy
             </p>
-            
+
           </div>
         )}
 
         {activeStep === 1 && (
-          <div>
-            password page
-            
-           
+          <div className="Rajesh_alachandra">
+            <Grid className="_8biz">
+              <Typography className="hello" variant="div">
+                We have send a verification to your Mail
+              </Typography>
+              <Typography className="hello" variant="div">
+                There are many variations of passages of Lorem Ipsum available
+              </Typography>
+              <Typography className="hello" variant="div">
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+              </Typography>
+            </Grid>
+            <Grid className="_1olp">
+              <TextField
+                label="Enter password"
+                sx={{ width: 350 }}
+                margin="normal"
+                variant="outlined"
+              />
+              <Typography style={{ color: "#0166cd" }}>
+                Suggested password
+              </Typography>
+              <TextField
+                label="Enter Full Name "
+                sx={{ width: 350 }}
+                margin="normal"
+                variant="outlined"
+              />
+              <TextField
+                label="Enter Display Name "
+                sx={{ width: 350 }}
+                margin="normal"
+                variant="outlined"
+              />
+            </Grid>
           </div>
         )}
 
-{activeStep === 2 && (
+        {activeStep === 2 && (
           <div>
-            <OnboardingDashboard/>
+            <OnboardingDashboard />
           </div>
         )}
-       
+
       </div>
       <div className="registerback">
-      <button onClick={handleNext}>Register and continue</button>
-      <button
-              disabled={isBackDisabled}
-              onClick={handleBack}
-              sx={{ mr: 1 }}
-            >
-              Back
-            </button>
-            </div>
+        <button onClick={handleNext}>Register and continue</button>
+        <button
+          disabled={isBackDisabled}
+          onClick={handleBack}
+          sx={{ mr: 1 }}
+        >
+          Back
+        </button>
+      </div>
     </div>
   );
 };
