@@ -28,10 +28,29 @@ export const SellerCategories = () => {
     };
 
     return (
-        <div className="_1ort">
+        <div className="_7apj">
          
             <div className='table-container-iort'>
-                <h1>Upload Image</h1>
+            <div>
+            <TextField
+                        label="Enter Category name"
+                        sx={{ width: 450 }}
+                        margin="normal"
+                        variant="outlined"
+                        value={productName}
+                        onChange={(e) => setProductName(e.target.value)}
+                    />
+             <div>
+                     <TextField
+                        label="Enter Product name"
+                        sx={{ width: 450 }}
+                        margin="normal"
+                        variant="outlined"
+                        value={productName}
+                        onChange={(e) => setProductName(e.target.value)}
+                    />
+                    </div>
+                <h4>Upload Image of the product</h4>
  
                 <div className="image-container">
                     <div className="display-image">
@@ -43,14 +62,9 @@ export const SellerCategories = () => {
                     </div>
                     <input type="file" accept="image/*" onChange={handleImageUpload} />
 
-                    <TextField
-                        label="Enter product name"
-                        sx={{ width: 450 }}
-                        margin="normal"
-                        variant="outlined"
-                        value={productName}
-                        onChange={(e) => setProductName(e.target.value)}
-                    />
+                   
+                </div>
+                <button>Add</button>
                 </div>
                 <div  className="_1ort-save">
                 <button onClick={handleSave}>Save</button>

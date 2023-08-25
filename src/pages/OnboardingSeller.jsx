@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SellerHeader from "../components/SellerHeader";
 import { SellerSlider } from "../components/SellerSlider";
+import SellerCategories from "../components/SellerCategories";
 
 function OnboardingSeller() {
     const [selectedOption, setSelectedOption] = useState(null);
@@ -38,7 +39,7 @@ function OnboardingSeller() {
                                 <li onClick={() => handleOptionSelect('slider')}>
                                     Slider
                                 </li>
-                                <li onClick={() => handleOptionSelect('slider')}>
+                                <li onClick={() => handleOptionSelect('categories')}>
                                     Categories
                                 </li>
                             </ul>
@@ -49,6 +50,7 @@ function OnboardingSeller() {
                   
                     {selectedOption === 'header' && <SellerHeader/>}
                     {selectedOption === 'slider' && <SellerSlider/>}
+                    {selectedOption === 'categories' && <SellerCategories/>}
                 </div>
             </div>
 
