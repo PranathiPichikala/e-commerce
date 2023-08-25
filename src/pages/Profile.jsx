@@ -60,7 +60,7 @@ export const Profile = () => {
     <div>
       <Navigation />
       <NavigationBottom />
-      <Box sx={{ flexGrow: 1 }}>
+      <Box className="_4zvw" sx={{ flexGrow: 1 }}>
         <Grid container spacing={2}>
           <Grid item xs={3}>
             <Item>
@@ -170,21 +170,20 @@ export const Profile = () => {
               </div>
               <div onClick={handleLogOut} className="myorders">
                 <div className="myorders-img">
-                  <AiOutlineLogout />
+                  <AiOutlineLogout className="_icon" />
                 </div>
                 <div className="myorders-link">
                   <span>Logout</span>
                 </div>
-
               </div>
             </Item>
-            <Item>
-              <div>
-                <div className="visited">Frequently Visited:</div>
-                <div className="row">
-                  <Link className="Track" >Track Order</Link>
-                  <Link className="Help">Help Center</Link></div>
+            <Item className="_9tsj">
+              <div className="visited">
+                Frequently Visited:
               </div>
+              <div className="row">
+                <Link className="Track" >Track Order</Link>
+                <Link className="Help">Help Center</Link></div>
             </Item>
           </Grid>
           <Grid item xs={9}>

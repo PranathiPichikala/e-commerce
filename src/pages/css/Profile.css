@@ -1,124 +1,192 @@
-.person-img{
+.person-img {
     display: flex;
     flex-direction: row;
-  padding: 10px;
+    padding: 10px;
 }
-.person{
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+
+.person {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
     margin-bottom: 10px;
 }
-.hello-flipkart{
+
+.hello-flipkart {
     display: flex;
     flex-direction: column;
     text-align: start;
     padding: 5px 0 0 16px;
 }
-.hello-flipkart .hello-1{
+
+.hello-flipkart .hello-1 {
     color: #000;
 }
-.hello-flipkart .hello-2{
+
+.hello-flipkart .hello-2 {
     font-weight: bolder;
     color: #000;
 }
-.myorders{
+
+.myorders {
     display: flex;
     flex-direction: row;
-    padding: 12px;
+    padding: 15px;
     border-bottom: 1px solid #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
-.myorders .myorders-link, .myorders .myorders-img{
+
+.myorders:hover {
+    color: blue;
+}
+
+.myorders .myorders-link,
+.myorders .myorders-img {
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px !important;
+    font-weight: 600
 }
-.myorders .myorders-link a{
+
+.myorders-img ._icon {
+    font-size: 25px;
+}
+
+.myorders .myorders-link a {
     width: calc(100% - 26px);
     font-size: 15px;
-    font-weight:bolder;
+    font-weight: bolder;
     color: #878787 !important;
     cursor: pointer;
     text-decoration: none;
 }
-.myorders .myorders-img{
+
+.myorders .myorders-img {
     font-size: 20px;
 }
-.myorders .arrow-right{
+
+.myorders .arrow-right {
     font-size: 20px;
     padding-left: 30px;
 }
-.my-acc{
+
+.my-acc {
     border-bottom: 1px solid #f0f0f0;
 }
-.myaccount-setting{
+
+.myaccount-setting {
     display: flex;
     flex-direction: row;
     padding: 12px;
 }
-.myaccount-setting
- .myaccount-setting-link, .myaccount-setting
- .myaccount-setting-img{
+
+.myaccount-setting .myaccount-setting-link,
+.myaccount-setting .myaccount-setting-img {
     padding-left: 20px;
     padding-right: 20px;
 }
-.myaccount-setting
- .myaccount-setting-link a{
+
+.myaccount-setting .myaccount-setting-link a {
     width: calc(100% - 26px);
     font-size: 15px;
-    font-weight:bolder;
+    font-weight: bolder;
     color: #878787 !important;
     cursor: pointer;
     text-decoration: none !important;
 }
-.myaccount-setting
- .myaccount-setting-img{
+
+.myaccount-setting .myaccount-setting-img {
     font-size: 20px;
 }
-.profile-info ul{
+
+.profile-info ul {
     display: flex;
     flex-direction: column;
     align-items: start;
     list-style: none;
 }
+
 .profile-info ul li {
     padding: 12px 5px 12px 54px;
 
     text-decoration: none;
- 
+
 }
-.profile-info ul li a{
+
+._4zvw {
+    margin: 10px;
+}
+
+.profile-info ul li a {
     text-decoration: none;
     font-size: 14px;
     color: #000;
     font-weight: 400;
     cursor: pointer;
 }
-.PKhkts{
-float: right;
-padding: 0 20px 0 65px;
-color: #388e3c;
-font-weight: 500;
+
+.PKhkts {
+    float: right;
+    padding: 0 20px 0 65px;
+    color: #388e3c;
+    font-weight: 500;
 }
-.row .Track{
+
+.row .Track {
     padding-right: 10px;
+    text-decoration: none;
 }
-._1yce{
+
+.row .Help {
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.row {
+    padding: 10px;
+}
+
+._1yce {
     width: 500px;
 }
-._8ewn{
+
+._8ewn {
     margin-left: 0px !important;
     margin-right: 0px !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 10px 20px 30px !important;
+    /* width: 95% !important; */
+    max-width: 900px !important;
 }
-._7hbl{
+
+.visited {
+    padding: 10px;
+}
+
+._9tsj {
+    margin-top: 25px;
+    text-align: start;
+    padding: 10px !important;
+}
+
+._7hbl {
     margin-left: 30px !important;
 }
-._7rmp{
+
+._7rmp {
     margin-bottom: 20px !important;
 }
-._7xte{
-    margin-right: 20px!important;
+
+._7xte {
+    margin-right: 20px !important;
 }
-._4eys{
+
+._4eys {
     margin-left: 20px !important;
 }
-._5wcd{
+
+._5wcd {
     margin-top: 20px !important;
 }
