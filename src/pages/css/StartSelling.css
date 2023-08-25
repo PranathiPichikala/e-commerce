@@ -10,6 +10,8 @@
   width: 100%;
   display: flex;
   margin: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 ._2ydi .step {
@@ -73,4 +75,9 @@
 ._1olp {
   display: flex !important;
   flex-direction: column !important;
+}
+
+.send-otp-button {
+  border: none;
+  color: rgb(186, 214, 242);
 }
