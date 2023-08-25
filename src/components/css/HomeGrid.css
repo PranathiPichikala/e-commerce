@@ -1,46 +1,56 @@
-._6jup{
-   border-radius: 10px;
+._6jup {
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid rgb(223, 223, 223) !important;
     margin: 0 0 10px 5px;
-   
+
 }
-._6jup img{
+
+._6jup img {
     object-fit: contain;
 }
-._6jup .heading-6jup{
+
+._6jup .heading-6jup {
     font-size: 15px;
     text-transform: uppercase;
     color: black;
 }
-._8znn a{
-    text-decoration: none ;
+
+._8znn a {
+    text-decoration: none;
 }
-._7hac{
+
+._7hac {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 20px !important;
 }
-._1fdg{
+
+._1fdg {
     margin-bottom: 10px !important;
     text-decoration: none !important;
 }
-._7hac h4{
+
+._7hac h4 {
     padding: 15px;
 }
-._8znn{
+
+._8znn {
     padding-left: 10px !important;
 
 }
-._3ndr{
+
+._3ndr {
     display: flex;
     justify-content: space-between;
 }
-._3ndr h5{
+
+._3ndr h5 {
     padding: 20px;
 }
-._3ndr svg{
+
+._3ndr svg {
     padding: 5px;
     background-color: blue;
     border-radius: 50%;
@@ -48,4 +58,8 @@
     margin-right: 20px !important;
     margin-top: 20px !important;
     cursor: pointer;
+}
+
+._5rtb {
+    padding: 20px !important;
 }

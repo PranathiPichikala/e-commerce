@@ -41,14 +41,14 @@ const ProfileInformation = () => {
             ...prevEditModes,
             [section]: false,
         }));
-        };
+    };
 
     return (
         <Container className="_8ewn" maxWidth="sm">
             <Box mt={3}>
                 <Typography className="_7rmp" variant="h5">Personal Information
-                    <Button className="_7hbl" variant="outlined"  onClick={() => handleEditClick('personalInfo')}>
-                    {editModes.personalInfo ? 'Cancel' : 'Edit'}
+                    <Button className="_7hbl" variant="outlined" onClick={() => handleEditClick('personalInfo')}>
+                        {editModes.personalInfo ? 'Cancel' : 'Edit'}
                     </Button>
                 </Typography>
                 <Box>
@@ -110,7 +110,7 @@ const ProfileInformation = () => {
                         </RadioGroup>
                     </FormControl>
                     {editModes.gender && (
-                        <Button variant="contained"onClick={() => handleSaveClick('gender')}>
+                        <Button variant="contained" onClick={() => handleSaveClick('gender')}>
                             Save
                         </Button>
                     )}
@@ -123,24 +123,24 @@ const ProfileInformation = () => {
                     </Button>
                 </Typography>
                 <div className="_5wcd">
-                <Box>
-                    <TextField
-                        id="email"
-                        label="Email"
-                        variant="filled"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        disabled={!editModes.email}
-                        className="_7xte  _1yce"
-                    />
-                   
-                    {editModes.email && (
-                        <Button variant="contained" onClick={() => handleSaveClick('email')} className="_4eys">
-                            Save
-                        </Button>
-                    )}
-                  
-                </Box>
+                    <Box>
+                        <TextField
+                            id="email"
+                            label="Email"
+                            variant="filled"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            disabled={!editModes.email}
+                            className="_7xte  _1yce"
+                        />
+
+                        {editModes.email && (
+                            <Button variant="contained" onClick={() => handleSaveClick('email')} className="_4eys">
+                                Save
+                            </Button>
+                        )}
+
+                    </Box>
                 </div>
             </Box>
             <Box mt={3}>
@@ -150,35 +150,60 @@ const ProfileInformation = () => {
                     </Button>
                 </Typography>
                 <div className="_5wcd">
-                <Box>
-                    <TextField
-                        id="mobile"
-                        label="Mobile"
-                        variant="filled"
-                        value={mobile}
-                        onChange={(e) => setMobile(e.target.value)}
-                        disabled={!editModes.mobile}
-                        className="_7xte _1yce"
-                    />
-                   
-                    {editModes.mobile && (
-                        <Button variant="contained"  onClick={() => handleSaveClick('mobile')} className="_4eys">
-                            Save
-                        </Button>
-                    )}
-                </Box>
+                    <Box>
+                        <TextField
+                            id="mobile"
+                            label="Mobile"
+                            variant="filled"
+                            value={mobile}
+                            onChange={(e) => setMobile(e.target.value)}
+                            disabled={!editModes.mobile}
+                            className="_7xte _1yce"
+                        />
+
+                        {editModes.mobile && (
+                            <Button variant="contained" onClick={() => handleSaveClick('mobile')} className="_4eys">
+                                Save
+                            </Button>
+                        )}
+                    </Box>
                 </div>
             </Box>
             <Box mt={3}>
                 <Typography variant="h5">FAQ's</Typography>
-                <Typography>
+                <Typography variant='h6'>
                     What happens when I update my email address (or mobile number)?
                 </Typography>
                 <Typography variant="p">
                     Your login email id (or mobile number) changes, likewise. You'll receive all your
                     account related communication on your updated email address (or mobile number).
                 </Typography>
-
+                <Typography variant='h6'>
+                    What happens when I update my email address (or mobile number)?
+                </Typography>
+                <Typography variant="p">
+                    Your login email id (or mobile number) changes, likewise. You'll receive all your
+                    account related communication on your updated email address (or mobile number).
+                </Typography>
+                <Typography variant='h6'>
+                    What happens when I update my email address (or mobile number)?
+                </Typography>
+                <Typography variant="p">
+                    Your login email id (or mobile number) changes, likewise. You'll receive all your
+                    account related communication on your updated email address (or mobile number).
+                </Typography>
+                <Typography variant='h6'>
+                    What happens when I update my email address (or mobile number)?
+                </Typography>
+                <Typography variant="p">
+                    Your login email id (or mobile number) changes, likewise. You'll receive all your
+                    account related communication on your updated email address (or mobile number).
+                </Typography>
+                <div style={{ marginTop: "20px" }}>
+                    <Button>
+                        Deactivate Account
+                    </Button>
+                </div>
             </Box>
         </Container>
     );
